@@ -1,0 +1,38 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import {
+  Form,
+  LabeledFormElement,
+  PhoneInputField,
+} from "@virtahealth/components";
+
+<Meta title="Components / PhoneInput" component={PhoneInputField} />
+
+# PhoneInput
+
+`PhoneInputField` is a specialized TextInput that auto-formats user inputs as phone numbers.
+This component should be used within a Formik form, and currently requires inputs to take
+the form 999-999-9999, but could be easily extended to use other formats, or even a
+prop-provided format.
+
+<Preview>
+  <Story name="example">
+    <View style={{ width: "40rem" }}>
+      <Form initialValues={{ phone: null }} onSubmit={(values) => null}>
+        <LabeledFormElement
+          helperText={{ id: "components.phoneInput.helper" }}
+          labelMessage={{ id: "components.phoneInput.label" }}
+        >
+          <PhoneInputField
+            name="phone"
+            placeholderMessage={{ id: "components.phoneInput.placeholder" }}
+          />
+        </LabeledFormElement>
+      </Form>
+    </View>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={PhoneInputField} />

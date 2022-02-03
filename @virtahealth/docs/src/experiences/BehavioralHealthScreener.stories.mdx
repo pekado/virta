@@ -1,0 +1,32 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { BehavioralHealthScreener } from "@virtahealth/experiences";
+import MockPAClient from "./mock_data/mockPAClient";
+import MockAnalyticsClient from "./mock_data/mockAnalyticsClient";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+
+<Meta title="Experiences / Behavioral Health Screener" />
+
+<Preview>
+  <Story name="Behavioral Health Screener">
+    <StoryBookVirtaContext
+      analyticsClient={new MockAnalyticsClient()}
+      client={new MockPAClient()}
+    >
+      <BehavioralHealthScreener
+        virtaId="mockVirtaId"
+        fhirQuestionnaireId="mock-fhir-questionnaire-id"
+        patientActionId="mock-patient-action-id"
+        imageMap={{
+          revisitWhy: { uri: "https://i.imgur.com/YEU16TD.jpg" },
+          woop: { uri: "https://i.imgur.com/QJkbbbR.jpg" },
+          placeholder: { uri: "https://i.imgur.com/QJkbbbR.jpg" },
+        }}
+        followUpActionsEnabled={true}
+      />
+    </StoryBookVirtaContext>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={BehavioralHealthScreener} />

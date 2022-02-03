@@ -1,0 +1,66 @@
+{
+  "name": "@virtahealth/docs",
+  "description": "Documentation for Atlas",
+  "version": "10.20.1",
+  "author": "Aaron Fullerton <aaron.fullerton@virtahealth.com>",
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.11",
+    "@react-native-community/datetimepicker": "^3.5.2",
+    "@react-native-community/slider": "^4.1.12",
+    "@storybook/addon-a11y": "6.4.5",
+    "@storybook/addon-actions": "6.4.5",
+    "@storybook/addon-controls": "6.4.5",
+    "@storybook/addon-docs": "6.4.5",
+    "@storybook/addon-knobs": "^6.3.1",
+    "@storybook/addon-links": "6.4.5",
+    "@storybook/addon-ondevice-actions": "^6.0.1-alpha.6",
+    "@storybook/addon-ondevice-backgrounds": "^6.0.1-alpha.6",
+    "@storybook/addon-ondevice-controls": "^6.0.1-alpha.6",
+    "@storybook/addon-ondevice-notes": "^6.0.1-alpha.6",
+    "@storybook/addon-viewport": "6.4.5",
+    "@storybook/addons": "6.4.5",
+    "@storybook/api": "6.4.5",
+    "@storybook/cli": "6.4.5",
+    "@storybook/components": "6.4.5",
+    "@storybook/core-events": "6.4.7",
+    "@storybook/react": "6.4.5",
+    "@storybook/react-native": "^6.0.1-alpha.6",
+    "@storybook/theming": "6.4.7",
+    "@virtahealth/components": "^10.19.2",
+    "@virtahealth/experiences": "^10.20.1",
+    "@virtahealth/styles": "^10.18.1",
+    "@virtahealth/utils": "^10.19.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.66.3",
+    "react-native-svg": "^12.1.1",
+    "storybook-addon-designs": "6.2.0"
+  },
+  "scripts": {
+    "start": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "chromatic",
+    "lint": "eslint --ext .js,.ts,.tsx .",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "ios:pods": "cd ios && pod install",
+    "get-stories": "sb-rn-get-stories --config-path=./.storybook-rn",
+    "storybook-watcher": "sb-rn-watcher --config-path=./.storybook-rn",
+    "prestart:mobile": "yarn get-stories",
+    "start:mobile": "react-native start"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "main": "index.js",
+  "license": "MIT"
+}

@@ -1,0 +1,233 @@
+{
+  "status": "draft",
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire|2.0"
+    ],
+    "tag": [
+      {
+        "code": "lformsVersion: 24.0.0"
+      }
+    ]
+  },
+  "item": [
+    {
+      "type": "group",
+      "code": [
+        {
+          "code": "24323-8",
+          "display": "Comprehensive metabolic 2000 panel - Serum or Plasma",
+          "system": "http://loinc.org"
+        }
+      ],
+      "required": false,
+      "linkId": "/24323-8",
+      "text": "Comprehensive metabolic 2000 panel - Serum or Plasma",
+      "item": [
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "2345-7",
+              "display": "Glucose SerPl-mCnc",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "mg/dL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/24323-8/2345-7",
+          "text": "Glucose SerPl-mCnc"
+        },
+        {
+          "type": "group",
+          "code": [
+            {
+              "code": "24326-1",
+              "display": "Lytes 1998 Pnl SerPl",
+              "system": "http://loinc.org"
+            }
+          ],
+          "required": false,
+          "linkId": "/24323-8/24326-1",
+          "text": "Lytes 1998 Pnl SerPl",
+          "item": [
+            {
+              "type": "decimal",
+              "code": [
+                {
+                  "code": "2951-2",
+                  "display": "Sodium SerPl-sCnc",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "display": "mmol/L"
+                  }
+                }
+              ],
+              "required": false,
+              "linkId": "/24323-8/24326-1/2951-2",
+              "text": "Sodium SerPl-sCnc"
+            },
+            {
+              "type": "decimal",
+              "code": [
+                {
+                  "code": "2823-3",
+                  "display": "Potassium SerPl-sCnc",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "display": "mmol/L"
+                  }
+                }
+              ],
+              "required": false,
+              "linkId": "/24323-8/24326-1/2823-3",
+              "text": "Potassium SerPl-sCnc"
+            },
+            {
+              "type": "decimal",
+              "code": [
+                {
+                  "code": "2075-0",
+                  "display": "Chloride SerPl-sCnc",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "display": "mmol/L"
+                  }
+                }
+              ],
+              "required": false,
+              "linkId": "/24323-8/24326-1/2075-0",
+              "text": "Chloride SerPl-sCnc"
+            },
+            {
+              "type": "decimal",
+              "code": [
+                {
+                  "code": "1963-8",
+                  "display": "HCO3 SerPl-sCnc",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "display": "mmol/L"
+                  }
+                }
+              ],
+              "required": false,
+              "linkId": "/24323-8/24326-1/1963-8",
+              "text": "HCO3 SerPl-sCnc"
+            },
+            {
+              "type": "decimal",
+              "code": [
+                {
+                  "code": "2028-9",
+                  "display": "CO2 SerPl-sCnc",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "display": "mmol/L"
+                  }
+                }
+              ],
+              "required": false,
+              "linkId": "/24323-8/24326-1/2028-9",
+              "text": "CO2 SerPl-sCnc"
+            },
+            {
+              "type": "decimal",
+              "code": [
+                {
+                  "code": "33037-3",
+                  "display": "Anion Gap SerPl-sCnc",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "display": "mmol/L"
+                  }
+                }
+              ],
+              "required": false,
+              "linkId": "/24323-8/24326-1/33037-3",
+              "text": "Anion Gap SerPl-sCnc"
+            },
+            {
+              "text": "The components of this panel were defined by HCFA (now CMS)",
+              "type": "display",
+              "linkId": "/24323-8/24326-1-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "The components of this panel were defined by HCFA (now CMS)",
+          "type": "display",
+          "linkId": "/24323-8-help",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

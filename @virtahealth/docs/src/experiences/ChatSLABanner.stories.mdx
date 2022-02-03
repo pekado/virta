@@ -1,0 +1,22 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { ChatSLABanner } from "@virtahealth/experiences";
+import MockPAClient from "./mock_data/mockPAClient";
+import MockAnalyticsClient from "./mock_data/mockAnalyticsClient";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+
+<Meta title="Experiences / Chat SLA Banner" />
+
+<Preview>
+  <Story name="ChatSLABanner">
+    <StoryBookVirtaContext
+      analyticsClient={new MockAnalyticsClient()}
+      client={new MockPAClient()}
+    >
+      <ChatSLABanner onPressContactSupport={() => null} />
+    </StoryBookVirtaContext>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ChatSLABanner} />

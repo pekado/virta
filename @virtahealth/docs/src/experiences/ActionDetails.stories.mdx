@@ -1,0 +1,55 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { ActionDetails } from "@virtahealth/experiences";
+
+<Meta title="Experiences / ActionDetails" component={ActionDetails} />
+
+# ActionDetails
+
+`ActionDetails` displays more in-depth details for an action item than its card, including a title, what description, when description, buttons to complete the action, a progress bar, a time estimate and icons.
+
+<Preview>
+  <Story name="Incomplete Video Action in Series">
+    <ActionDetails
+      action={{
+        title: {
+          id: "exampleTitle",
+          defaultMessage: "Watch cat video",
+        },
+        whatDetails: {
+          id: "exampleWhatDescription",
+          defaultMessage:
+            "This is a cute video of my cat Boo playing with his shadow. Why is this important for your physical health? Well it's not, but it's very important for your mental health. Cat videos have been shown to keep 99% of the population hangin in there",
+        },
+        whenDetails: {
+          id: "exampleWhenDescription",
+          defaultMessage:
+            "Immediately, drop everything and watch this video. Do it immewdiately. Super important cat vid. Nothing else matters. I swear if you do one other thing before watching this I will be sad.",
+        },
+        timeToComplete: 5,
+        ctaLabel: {
+          id: "exampleLabel",
+          defaultMessage: "Watch",
+        },
+        ctaLink: "katz",
+        actionType: "Video",
+        id: 12345,
+      }}
+      isComplete={false}
+      onPressPrimaryButton={() => {}}
+      toggleComplete={() => {}}
+      actionSeriesDetails={{
+        title: {
+          id: "exampleTitleSeries",
+          defaultMessage: "How are cats so cute?",
+        },
+        totalActions: 3,
+        completedActions: 1,
+      }}
+    />
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ActionDetails} />

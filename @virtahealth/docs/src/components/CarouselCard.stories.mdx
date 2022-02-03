@@ -1,0 +1,32 @@
+import { CarouselCard } from "@virtahealth/components";
+import { View } from "react-native";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+
+<Meta title="Components / CarouselCard" component={CarouselCard} />
+
+# Carousel
+
+<Preview>
+  <Story name="CarouselCard" args={{ displayLandscape: false }}>
+    {(args) => (
+      <CarouselCard
+        {...args}
+        item={{
+          title: "Kitteh Consumes Owner and It Hurt",
+          description:
+            "This chonk did a big nom on its owner, and now it's full",
+          typeInfo: "13 mins",
+          typeIcon: "read",
+          onPress: () => console.log("pressed"),
+          imageUrl:
+            "https://static.boredpanda.com/blog/wp-content/uploads/2019/10/cinderblock-fat-cat-workout-fb.png",
+        }}
+      />
+    )}
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={CarouselCard} />

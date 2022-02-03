@@ -1,0 +1,12 @@
+{
+  "extends": "../configs/src/tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["dom"],
+    "outDir": "./dist/"
+  },
+  "include": ["./src", "../../@types"],
+  "exclude": ["./src/UNSTABLE*"]
+}

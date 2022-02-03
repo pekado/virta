@@ -1,0 +1,53 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { PatientLabResults } from "@virtahealth/experiences";
+import MockSparkClient from "./mock_data/mockSparkLabsClient";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+
+<Meta title="Experiences / PatientLabResults" />
+
+# PatientLabResults
+
+- Note: The Reference Range popover positioning will look a bit off when viewing the docs,
+  so it's recommended to view them in the Canvas tab
+
+<Preview>
+  <Story name="PatientLabResults">
+    <StoryBookVirtaContext client={new MockSparkClient()}>
+      <PatientLabResults
+        virtaId={"testVirtaId"}
+        showFilesBelowResultTables={true}
+      />
+    </StoryBookVirtaContext>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Null State">
+    <PatientLabResults />
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Failed to load">
+    <StoryBookVirtaContext client={new MockSparkClient()}>
+      <PatientLabResults virtaId={"testLoadingFailure"} />
+    </StoryBookVirtaContext>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="PatientLabResults with Selection">
+    <StoryBookVirtaContext client={new MockSparkClient()}>
+      <PatientLabResults
+        virtaId={"testVirtaId"}
+        selectDiagnosticReport={true}
+        onSelectDiagnosticReport={action("report-selected")}
+      />
+    </StoryBookVirtaContext>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={PatientLabResults} />

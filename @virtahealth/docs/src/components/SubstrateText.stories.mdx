@@ -1,0 +1,293 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import {
+  Heading,
+  SubstrateLabel,
+  SubstrateBody,
+} from "@virtahealth/components";
+
+<Meta title="Components / Substrate Text" />
+
+<Preview>
+  <Story
+    name="substrateTextHeading"
+    argTypes={{
+      children: {
+        control: {
+          type: "text",
+        },
+      },
+      color: {
+        control: {
+          type: "select",
+          options: [
+            "base",
+            "subdued",
+            "primary",
+            "secondary",
+            "success",
+            "warning",
+            "danger",
+          ],
+        },
+        defaultValue: { summary: "base" },
+        description:
+          "Text color conveyed by intent. Raw hex values or rgba values can also be passed in as a string.",
+      },
+      lineHeightMultiplier: {
+        control: { type: "number" },
+        defaultValue: { summary: "1.4" },
+        description:
+          "Line height as a factor of the font-size (i.e. 1.4 means the line-height will be 1.4 * `font-size`). Raw line-height values can also be passed in as a string, assuming valid for platform to be used in.",
+      },
+      size: {
+        control: { type: "number", min: 1, max: 4, step: 1 },
+        defaultValue: { summary: "2" },
+        description:
+          "The size of headings as numbers (1 - 4) that map to HTML h tags (e.g. `<h1>`, `<h2>`, etc.). Raw font-sizes can also be passed in as a string, assuming valid for platform to be used in. (e.g. 24px, 32rem, etc.)",
+      },
+      weight: {
+        control: { type: "select", options: ["regular", "semibold", "bold"] },
+        defaultValue: { summary: "bold" },
+        description:
+          "Font weight that can be intent values or raw font weight values (e.g. 500, 600).",
+      },
+    }}
+    args={{
+      children: "HELLO I'm a Heading!",
+      color: "base",
+      size: 2,
+      lineHeightMultiplier: 1.4,
+      weight: "bold",
+    }}
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/BE4LAkqIoFGy2gg2q2wJtA/Substrate-02-PA-Text-Styles?node-id=685%3A286",
+      },
+    }}
+  >
+    {(args) => <Heading {...args}>{args.children}</Heading>}
+  </Story>
+  <Story
+    name="substrateTextHeadingWithRawValues"
+    argTypes={{
+      color: {
+        control: {
+          type: "color",
+        },
+      },
+    }}
+    args={{
+      children: "HELLO I'm a Heading too!",
+      color: "#000000",
+      size: "24px",
+      lineHeightMultiplier: "28px",
+      weight: 500,
+    }}
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/BE4LAkqIoFGy2gg2q2wJtA/Substrate-02-PA-Text-Styles?node-id=685%3A286",
+      },
+    }}
+  >
+    {(args) => <Heading {...args}>{args.children}</Heading>}
+  </Story>
+  <Story
+    name="substrateTextLabel"
+    argTypes={{
+      children: {
+        control: {
+          type: "text",
+        },
+      },
+      color: {
+        control: {
+          type: "select",
+          options: [
+            "base",
+            "subdued",
+            "primary",
+            "secondary",
+            "success",
+            "warning",
+            "danger",
+          ],
+        },
+        defaultValue: "base",
+        description:
+          "Text color conveyed by intent. Raw hex values or rgba values can also be passed in as a string.",
+      },
+      lineHeightMultiplier: {
+        defaultValue: 1,
+        description:
+          "Line height as a factor of the font-size (i.e. 1.4 means the line-height will be 1.4 * `font-size`). Raw line-height values can also be passed in as a string, assuming valid for platform to be used in.",
+      },
+      size: {
+        control: { type: "select", options: ["small", "regular", "large"] },
+        defaultValue: "regular",
+        description:
+          "The sizes of text conveyed as intent. Raw font-sizes can also be passed in as a string, assuming valid for platform to be used in. (e.g. 24px, 32rem, etc.)",
+      },
+      weight: {
+        control: { type: "select", options: ["regular", "semibold", "bold"] },
+        defaultValue: "regular",
+        description:
+          "Font weight that can be intent values or raw font weight values (e.g. 500, 600).",
+      },
+    }}
+    args={{
+      children: "I'm a Label",
+      color: "base",
+      size: "regular",
+      lineHeightMultiplier: 1,
+      weight: "regular",
+    }}
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/BE4LAkqIoFGy2gg2q2wJtA/Substrate-02-PA-Text-Styles?node-id=685%3A12506",
+      },
+    }}
+  >
+    {(args) => <SubstrateLabel {...args}>{args.children}</SubstrateLabel>}
+  </Story>
+  <Story
+    name="substrateTextLabelWithRawValues"
+    argTypes={{
+      color: {
+        control: {
+          type: "color",
+        },
+      },
+      lineHeightMultiplier: {
+        description:
+          "Line height as a factor of the font-size (i.e. 1.4 means the line-height will be 1.4 * `font-size`). Raw line-height values can also be passed in as a string, assuming valid for platform to be used in.",
+      },
+      size: {
+        description:
+          "The sizes of text conveyed as intent (small, regular, large). Raw font-sizes can also be passed in as a string, assuming valid for platform to be used in. (e.g. 24px, 32rem, etc.)",
+      },
+      weight: {
+        control: { type: "string" },
+        description:
+          "Font weight that can be intent values (regular, semibold, bold) or raw font weight values (e.g. 500, 600).",
+      },
+    }}
+    args={{
+      children: "HELLO I'm a Label too!",
+      color: "#000000",
+      size: "12px",
+      lineHeightMultiplier: "12px",
+      weight: 500,
+    }}
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/BE4LAkqIoFGy2gg2q2wJtA/Substrate-02-PA-Text-Styles?node-id=685%3A12506",
+      },
+    }}
+  >
+    {(args) => <SubstrateLabel {...args}>{args.children}</SubstrateLabel>}
+  </Story>
+  <Story
+    name="substrateTextBody"
+    argTypes={{
+      children: {
+        control: {
+          type: "text",
+        },
+      },
+      color: {
+        control: {
+          type: "select",
+          options: [
+            "base",
+            "subdued",
+            "primary",
+            "secondary",
+            "success",
+            "warning",
+            "danger",
+          ],
+        },
+        defaultValue: "base",
+        description:
+          "Text color conveyed by intent. Raw hex values or rgba values can also be passed in as a string.",
+      },
+      lineHeightMultiplier: {
+        defaultValue: 1,
+        description:
+          "Line height as a factor of the font-size (i.e. 1.4 means the line-height will be 1.4 * `font-size`). Raw line-height values can also be passed in as a string, assuming valid for platform to be used in.",
+      },
+      size: {
+        control: {
+          type: "select",
+          options: ["xsmall", "small", "regular", "large", "xlarge"],
+        },
+        defaultValue: "regular",
+        description:
+          "The sizes of text conveyed as intent. Raw font-sizes can also be passed in as a string, assuming valid for platform to be used in. (e.g. 24px, 32rem, etc.)",
+      },
+      weight: {
+        control: { type: "select", options: ["regular", "semibold", "bold"] },
+        defaultValue: "regular",
+        description:
+          "Font weight that can be intent values or raw font weight values (e.g. 500, 600).",
+      },
+    }}
+    args={{
+      children: "I'm a Body",
+      color: "base",
+      size: "regular",
+      lineHeightMultiplier: 1,
+      weight: "regular",
+    }}
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/BE4LAkqIoFGy2gg2q2wJtA/Substrate-02-PA-Text-Components-and-Styles?node-id=1205%3A1",
+      },
+    }}
+  >
+    {(args) => <SubstrateBody {...args}>{args.children}</SubstrateBody>}
+  </Story>
+  <Story
+    name="substrateTextBodyWithRawValues"
+    argTypes={{
+      color: {
+        control: {
+          type: "color",
+        },
+      },
+      lineHeightMultiplier: {
+        description:
+          "Line height as a factor of the font-size (i.e. 1.4 means the line-height will be 1.4 * `font-size`). Raw line-height values can also be passed in as a string, assuming valid for platform to be used in.",
+      },
+      size: {
+        description:
+          "The sizes of text conveyed as intent (small, regular, large). Raw font-sizes can also be passed in as a string, assuming valid for platform to be used in. (e.g. 24px, 32rem, etc.)",
+      },
+      weight: {
+        control: { type: "string" },
+        description:
+          "Font weight that can be intent values (regular, semibold, bold) or raw font weight values (e.g. 500, 600).",
+      },
+    }}
+    args={{
+      children: "HELLO I'm a Body too!",
+      color: "#000000",
+      size: "12px",
+      lineHeightMultiplier: "12px",
+      weight: 500,
+    }}
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/BE4LAkqIoFGy2gg2q2wJtA/Substrate-02-PA-Text-Components-and-Styles?node-id=1205%3A1",
+      },
+    }}
+  >
+    {(args) => <SubstrateBody {...args}>{args.children}</SubstrateBody>}
+  </Story>
+</Preview>

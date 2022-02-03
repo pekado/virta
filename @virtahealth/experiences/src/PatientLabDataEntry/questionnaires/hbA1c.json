@@ -1,0 +1,54 @@
+{
+  "status": "draft",
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire|2.0"
+    ],
+    "tag": [
+      {
+        "code": "lformsVersion: 24.0.0"
+      }
+    ]
+  },
+  "item": [
+    {
+      "type": "group",
+      "code": [],
+      "required": false,
+      "linkId": "/4548-4",
+      "text": "Hemoglobin A1c",
+      "item": [
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "4548-4",
+              "display": "HbA1c",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "%"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueDecimal": 4.0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueDecimal": 15.5
+            }
+          ],
+          "required": false,
+          "linkId": "/4548-4",
+          "text": "HbA1c"
+        }
+      ]
+    }
+  ]
+}

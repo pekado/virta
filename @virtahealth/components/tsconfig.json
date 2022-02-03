@@ -1,0 +1,12 @@
+{
+  // update this to use the config from node_modules once it's live
+  "extends": "../configs/src/tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true, // needed for @sanity/block-content-to-react
+    "jsx": "react",
+    "lib": ["dom"],
+    "outDir": "./dist/"
+  },
+  "include": ["./src", "../../@types"]
+}

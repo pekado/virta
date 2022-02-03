@@ -1,0 +1,31 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { PatientProfileMenu } from "@virtahealth/experiences";
+
+<Meta title="Experiences / PatientProfileMenu" component={PatientProfileMenu} />
+
+# PatientProfileMenu
+
+`PatientProfileMenu` displays a list of actions the user can take to view/edit their profile. Note the parent container must define width and background color.
+
+<Preview>
+  <Story name="Patient Profile">
+    <View>
+      <PatientProfileMenu
+        personalGoal="To be the very best, like no-one ever was."
+        name="Virtan"
+        email="virtan@virtahealth.com"
+        phoneNumber="555-555-555"
+        primaryLanguage="English"
+        days="123"
+        authToken=""
+        profilePicture="https://i.imgur.com/8b1AA0F.jpg"
+        onSelectMenuItem={(navigation) => {}}
+      />
+    </View>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={PatientProfileMenu} />

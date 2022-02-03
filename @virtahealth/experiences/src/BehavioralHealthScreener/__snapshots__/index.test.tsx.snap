@@ -1,0 +1,625 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Behavioral Health Screener renders 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "marginTop": 25,
+      },
+    ]
+  }
+>
+  <View
+    height={1334}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "#e6e8eb",
+          "borderBottomWidth": 1,
+          "display": "flex",
+          "flexShrink": 0,
+          "height": 80,
+          "justifyContent": "center",
+          "width": "100%",
+          "zIndex": 2,
+        },
+      ]
+    }
+    width={750}
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(36, 38, 43)",
+            "fontFamily": "Whitney-Medium",
+            "fontSize": 20,
+            "fontWeight": "500",
+            "letterSpacing": 0,
+            "lineHeight": 20,
+          },
+          Object {
+            "marginBottom": 10,
+          },
+        ]
+      }
+    >
+      Self-Reflection
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#E6E8EB",
+            "borderRadius": 100,
+            "height": 8,
+            "width": "90%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "rgba(35, 175, 255, 1)",
+            "borderRadius": 100,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "0%",
+          }
+        }
+      />
+    </View>
+  </View>
+  <RCTScrollView
+    contentContainerStyle={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "column-reverse",
+        "paddingBottom": 72,
+      }
+    }
+    height={1334}
+    style={
+      Array [
+        Object {
+          "display": "flex",
+          "height": 1199,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "90%",
+        },
+      ]
+    }
+    width={750}
+  >
+    <View>
+      <View
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <View
+          marginBottom={0}
+          marginTop={20}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              Object {
+                "marginBottom": 0,
+                "marginTop": 20,
+                "maxWidth": 350,
+                "width": 350,
+              },
+            ]
+          }
+          width={750}
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 18,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 18,
+                },
+              ]
+            }
+          >
+            Rate your overall level of confidence based on the following sentence:
+          </Text>
+        </View>
+        <View
+          marginBottom={20}
+          marginTop={20}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              Object {
+                "marginBottom": 20,
+                "marginTop": 20,
+                "maxWidth": 350,
+                "width": 350,
+              },
+            ]
+          }
+          width={750}
+        >
+          <View
+            style={
+              Object {
+                "maxHeight": 0,
+                "minHeight": 0,
+                "opacity": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              onLayout={[Function]}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-start",
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "maxWidth": 350,
+                      "width": "100%",
+                    },
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "rgb(36, 38, 43)",
+                        "fontFamily": "Whitney-Book",
+                        "fontSize": 20,
+                        "fontWeight": "500",
+                        "letterSpacing": 0,
+                        "lineHeight": 20,
+                        "textDecorationColor": "black",
+                        "textDecorationLine": "none",
+                        "textDecorationStyle": "solid",
+                      },
+                      Object {
+                        "fontWeight": "700",
+                        "marginBottom": 12,
+                      },
+                    ]
+                  }
+                >
+                  I can manage to solve difficult problems if I try hard enough.
+                </Text>
+                <View>
+                  <TouchableOpacity
+                    accessibilityLabel="I am not at all confident"
+                    accessibilityRole="button"
+                    accessible={true}
+                    alignLabel="left"
+                    appearance="outline"
+                    disabled={false}
+                    intent="secondary"
+                    onPress={[Function]}
+                    size="medium"
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "flex-start",
+                          "backgroundColor": "transparent",
+                          "borderColor": "rgb(34, 110, 173)",
+                          "borderRadius": 48,
+                          "borderStyle": "solid",
+                          "borderWidth": 2,
+                          "display": "flex",
+                          "justifyContent": "center",
+                          "minHeight": 44,
+                          "opacity": 1,
+                          "paddingHorizontal": 22,
+                        },
+                        Object {
+                          "marginBottom": 5,
+                          "marginLeft": 0,
+                          "marginRight": 0,
+                          "marginTop": 5,
+                        },
+                      ]
+                    }
+                    width="none"
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "minHeight": 20,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "position": "absolute",
+                          }
+                        }
+                      >
+                        <ActivityIndicator
+                          animating={false}
+                          color="rgb(34, 110, 173)"
+                        />
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "flexDirection": "row",
+                              },
+                              Object {
+                                "alignItems": "center",
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            appearance="outline"
+                            disabled={false}
+                            intent="secondary"
+                            size="medium"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "rgb(34, 110, 173)",
+                                  "fontFamily": "Whitney-Semibold",
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "lineHeight": 18,
+                                },
+                              ]
+                            }
+                          >
+                            I am not at all confident
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    accessibilityLabel="I am a little confident"
+                    accessibilityRole="button"
+                    accessible={true}
+                    alignLabel="left"
+                    appearance="outline"
+                    disabled={false}
+                    intent="secondary"
+                    onPress={[Function]}
+                    size="medium"
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "flex-start",
+                          "backgroundColor": "transparent",
+                          "borderColor": "rgb(34, 110, 173)",
+                          "borderRadius": 48,
+                          "borderStyle": "solid",
+                          "borderWidth": 2,
+                          "display": "flex",
+                          "justifyContent": "center",
+                          "minHeight": 44,
+                          "opacity": 1,
+                          "paddingHorizontal": 22,
+                        },
+                        Object {
+                          "marginBottom": 5,
+                          "marginLeft": 0,
+                          "marginRight": 0,
+                          "marginTop": 5,
+                        },
+                      ]
+                    }
+                    width="none"
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "minHeight": 20,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "position": "absolute",
+                          }
+                        }
+                      >
+                        <ActivityIndicator
+                          animating={false}
+                          color="rgb(34, 110, 173)"
+                        />
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "flexDirection": "row",
+                              },
+                              Object {
+                                "alignItems": "center",
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            appearance="outline"
+                            disabled={false}
+                            intent="secondary"
+                            size="medium"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "rgb(34, 110, 173)",
+                                  "fontFamily": "Whitney-Semibold",
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "lineHeight": 18,
+                                },
+                              ]
+                            }
+                          >
+                            I am a little confident
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    accessibilityLabel="I am somewhat confident"
+                    accessibilityRole="button"
+                    accessible={true}
+                    alignLabel="left"
+                    appearance="outline"
+                    disabled={false}
+                    intent="secondary"
+                    onPress={[Function]}
+                    size="medium"
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "flex-start",
+                          "backgroundColor": "transparent",
+                          "borderColor": "rgb(34, 110, 173)",
+                          "borderRadius": 48,
+                          "borderStyle": "solid",
+                          "borderWidth": 2,
+                          "display": "flex",
+                          "justifyContent": "center",
+                          "minHeight": 44,
+                          "opacity": 1,
+                          "paddingHorizontal": 22,
+                        },
+                        Object {
+                          "marginBottom": 5,
+                          "marginLeft": 0,
+                          "marginRight": 0,
+                          "marginTop": 5,
+                        },
+                      ]
+                    }
+                    width="none"
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "minHeight": 20,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "position": "absolute",
+                          }
+                        }
+                      >
+                        <ActivityIndicator
+                          animating={false}
+                          color="rgb(34, 110, 173)"
+                        />
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "flexDirection": "row",
+                              },
+                              Object {
+                                "alignItems": "center",
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            appearance="outline"
+                            disabled={false}
+                            intent="secondary"
+                            size="medium"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "rgb(34, 110, 173)",
+                                  "fontFamily": "Whitney-Semibold",
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "lineHeight": 18,
+                                },
+                              ]
+                            }
+                          >
+                            I am somewhat confident
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    accessibilityLabel="I am very confident"
+                    accessibilityRole="button"
+                    accessible={true}
+                    alignLabel="left"
+                    appearance="outline"
+                    disabled={false}
+                    intent="secondary"
+                    onPress={[Function]}
+                    size="medium"
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "flex-start",
+                          "backgroundColor": "transparent",
+                          "borderColor": "rgb(34, 110, 173)",
+                          "borderRadius": 48,
+                          "borderStyle": "solid",
+                          "borderWidth": 2,
+                          "display": "flex",
+                          "justifyContent": "center",
+                          "minHeight": 44,
+                          "opacity": 1,
+                          "paddingHorizontal": 22,
+                        },
+                        Object {
+                          "marginBottom": 5,
+                          "marginLeft": 0,
+                          "marginRight": 0,
+                          "marginTop": 5,
+                        },
+                      ]
+                    }
+                    width="none"
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "minHeight": 20,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "position": "absolute",
+                          }
+                        }
+                      >
+                        <ActivityIndicator
+                          animating={false}
+                          color="rgb(34, 110, 173)"
+                        />
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "flexDirection": "row",
+                              },
+                              Object {
+                                "alignItems": "center",
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            appearance="outline"
+                            disabled={false}
+                            intent="secondary"
+                            size="medium"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "rgb(34, 110, 173)",
+                                  "fontFamily": "Whitney-Semibold",
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "lineHeight": 18,
+                                },
+                              ]
+                            }
+                          >
+                            I am very confident
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

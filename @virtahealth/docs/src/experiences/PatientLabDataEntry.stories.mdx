@@ -1,0 +1,40 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { PatientLabDataEntry as ControlledLabDataEntry } from "@virtahealth/experiences";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+import MockSparkClient, { mocks } from "./mock_data/mockSparkLabsClient";
+import { MockedGraphQLProvider } from "@virtahealth/utils";
+import { wrappedPatientLabDataEntry } from "./mock_data/ControlledLabDataEntryWrapper";
+
+export const PatientLabDataEntry = wrappedPatientLabDataEntry(
+  ControlledLabDataEntry
+);
+
+<Meta title="Experiences / PatientLabDataEntry" />
+
+<Preview>
+  <Story name="PatientLabDataEntry">
+    <StoryBookVirtaContext client={new MockSparkClient()}>
+      <MockedGraphQLProvider mocks={mocks}>
+        <PatientLabDataEntry
+          patient={{
+            first_name: "Test",
+            last_name: "Patient",
+            date_of_birth: "1-1-1980",
+            virta_id: "testVirtaId",
+            primary_address: {
+              address_1: "1 Main St.",
+              city: "Springfield",
+              province: "IL",
+              postal_code: "61000",
+            },
+          }}
+          popoverOffsets={{ top: 15, left: 17 }}
+        />
+      </MockedGraphQLProvider>
+    </StoryBookVirtaContext>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={PatientLabDataEntry} />

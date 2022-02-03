@@ -1,0 +1,97 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import {
+  InlineDescription,
+  Input as ControlledInput,
+  LabeledFormElement,
+  Row,
+  styled,
+} from "@virtahealth/components";
+import { wrapControlledInput } from "./mock_data/ControlledInputWrapper";
+
+export const Input = wrapControlledInput(ControlledInput);
+
+export const inlineDescription = (
+  <InlineDescription message={{ id: "components.input.inlineDescription" }} />
+);
+
+<Meta title="Components / Input" component={Input} />
+
+# Input
+
+`Input` is a styled wrapper around React Native's TextInput.
+
+<Preview>
+  <Story name="example">
+    <Input
+      placeholderMessage={{ id: "components.input.placeholder" }}
+      value=""
+      onChangeText={action("change-text")}
+    />
+  </Story>
+  <Story name="labeled">
+    <LabeledFormElement labelMessage={{ id: "components.input.label" }}>
+      <Input value="" onChangeText={action("change-text")} />
+    </LabeledFormElement>
+  </Story>
+  <Story name="with error">
+    <LabeledFormElement labelMessage={{ id: "components.input.label" }}>
+      <Input
+        errorMessage={{ id: "components.input.error" }}
+        value="with error"
+        onChangeText={action("change-text")}
+      />
+    </LabeledFormElement>
+  </Story>
+  <Story name="not editable">
+    <LabeledFormElement labelMessage={{ id: "components.input.label" }}>
+      <Input value="not editable" editable={false} />
+    </LabeledFormElement>
+  </Story>
+  <Story name="multiline">
+    <LabeledFormElement labelMessage={{ id: "components.input.label" }}>
+      <Input
+        multiline
+        numberOfLines={4}
+        placeholderMessage={{ id: "components.input.placeholder" }}
+        value=""
+        onChangeText={action("change-text")}
+      />
+    </LabeledFormElement>
+  </Story>
+  <Story name="inlines">
+    <LabeledFormElement
+      helperText={{ id: "components.formElementLabel.helperText" }}
+      labelMessage={{ id: "components.input.label" }}
+    >
+      <Input
+        placeholderMessage={{ id: "components.input.placeholder" }}
+        insetText={{ id: "components.input.insetText" }}
+        value=""
+        onChangeText={action("change-text")}
+      />
+      <InlineDescription
+        message={{ id: "components.input.inlineDescription" }}
+      />
+    </LabeledFormElement>
+  </Story>
+  <Story name="Thick">
+    <Input
+      isThick={true}
+      value="Thick, round border and larger text"
+      onChangeText={action("change-text")}
+    />
+  </Story>
+  <Story name="Left/Right Components">
+    <Input
+      value="Putting components on the left and right of the input"
+      leftComponent={<Text>Hello</Text>}
+      rightComponent={<Text>Goodbye</Text>}
+      onChangeText={action("change-text")}
+    />
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ControlledInput} />

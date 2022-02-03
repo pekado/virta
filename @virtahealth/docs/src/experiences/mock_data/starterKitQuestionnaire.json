@@ -1,0 +1,224 @@
+{
+  "id": { "value": "4e40c483-d749-4ec3-969f-6285b4c1e5ea" },
+  "meta": {
+    "versionId": { "value": "MTYzMTAzNDUzMzc4OTgzNjAwMA" },
+    "lastUpdated": {
+      "valueUs": "1631034533789836",
+      "timezone": "+00:00",
+      "precision": "MICROSECOND"
+    },
+    "profile": [
+      {
+        "value": "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire|2.0"
+      }
+    ],
+    "tag": [{ "code": { "value": "lformsVersion: 29.1.2" } }]
+  },
+  "name": { "value": "request-starter-kit" },
+  "title": { "value": "Request Starter Kit" },
+  "status": { "value": "ACTIVE" },
+  "item": [
+    {
+      "extension": [
+        {
+          "url": {
+            "value": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden"
+          }
+        }
+      ],
+      "linkId": { "value": "isBMOC" },
+      "code": [
+        {
+          "system": { "value": "http://virta.dev/Patient" },
+          "code": { "value": "IS_BMOC" }
+        }
+      ],
+      "type": { "value": "BOOLEAN" },
+      "required": {}
+    },
+    {
+      "extension": [
+        {
+          "url": {
+            "value": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden"
+          }
+        }
+      ],
+      "linkId": { "value": "enableXLScale" },
+      "code": [
+        {
+          "system": { "value": "http://virta.dev/Patient" },
+          "code": { "value": "WEIGHT" }
+        },
+        {
+          "system": { "value": "http://virta.dev/Comparison" },
+          "code": { "value": "> 440" }
+        }
+      ],
+      "type": { "value": "BOOLEAN" },
+      "required": {}
+    },
+    {
+      "linkId": { "value": "hasBloodPressureCuff" },
+      "text": {
+        "value": "Do you already have a blood pressure cuff you use at home?"
+      },
+      "type": { "value": "BOOLEAN" },
+      "enableWhen": [
+        {
+          "question": { "value": "isBMOC" },
+          "answer": { "boolean": { "value": true } }
+        }
+      ],
+      "required": {}
+    },
+    {
+      "linkId": { "value": "hasXLScale" },
+      "text": { "value": "Do you already have an XL scale you use at home?" },
+      "type": { "value": "BOOLEAN" },
+      "enableWhen": [
+        {
+          "question": { "value": "enableXLScale" },
+          "answer": { "boolean": { "value": true } }
+        }
+      ],
+      "required": {}
+    },
+    {
+      "linkId": { "value": "shippingAddress" },
+      "code": [
+        {
+          "system": { "value": "http://virta.dev/Patient" },
+          "code": { "value": "ADDRESS" }
+        }
+      ],
+      "text": { "value": "What's your shipping address?" },
+      "type": { "value": "GROUP" },
+      "required": { "value": true },
+      "item": [
+        {
+          "extension": [
+            {
+              "url": {
+                "value": "http://hl7.org/fhir/StructureDefinition/regex"
+              },
+              "value": { "string": { "value": "^\\d+(\\s+\\w+){2,}$" } }
+            }
+          ],
+          "linkId": { "value": "shippingAddress.street" },
+          "code": [
+            {
+              "system": { "value": "http://virta.dev/Address" },
+              "code": { "value": "STREET" }
+            }
+          ],
+          "text": { "value": "Street" },
+          "type": { "value": "STRING" },
+          "required": { "value": true }
+        },
+        {
+          "linkId": { "value": "shippingAddress.aptUnit" },
+          "code": [
+            {
+              "system": { "value": "http://virta.dev/Address" },
+              "code": { "value": "APT_UNIT" }
+            }
+          ],
+          "text": { "value": "Apt / Unit #" },
+          "type": { "value": "STRING" },
+          "required": {}
+        },
+        {
+          "extension": [
+            {
+              "url": {
+                "value": "http://hl7.org/fhir/StructureDefinition/regex"
+              },
+              "value": { "string": { "value": "^\\w+(\\s+\\w+)*$" } }
+            }
+          ],
+          "linkId": { "value": "shippingAddress.city" },
+          "code": [
+            {
+              "system": { "value": "http://virta.dev/Address" },
+              "code": { "value": "CITY" }
+            }
+          ],
+          "text": { "value": "City" },
+          "type": { "value": "STRING" },
+          "required": { "value": true }
+        },
+        {
+          "linkId": { "value": "shippingAddress.state" },
+          "code": [
+            {
+              "system": { "value": "http://virta.dev/Address" },
+              "code": { "value": "STATE" }
+            }
+          ],
+          "text": { "value": "State" },
+          "type": { "value": "CHOICE" },
+          "required": { "value": true },
+          "options": {
+            "valueSetId": { "value": "4df08a6c-5959-477d-98c9-a84cab11a037" }
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": {
+                "value": "http://hl7.org/fhir/StructureDefinition/regex"
+              },
+              "value": {
+                "string": { "value": "(^\\d{5}$)|(^\\d{9}$)|(^\\d{5}-\\d{4}$)" }
+              }
+            }
+          ],
+          "linkId": { "value": "shippingAddress.zip" },
+          "code": [
+            {
+              "system": { "value": "http://virta.dev/Address" },
+              "code": { "value": "ZIP" }
+            }
+          ],
+          "text": { "value": "Zip" },
+          "type": { "value": "STRING" },
+          "required": { "value": true }
+        },
+        {
+          "extension": [
+            {
+              "url": {
+                "value": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+              },
+              "value": {
+                "codeableConcept": {
+                  "coding": [
+                    {
+                      "system": {
+                        "value": "http://hl7.org/fhir/questionnaire-item-control"
+                      },
+                      "code": { "value": "check-box" },
+                      "display": { "value": "Check-box" }
+                    }
+                  ],
+                  "text": { "value": "Check-box" }
+                }
+              }
+            }
+          ],
+          "linkId": { "value": "shippingAddress.isMain" },
+          "code": [
+            {
+              "system": { "value": "http://virta.dev/Address" },
+              "code": { "value": "IS_MAIN_SHIPPING" }
+            }
+          ],
+          "text": { "value": "Make above address my main shipping address" },
+          "type": { "value": "BOOLEAN" },
+          "required": { "value": true }
+        }
+      ]
+    }
+  ]
+}

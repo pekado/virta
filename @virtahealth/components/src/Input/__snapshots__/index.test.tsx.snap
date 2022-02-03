@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField renders the InputField with the correct initial value 1`] = `
+<View>
+  <View
+    style={
+      Array [
+        Object {
+          "display": "flex",
+          "flexBasis": "auto",
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 0,
+        },
+      ]
+    }
+  >
+    <View
+      editable={true}
+      isFocused={false}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+          },
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "rgb(255,255,255)",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderRadius": 6,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "display": "flex",
+            "flexBasis": "auto",
+            "flexGrow": 1,
+            "flexShrink": 0,
+          },
+        ]
+      }
+    >
+      <TextInput
+        editable={true}
+        isFocused={false}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "rgb(0,0,0)",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "minHeight": 40,
+              "paddingBottom": 8,
+              "paddingLeft": 12,
+              "paddingRight": 12,
+              "paddingTop": 8,
+            },
+          ]
+        }
+        testID="myInput"
+        value="5"
+      />
+    </View>
+  </View>
+</View>
+`;

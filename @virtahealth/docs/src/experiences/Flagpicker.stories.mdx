@@ -1,0 +1,19 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { FlagPicker, GET_PATIENT_FLAGS } from "@virtahealth/experiences";
+import { MockedGraphQLProvider } from "@virtahealth/utils";
+import { mocks } from "./mock_data/mockFlagPickerClient";
+
+<Meta title="Experiences / FlagPicker" component={() => null} />
+
+# FlagPicker
+
+`FlagPicker` is a multi-select `Combobox` for displaying and selecting Flags enabled on a Patient
+
+<Preview>
+  <Story name="normal">
+    <MockedGraphQLProvider mocks={mocks}>
+      <FlagPicker userId={9999} />
+    </MockedGraphQLProvider>
+  </Story>
+</Preview>

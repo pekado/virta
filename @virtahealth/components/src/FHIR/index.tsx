@@ -1,0 +1,1 @@
+export { FhirObservationInput } from "./ObservationInput";

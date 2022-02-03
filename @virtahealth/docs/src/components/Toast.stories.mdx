@@ -1,0 +1,56 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Text, View } from "react-native";
+import { ToastWrapper } from "./mock_data/ToastWrapper";
+import { Button, Toast } from "@virtahealth/components";
+
+<Meta title="Components / Toast" />
+
+# Toast
+
+This is a Toast component that slides up from the bottom of the screen. There is an optional timeout available
+to automatically close the toast element; if omitted, the user will have to click on the 'X' to dismiss it.
+
+<Preview>
+  <Story name="example">
+    <ToastWrapper>
+      {({ showToast, setShowToast }) => (
+        <View>
+          <Button
+            labelMessage={{
+              id: "toast",
+              defaultMessage: "Show that toaster!",
+            }}
+            onPress={() => setShowToast(true)}
+          />
+          <Toast
+            isOpen={showToast}
+            height={50}
+            animationDuration={200}
+            handleClose={() => setShowToast(false)}
+            positionValues={{ left: 10 }}
+            timeoutDuration={3000}
+            notificationType={"success"}
+            slideEndPosition={10}
+            style={{ padding: 10 }}
+          >
+            <View style={{ display: "flex", flexDirection: "row" }}>
+              <Text
+                style={{
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                Wow, how cool!
+              </Text>
+            </View>
+          </Toast>
+        </View>
+      )}
+    </ToastWrapper>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={Toast} />

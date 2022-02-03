@@ -1,0 +1,22 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { SkillsHome } from "@virtahealth/experiences";
+import MockPAClient from "./mock_data/mockPAClient";
+import MockAnalyticsClient from "./mock_data/mockAnalyticsClient";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+
+<Meta title="Experiences / Skill Home" />
+
+<Preview>
+  <Story name="SkillsHome">
+    <StoryBookVirtaContext
+      analyticsClient={new MockAnalyticsClient()}
+      client={new MockPAClient()}
+    >
+      <SkillsHome />
+    </StoryBookVirtaContext>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={SkillsHome} />

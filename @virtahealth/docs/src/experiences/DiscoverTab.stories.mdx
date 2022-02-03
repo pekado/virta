@@ -1,0 +1,53 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { DiscoverTab } from "@virtahealth/experiences";
+import MockPAClient from "./mock_data/mockPAClient";
+import MockAnalyticsClient from "./mock_data/mockAnalyticsClient";
+import MockAlgoliaClient from "./mock_data/mockAlgoliaClient";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+
+<Meta title="Experiences / DiscoverTab" />
+
+<Preview>
+  <Story name="DiscoverTab">
+    <div style={{ display: "flex", height: "100vh" }}>
+      <StoryBookVirtaContext
+        algoliaClient={new MockAlgoliaClient()}
+        analyticsClient={new MockAnalyticsClient()}
+        client={new MockPAClient()}
+      >
+        <DiscoverTab
+          virtaId={"mock-virta-id"}
+          handleOpenContent={(id) => {
+            console.log("Clicked content: ", id);
+          }}
+          showSearch
+        />
+      </StoryBookVirtaContext>
+    </div>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="DiscoverTab - Omnisearch">
+    <div style={{ display: "flex", height: "100vh" }}>
+      <StoryBookVirtaContext
+        algoliaClient={new MockAlgoliaClient()}
+        analyticsClient={new MockAnalyticsClient()}
+        client={new MockPAClient()}
+      >
+        <DiscoverTab
+          virtaId={"mock-virta-id"}
+          handleOpenContent={(id) => {
+            console.log("Clicked content: ", id);
+          }}
+          showSearch
+          omnisearch={true}
+        />
+      </StoryBookVirtaContext>
+    </div>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={DiscoverTab} />

@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sub Tab Item Component Checks that the component renders as selected 1`] = `
+<TouchableOpacity
+  isSelected={true}
+  onPress={[MockFunction]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "rgb(34, 110, 173)",
+        "borderBottomWidth": 2,
+        "borderStyle": "solid",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+  testID="1"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <Text
+      isSelected={true}
+      style={
+        Array [
+          Object {
+            "color": "rgb(36, 38, 43)",
+            "fontFamily": "Whitney-Medium",
+            "fontSize": 20,
+            "fontWeight": "500",
+            "letterSpacing": 0,
+            "lineHeight": 20,
+          },
+          Object {
+            "color": "rgb(34, 110, 173)",
+            "fontWeight": "700",
+            "paddingBottom": 10,
+          },
+        ]
+      }
+    >
+      Test Tab
+    </Text>
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`Sub Tab Item Component Checks that the component renders as unselected 1`] = `
+<TouchableOpacity
+  isSelected={false}
+  onPress={[MockFunction]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "rgb(168, 174, 182)",
+        "borderBottomWidth": 2,
+        "borderStyle": "solid",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+  testID="1"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <Text
+      isSelected={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(36, 38, 43)",
+            "fontFamily": "Whitney-Medium",
+            "fontSize": 20,
+            "fontWeight": "500",
+            "letterSpacing": 0,
+            "lineHeight": 20,
+          },
+          Object {
+            "color": "rgb(168, 174, 182)",
+            "fontWeight": "700",
+            "paddingBottom": 10,
+          },
+        ]
+      }
+    >
+      Test Tab
+    </Text>
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`Sub Tab Item Component Renders an icon 1`] = `
+<TouchableOpacity
+  isSelected={false}
+  onPress={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "rgb(168, 174, 182)",
+        "borderBottomWidth": 2,
+        "borderStyle": "solid",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+  testID="1"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <Text
+      isSelected={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(36, 38, 43)",
+            "fontFamily": "Whitney-Medium",
+            "fontSize": 20,
+            "fontWeight": "500",
+            "letterSpacing": 0,
+            "lineHeight": 20,
+          },
+          Object {
+            "color": "rgb(168, 174, 182)",
+            "fontWeight": "700",
+            "paddingBottom": 10,
+          },
+        ]
+      }
+    >
+      Test Tab
+    </Text>
+    <View
+      size={25}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "rgb(22, 56, 76)",
+            "borderRadius": 25,
+            "height": 25,
+            "justifyContent": "center",
+            "width": 25,
+          },
+        ]
+      }
+    >
+      <Text
+        size={25}
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+              "textDecorationColor": "black",
+              "textDecorationLine": "none",
+              "textDecorationStyle": "solid",
+            },
+            Object {
+              "color": "rgb(255,255,255)",
+              "fontFamily": "Whitney-Medium",
+              "fontSize": 16.666666666666668,
+              "fontWeight": "700",
+              "textAlign": "center",
+              "textTransform": "uppercase",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        5
+      </Text>
+    </View>
+  </View>
+</TouchableOpacity>
+`;

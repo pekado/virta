@@ -1,0 +1,306 @@
+import { MessageDescriptor } from "react-intl";
+
+export const en = {
+  commonConditions: "Common Medical Conditions",
+  haveConditions: "Do you have any of the following conditions?",
+  checkAllThatApply: "Please check all that apply.",
+  fattyLiverDisease: "Fatty liver disease",
+  gout: "Gout",
+  heartAttack: "Heart attack",
+  highBloodPressure: "High blood pressure or hypertension",
+  highCholesterol: "High cholesterol or triglycerides",
+  pcos: "Polycystic ovarian syndrome (PCOS)",
+  kidneyStones: "Kidney stones",
+  osa: "Sleep apnea (OSA)",
+  stroke: "Stroke",
+  gestationalDiabetesHistory: "Gestational diabetes",
+  otherHealth: "Other General Health",
+  bloodDisease: "Blood diseases",
+  bloodDiseaseDescription: "(e.g. anemia)",
+  brainOrNerve: "Brain or nervous system",
+  brainOrNerveDescription: "(e.g. TBI)",
+  cancer: "Cancer",
+  ent: "Eyes, ears, sinus, nose, or throat",
+  heartDisease: "Heart or blood vessels",
+  heartDiseaseDescription: "(e.g. high cholesterol)",
+  hormonal: "Hormonal or endocrine system",
+  hormonalDescription: "(e.g. thyroid)",
+  kidney: "Kidneys or bladder",
+  kidneyDescription: "(e.g. low kidney function)",
+  lungs: "Lungs",
+  lungsDescription: "(e.g. asthma, COPD)",
+  muscleBoneJoint: "Muscles, bones, or joints",
+  muscleBoneJointDescription: "(e.g. arthritis)",
+  noAdditional: "I do not have any of the above general health problems",
+  pregnancyBreastfeeding: "Pregnancy or breastfeeding",
+  pregnancyBreastfeedingDescription: "(current/planned)",
+  psych: "Psychiatric or mental health",
+  psychDescription: "(e.g. anxiety, eating disorder)",
+  reproductiveHealth: "Reproductive and sexual health",
+  reproductiveHealthDescription: "(e.g. infertility)",
+  stomachIntestineLiver: "Stomach, intestines, liver, gallbladder, pancreas",
+  stomachIntestineLiverDescription: "(e.g. pancreatitis)",
+  otherHealthHistory:
+    "Do you have a history of any of the following conditions?",
+  mustAddGeneralHealth:
+    'You must either add other general health or select "I do not have any of the above general health problems".',
+};
+
+export const es = {
+  commonConditions: "Afecciones médicas comunes",
+  haveConditions: "¿Tiene alguno de los siguientes cuadros clínicos?",
+  checkAllThatApply: "Marque todas las opciones que correspondan.",
+  fattyLiverDisease: "Hígado graso",
+  gout: "Gota",
+  heartAttack: "Ataque cardíaco",
+  highBloodPressure: "Presión arterial elevada o hipertensión",
+  highCholesterol: "Niveles elevados de colesterol o triglicéridos",
+  pcos: "Síndrome del ovario poliquístico",
+  kidneyStones: "Cálculos renales",
+  osa: "Apnea del sueño",
+  stroke: "Accidente cerebrovascular",
+  gestationalDiabetesHistory: "Diabetes gestacional",
+  otherHealth: "Otras cuestiones de salud general",
+  bloodDisease: "Enfermedades sanguíneas",
+  bloodDiseaseDescription: "(por ejemplo, anemia)",
+  brainOrNerve: "Afecciones del cerebro o del sistema nervioso",
+  brainOrNerveDescription: "(por ejemplo, traumatismo craneoencefálico)",
+  cancer: "Cáncer",
+  ent: "Enfermedades otorrinolaringológicas",
+  heartDisease: "Trastornos del corazón o los vasos sanguíneos",
+  heartDiseaseDescription: "(por ejemplo, niveles elevados de colesterol)",
+  hormonal: "Trastornos hormonales o del sistema endocrino ",
+  hormonalDescription: "(por ejemplo, problemas de tiroides)",
+  kidney: "Problemas de los riñones o la vejiga",
+  kidneyDescription: "(por ejemplo, insuficiencia renal)",
+  lungs: "Afecciones pulmonares",
+  lungsDescription: "(por ejemplo, asma o EPOC)",
+  muscleBoneJoint: "Problemas musculares, óseos o articulares",
+  muscleBoneJointDescription: "(por ejemplo, artritis)",
+  noAdditional: "No tengo ningún problema de salud general",
+  pregnancyBreastfeeding: "Embarazo o lactancia",
+  pregnancyBreastfeedingDescription: "(actual/planificado)",
+  psych: "Problema psiquiátrico o de salud mental",
+  psychDescription: "(por ejemplo, ansiedad, trastorno de la alimentación)",
+  reproductiveHealth: "Problemas de la salud sexual y reproductiva",
+  reproductiveHealthDescription: "(por ejemplo, infertilidad)",
+  stomachIntestineLiver:
+    "Afecciones del estómago, intestinos, hígado, vesícula o páncreas",
+  stomachIntestineLiverDescription: "(por ejemplo, pancreatitis)",
+  otherHealthHistory:
+    "¿Tiene antecedentes de alguno de los siguientes cuadros clínicos?",
+  mustAddGeneralHealth:
+    'Debe agregar salud general o seleccionar "No tengo ningún problema de salud general".',
+};
+
+export const messages: { [key: string]: Required<MessageDescriptor> } = {
+  commonConditions: {
+    id: "commonConditions",
+    defaultMessage: en.commonConditions,
+    description:
+      "Title for the list of common medical conditions that an applicant may have",
+  },
+  haveConditions: {
+    id: "haveConditions",
+    defaultMessage: en.haveConditions,
+    description: "Asks if user has any of the listed conditions, used in EP",
+  },
+  checkAllThatApply: {
+    id: "checkAllThatApply",
+    defaultMessage: en.checkAllThatApply,
+    description: "Prompts user to check all that apply, used in EP",
+  },
+  fattyLiverDisease: {
+    id: "fattyLiverDisease",
+    defaultMessage: en.fattyLiverDisease,
+    description: "The condition Fatty Liver Disease, used in EP",
+  },
+  gout: {
+    id: "gout",
+    defaultMessage: en.gout,
+    description: "The condition Gout, used in EP",
+  },
+  heartAttack: {
+    id: "heartAttack",
+    defaultMessage: en.heartAttack,
+    description: "The condition Heart Attack, used in EP",
+  },
+  highBloodPressure: {
+    id: "highBloodPressure",
+    defaultMessage: en.highBloodPressure,
+    description: "The condition High Blood Pressure, used in EP",
+  },
+  highCholesterol: {
+    id: "highCholesterol",
+    defaultMessage: en.highCholesterol,
+    description: "The condition High Cholesterol, used in EP",
+  },
+  pcos: {
+    id: "pcos",
+    defaultMessage: en.pcos,
+    description: "The condition Polycystic Ovarian Syndrome, used in EP",
+  },
+  kidneyStones: {
+    id: "kidneyStones",
+    defaultMessage: en.kidneyStones,
+    description: "The condition kidney stones, used in EP",
+  },
+  osa: {
+    id: "osa",
+    defaultMessage: en.osa,
+    description: "The condition Sleep Apnea, used in EP",
+  },
+  stroke: {
+    id: "stroke",
+    defaultMessage: en.stroke,
+    description: "The condition Stroke, used in EP",
+  },
+  gestationalDiabetesHistory: {
+    id: "gestationalDiabetesHistory",
+    defaultMessage: en.gestationalDiabetesHistory,
+    description: "Gestational Diabestes History, used in EP",
+  },
+  otherHealth: {
+    id: "otherHealth",
+    defaultMessage: en.otherHealth,
+    description: "Other General Health header, used in EP",
+  },
+  bloodDisease: {
+    id: "bloodDisease",
+    description: "The label for the blood input",
+    defaultMessage: en.bloodDisease,
+  },
+  bloodDiseaseDescription: {
+    id: "bloodDiseaseDescription",
+    description: "The description for blood disease",
+    defaultMessage: en.bloodDiseaseDescription,
+  },
+  brainOrNerveDescription: {
+    id: "brainOrNerveDescription",
+    description: "The description for brain/nerve",
+    defaultMessage: en.brainOrNerveDescription,
+  },
+  heartDiseaseDescription: {
+    id: "heartDiseaseDescription",
+    description: "The description for heart disease",
+    defaultMessage: en.heartDiseaseDescription,
+  },
+  hormonalDescription: {
+    id: "hormonalDescription",
+    description: "The description for hormonal disorders",
+    defaultMessage: en.hormonalDescription,
+  },
+  kidneyDescription: {
+    id: "kidneyDescription",
+    description: "The description for kidney disease",
+    defaultMessage: en.kidneyDescription,
+  },
+  lungsDescription: {
+    id: "lungsDescription",
+    description: "The description for lung disease",
+    defaultMessage: en.lungsDescription,
+  },
+  muscleBoneJointDescription: {
+    id: "muscleBoneJointDescription",
+    description: "The description for muscle, bone, joint disease",
+    defaultMessage: en.muscleBoneJointDescription,
+  },
+  pregnancyBreastfeedingDescription: {
+    id: "pregnancyBreastfeedingDescription",
+    description: "The description for pregrancy/breastfeeding",
+    defaultMessage: en.pregnancyBreastfeedingDescription,
+  },
+  psychDescription: {
+    id: "psychDescription",
+    description: "The description for psych",
+    defaultMessage: en.psychDescription,
+  },
+  reproductiveHealthDescription: {
+    id: "reproductiveHealthDescription",
+    description: "The description for reproductive health",
+    defaultMessage: en.reproductiveHealthDescription,
+  },
+  stomachIntestineLiverDescription: {
+    id: "stomachIntestineLiverDescription",
+    description: "The description for stomach, instestine, liver",
+    defaultMessage: en.stomachIntestineLiverDescription,
+  },
+  brainOrNerve: {
+    id: "brainOrNerve",
+    description: "The label for the nerve input",
+    defaultMessage: en.brainOrNerve,
+  },
+  cancer: {
+    id: "cancer",
+    description: "The label for the cancer input",
+    defaultMessage: en.cancer,
+  },
+  ent: {
+    id: "ent",
+    description: "The label for the ent input",
+    defaultMessage: en.ent,
+  },
+  heartDisease: {
+    id: "heartDisease",
+    description: "The label for the heart input",
+    defaultMessage: en.heartDisease,
+  },
+  hormonal: {
+    id: "hormonal",
+    description: "The label for the hormonal button",
+    defaultMessage: en.hormonal,
+  },
+  kidney: {
+    id: "kidney",
+    description: "The label for the kidney input",
+    defaultMessage: en.kidney,
+  },
+  lungs: {
+    id: "lungs",
+    description: "The label for the month input",
+    defaultMessage: en.lungs,
+  },
+  muscleBoneJoint: {
+    id: "muscleBoneJoint",
+    description: "The label for the muscle, bone and joint input",
+    defaultMessage: en.muscleBoneJoint,
+  },
+  noAdditional: {
+    id: "noAdditional",
+    defaultMessage: en.noAdditional,
+    description: "Label for no additional conditions to report",
+  },
+  pregnancyBreastfeeding: {
+    id: "pregnancyBreastfeeding",
+    description: "The label for the pregnancy input",
+    defaultMessage: en.pregnancyBreastfeeding,
+  },
+  psych: {
+    id: "psych",
+    description: "The label for the psychiatric input",
+    defaultMessage: en.psych,
+  },
+  reproductiveHealth: {
+    id: "reproductiveHealth",
+    description: "The label for the reproductive health input",
+    defaultMessage: en.reproductiveHealth,
+  },
+  stomachIntestineLiver: {
+    id: "stomachIntestineLiver",
+    description:
+      "The label for the stomach, intestine, liver, gallbladder, and pancreas input",
+    defaultMessage: en.stomachIntestineLiver,
+  },
+  otherHealthHistory: {
+    id: "otherHealthHistory",
+    defaultMessage: en.otherHealthHistory,
+    description:
+      "Asks if the user has a history of the listed conditions, used in EP",
+  },
+  mustAddGeneralHealth: {
+    id: "mustAddGeneralHealth",
+    defaultMessage: en.mustAddGeneralHealth,
+    description:
+      "Error message for meeting the necessary requirements for filling out other general health",
+  },
+};

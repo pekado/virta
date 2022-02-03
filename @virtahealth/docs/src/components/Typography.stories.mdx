@@ -1,0 +1,43 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import {
+  Heading1,
+  Heading2,
+  Heading3,
+  Heading4,
+  Base,
+  Blockquote,
+  Caption,
+  Interpose,
+  Row,
+  Link,
+  Body,
+  BodySmall,
+  BodyLight,
+  ErrorText,
+  HelperText,
+  Label,
+  BodyEmphasized,
+} from "@virtahealth/components";
+
+<Meta title="Components / Typography" />
+
+<Preview>
+  <Story name="example">
+    <Interpose with={<Row />}>
+      <Heading1>Heading 1</Heading1>
+      <Heading2>Heading 2</Heading2>
+      <Heading3>Heading 3</Heading3>
+      <Heading4>Heading 4</Heading4>
+      <Base>Base</Base>
+      <Blockquote>Blockquote</Blockquote>
+      <Body>Body</Body>
+      <BodySmall>BodySmall</BodySmall>
+      <BodyLight>BodyLight</BodyLight>
+      <Caption>Caption</Caption>
+      <ErrorText>ErrorText</ErrorText>
+      <HelperText>HelperText</HelperText>
+      <Label>Label</Label>
+      <BodyEmphasized>BodyEmphasized</BodyEmphasized>
+    </Interpose>
+  </Story>
+</Preview>

@@ -1,0 +1,42 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { RadioChooser, RadioChooserRowField } from "@virtahealth/components";
+import { Formik, Field, Form } from "formik";
+import { View } from "react-native";
+
+<Meta title="Components / RadioChooser" />
+
+<Preview>
+  <Story name="example">
+    <View style={{ width: "40rem" }}>
+      <Formik
+        initialErrors={{ test: { test1: "Required" } }}
+        initialValues={{ test: { test1: "yes", test2: "no", test3: "no" } }}
+        onSubmit={(values) => null}
+      >
+        <Form>
+          <RadioChooser
+            header={{ id: "testheader", defaultMessage: "options" }}
+            key="testradiochooser"
+            name="testradiochooser"
+            options={["yes", "no", "unsure"]}
+          >
+            <RadioChooserRowField
+              name="test.test1"
+              labelMessage={{
+                id: "conditionReporter.label.test1",
+                defaultMessage: "Do you like Atlas?",
+              }}
+            />
+            <RadioChooserRowField
+              name="test.test2"
+              labelMessage={{
+                id: "conditionReporter.label.test2",
+                defaultMessage: "Are you unsure?",
+              }}
+            />
+          </RadioChooser>
+        </Form>
+      </Formik>
+    </View>
+  </Story>
+</Preview>

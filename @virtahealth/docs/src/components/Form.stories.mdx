@@ -1,0 +1,31 @@
+import { action } from "@storybook/addon-actions";
+import { Form, InputField, SubmitButton } from "@virtahealth/components";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+<Meta title="Components / Form" component={Form} />
+
+# Forms
+
+Atlas provides a Form and related components that wrap Formik and some related conventions. Atlas also
+provides wrapped elements that hook into the Formik context automatically and can be used instead of a
+
+< Field \> component.
+
+<Preview>
+  <Story name="example">
+    <Form
+      initialValues={{ test_input: "" }}
+      onSubmit={action("form-submitted")}
+    >
+      <InputField
+        name={"test_input"}
+        labelMessage={{ id: "components.form.inputLabel" }}
+      />
+      <SubmitButton labelMessage={{ id: "components.form.buttonLabel" }} />
+    </Form>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={Form} />

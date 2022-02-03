@@ -1,0 +1,70 @@
+import { Carousel, CarouselCard, Spacer } from "@virtahealth/components";
+import { View } from "react-native";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+
+<Meta title="Components / Carousel" component={Carousel} />
+
+# Carousel
+
+<Preview>
+  <Story name="Carousel">
+    <Carousel
+      carouselItems={[
+        {
+          title: "Kitteh Consumes Owner and It Hurt",
+          description:
+            "This chonk did a big nom on its owner, and now it's full",
+          typeInfo: "13 mins",
+          typeIcon: "read",
+          onPress: () => console.log("pressed"),
+          imageUrl:
+            "https://static.boredpanda.com/blog/wp-content/uploads/2019/10/cinderblock-fat-cat-workout-fb.png",
+        },
+        {
+          title: "Kitteh Consumes Owner",
+          description: "this is second content",
+          typeInfo: "13 mins",
+          typeIcon: "read",
+          imageUrl:
+            "https://static.boredpanda.com/blog/wp-content/uploads/2019/10/cinderblock-fat-cat-workout-fb.png",
+        },
+        {
+          title: "Kitteh Consumes Owner",
+          description: "this is third content",
+          typeIcon: "listen",
+          typeInfo: "13 mins",
+          imageUrl:
+            "https://static.boredpanda.com/blog/wp-content/uploads/2019/10/cinderblock-fat-cat-workout-fb.png",
+        },
+        {
+          title: "Kitteh Consumes Owner",
+          description: "this is fourth content",
+          typeIcon: "read",
+          typeInfo: "13 mins",
+          imageUrl:
+            "https://static.boredpanda.com/blog/wp-content/uploads/2019/10/cinderblock-fat-cat-workout-fb.png",
+        },
+        {
+          title: "Kitteh Consumes Owner",
+          description: "this is fifth content",
+          typeIcon: "watch",
+          typeInfo: "13 mins",
+          imageUrl:
+            "https://static.boredpanda.com/blog/wp-content/uploads/2019/10/cinderblock-fat-cat-workout-fb.png",
+        },
+      ]}
+      renderFunction={({ item }) => (
+        <View style={{ display: "flex", flexDirection: "row" }}>
+          <Spacer width={16} />
+          <CarouselCard item={item} />
+          <Spacer width={16} />
+        </View>
+      )}
+    />
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={Carousel} />

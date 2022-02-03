@@ -1,0 +1,41 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Text, View } from "react-native";
+import { MenuItem, MarketingTargetBullseye } from "@virtahealth/components";
+
+<Meta title="Components / MenuItem" component={MenuItem} />
+
+# MenuItem
+
+`Menu Item` is used for listing various actions the user can take.
+Each menu item requires an icon and title, as well as either subtitle or a default action subtitle which will show if the subtitle is missing.
+Note these will attempt to take up the full width of their container, so set the container width appropriately!
+
+<Preview>
+  <Story name="default">
+    <MenuItem
+      icon={<MarketingTargetBullseye />}
+      title={{ id: "Title Text" }}
+      subtitleValue={"Subtitle text"}
+      subtitleDefaultAction={{ id: "Default action" }}
+      onPress={() => {}}
+    />
+  </Story>
+  <Story name="style variations">
+    <MenuItem
+      icon={<MarketingTargetBullseye />}
+      onPress={() => {}}
+      title={{ id: "Larger text" }}
+      subtitleValue={"Lighter subtext"}
+      noIndent={true}
+      hasStrike={false}
+      textSize={"Large"}
+      colorfulArrow={true}
+      lightSubtitleValue={true}
+      smallPadding={true}
+    />
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={MenuItem} />

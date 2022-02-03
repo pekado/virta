@@ -1,0 +1,34 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { SubTabGroup, SubTabItem, Badge } from "@virtahealth/components";
+import { View } from "react-native";
+
+<Meta title="Components / SubTabGroup" component={SubTabGroup} />
+
+# SubTabGroup
+
+`SubTabGroup` is a component for building a sub-tab navigation. It accepts
+one or more `SubTabItem`s
+
+<Preview>
+  <Story name="example">
+    <SubTabGroup>
+      <SubTabItem isSelected={true}>Test Selected</SubTabItem>
+      <SubTabItem
+        isSelected={false}
+        iconAfter={
+          <View style={{ position: "absolute", right: -30, top: -3 }}>
+            <Badge label={1} color="pink" size={25} />
+          </View>
+        }
+      >
+        Test Unselected
+      </SubTabItem>
+    </SubTabGroup>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={SubTabGroup} />
+<Props of={SubTabItem} />

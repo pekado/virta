@@ -1,0 +1,26 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { ConditionReporter } from "@virtahealth/experiences";
+import { Formik, Field, Form } from "formik";
+import { View } from "react-native";
+
+<Meta title="Experiences / ConditionReporter" />
+
+<Preview>
+  <Story name="ConditionReporter">
+    <View style={{ width: "50rem" }}>
+      <Formik
+        initialValues={{ test: { test1: "yes", test2: "no", test3: "no" } }}
+        initialErrors={{ hasHormonalOrEndocrineCondition: "test" }}
+        initialTouched={{ hasHormonalOrEndocrineCondition: "test" }}
+      >
+        <Form>
+          <ConditionReporter />
+        </Form>
+      </Formik>
+    </View>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ConditionReporter} />

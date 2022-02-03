@@ -1,0 +1,87 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import {
+  ComboBox as ControlledComboBox,
+  ComboBoxOption,
+  ComboBoxField,
+  Form,
+  LabeledFormElement,
+  Row,
+  styled,
+} from "@virtahealth/components";
+import { wrapControlledInput } from "./mock_data/ControlledInputWrapper";
+
+export const ComboBox = wrapControlledInput(ControlledComboBox);
+
+export const StyledComboBox = styled(ComboBox)`
+  flex: 1;
+`;
+
+<Meta title="Components / ComboBox" component={ComboBox} />
+
+# ComboBox
+
+`ComboBox` provides a dropdown with text input for filtering options.
+
+Filtering/autocomplete may be performed by the `onChangeText` handler. The
+`onSubmitText` handler is also provided for when the user presses 'return' in
+the text input, or (on mobile) taps the submit button in their device's soft
+keyboard. Options are provided as
+[children](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx),
+using the `<ComboBox.Item>` component. When an item is selected from the list,
+the `onSelectOption` handler is called.
+
+This is a
+[controlled component](https://reactjs.org/docs/forms.html#controlled-components),
+meaning that users of this component should maintain state for it via the
+`onChangeText` handler, passing in the `value` prop.
+
+<Preview>
+  <Story name="normal">
+    <LabeledFormElement labelMessage={{ id: "components.combobox.label" }}>
+      <StyledComboBox
+        placeholderMessage={{ id: "components.combobox.placeholder" }}
+        value="Blueberry"
+        onChange={action("change")}
+        onChangeText={action("change-text")}
+        onSubmitText={action("submit-text")}
+        onSelectOption={action("select-option")}
+      >
+        <ComboBoxOption value="NaCl">Sodium chloride</ComboBoxOption>
+        <ComboBoxOption value="KCl">Potassium chloride</ComboBoxOption>
+      </StyledComboBox>
+    </LabeledFormElement>
+  </Story>
+  <Story name="disabled">
+    <ComboBox
+      placeholderMessage={{ id: "components.combobox.placeholder" }}
+      value="Raspberry"
+      editable={false}
+    />
+  </Story>
+  <Story name="empty results">
+    <ComboBox
+      value="Unobtanium"
+      onChange={action("change")}
+      onChangeText={action("change-text")}
+      onSubmitText={action("submit-text")}
+    >
+      {[]}
+    </ComboBox>
+  </Story>
+  <Story name="form combobox">
+    <Form initialValues={{ test: "stuff" }}>
+      <ComboBoxField
+        name="test"
+        labelMessage={{ id: "oikfjeiajfiea", defaultValue: "combo box field" }}
+      >
+        <ComboBoxOption value="stuff">stuff</ComboBoxOption>
+        <ComboBoxOption value="newstuff">newstuff</ComboBoxOption>
+      </ComboBoxField>
+    </Form>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ControlledComboBox} />

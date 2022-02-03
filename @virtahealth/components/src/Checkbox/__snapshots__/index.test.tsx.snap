@@ -1,0 +1,489 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxField renders selected checkbox fields 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+        },
+      ]
+    }
+  >
+    <TouchableOpacity
+      accessibilityLabel="checkbox"
+      onPress={[Function]}
+    >
+      <View
+        hasDescription={false}
+        isChecked={true}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderRadius": 0,
+              "borderWidth": 0,
+              "display": "flex",
+              "flexDirection": "row",
+              "marginRight": 8,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="checked"
+          isChecked={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgb(34, 110, 173)",
+                "borderColor": "rgb(34, 110, 173)",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "height": 16,
+                "justifyContent": "center",
+                "marginRight": 8,
+                "width": 16,
+              },
+            ]
+          }
+          testID="undefined-box"
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight={8}
+            bbWidth={8}
+            fill="none"
+            focusable={false}
+            height={8}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 8,
+                  "width": 8,
+                },
+              ]
+            }
+            testID="check-mark-icon"
+            vbHeight={11}
+            vbWidth={13}
+            width={8}
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+            >
+              <RNSVGPath
+                d="M1 5.90608L3.52353 9.42913C3.76754 9.77458 4.17263 9.98701 4.61107 9.99942C5.0495 10.0118 5.46725 9.82271 5.73259 9.49168L12 1"
+                fill={4280446637}
+                propList={
+                  Array [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4294967295}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+                strokeWidth="1.5"
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 12,
+                },
+                Object {
+                  "fontSize": 16,
+                  "fontWeight": "300",
+                  "lineHeight": 16,
+                },
+              ]
+            }
+          >
+            Option 1
+          </Text>
+        </View>
+      </View>
+    </TouchableOpacity>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+        },
+      ]
+    }
+  >
+    <TouchableOpacity
+      accessibilityLabel="checkbox"
+      onPress={[Function]}
+    >
+      <View
+        hasDescription={false}
+        isChecked={true}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderRadius": 0,
+              "borderWidth": 0,
+              "display": "flex",
+              "flexDirection": "row",
+              "marginRight": 8,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="checked"
+          isChecked={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgb(34, 110, 173)",
+                "borderColor": "rgb(34, 110, 173)",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "height": 16,
+                "justifyContent": "center",
+                "marginRight": 8,
+                "width": 16,
+              },
+            ]
+          }
+          testID="undefined-box"
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight={8}
+            bbWidth={8}
+            fill="none"
+            focusable={false}
+            height={8}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 8,
+                  "width": 8,
+                },
+              ]
+            }
+            testID="check-mark-icon"
+            vbHeight={11}
+            vbWidth={13}
+            width={8}
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+            >
+              <RNSVGPath
+                d="M1 5.90608L3.52353 9.42913C3.76754 9.77458 4.17263 9.98701 4.61107 9.99942C5.0495 10.0118 5.46725 9.82271 5.73259 9.49168L12 1"
+                fill={4280446637}
+                propList={
+                  Array [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4294967295}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+                strokeWidth="1.5"
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 12,
+                },
+                Object {
+                  "fontSize": 16,
+                  "fontWeight": "300",
+                  "lineHeight": 16,
+                },
+              ]
+            }
+          >
+            Option 2
+          </Text>
+        </View>
+      </View>
+    </TouchableOpacity>
+  </View>,
+]
+`;
+
+exports[`CheckboxField renders unselected checkbox fields 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+        },
+      ]
+    }
+  >
+    <TouchableOpacity
+      accessibilityLabel="checkbox"
+      onPress={[Function]}
+    >
+      <View
+        hasDescription={false}
+        isChecked={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderRadius": 0,
+              "borderWidth": 0,
+              "display": "flex",
+              "flexDirection": "row",
+              "marginRight": 8,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+        <View
+          isChecked={false}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "rgb(214, 217, 221)",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "height": 16,
+                "justifyContent": "center",
+                "marginRight": 8,
+                "width": 16,
+              },
+            ]
+          }
+          testID="undefined-box"
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 12,
+                },
+                Object {
+                  "fontSize": 16,
+                  "fontWeight": "300",
+                  "lineHeight": 16,
+                },
+              ]
+            }
+          >
+            Option 1
+          </Text>
+        </View>
+      </View>
+    </TouchableOpacity>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+        },
+      ]
+    }
+  >
+    <TouchableOpacity
+      accessibilityLabel="checkbox"
+      onPress={[Function]}
+    >
+      <View
+        hasDescription={false}
+        isChecked={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderRadius": 0,
+              "borderWidth": 0,
+              "display": "flex",
+              "flexDirection": "row",
+              "marginRight": 8,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+        <View
+          isChecked={false}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "rgb(214, 217, 221)",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "height": 16,
+                "justifyContent": "center",
+                "marginRight": 8,
+                "width": 16,
+              },
+            ]
+          }
+          testID="undefined-box"
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 12,
+                },
+                Object {
+                  "fontSize": 16,
+                  "fontWeight": "300",
+                  "lineHeight": 16,
+                },
+              ]
+            }
+          >
+            Option 2
+          </Text>
+        </View>
+      </View>
+    </TouchableOpacity>
+  </View>,
+]
+`;

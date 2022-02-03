@@ -1,0 +1,186 @@
+import { MessageDescriptor } from "react-intl";
+
+export const en = {
+  firstName: "First Name",
+  mname: "Middle Name",
+  lastName: "Last Name",
+  suffix: "Suffix",
+  jr: "Jr",
+  sr: "Sr",
+  suffixThree: "III",
+  suffixTwo: "II",
+  suffixOne: "I",
+  nickname: "Nickname",
+  preferredIfDifferent: "Preferred name if other than your first name",
+  emailAddress: "Email Address",
+  dateOfBirth: "Date of Birth",
+  mobileNumber: "Mobile Number",
+  gender: "Gender",
+  select: "Select",
+  female: "Female",
+  male: "Male",
+  other: "Other",
+  sexAtBirth: "Sex at Birth",
+  height: "Height",
+  feet: "Feet",
+  inches: "Inches",
+  weight: "Weight",
+  pounds: "Pounds",
+};
+
+export const es = {
+  firstName: "Nombre",
+  mname: "Segundo nombre",
+  lastName: "Apellido",
+  suffix: "Sufijo",
+  jr: "Jr",
+  sr: "Sr",
+  suffixThree: "III",
+  suffixTwo: "II",
+  suffixOne: "I",
+  nickname: "Apodo",
+  preferredIfDifferent: "Nombre preferido si no es su nombre",
+  emailAddress: "Dirección de correo electrónico",
+  dateOfBirth: "Fecha de cumpleaños",
+  mobileNumber: "Número de teléfono móvil",
+  gender: "Género",
+  select: "Seleccione",
+  female: "Femenino",
+  male: "Masculino",
+  other: "Otro",
+  sexAtBirth: "Sexo al nacer",
+  height: "Estatura",
+  feet: "Pies",
+  inches: "Pulgadas",
+  weight: "Peso",
+  pounds: "Libras",
+};
+
+export const messages: { [key: string]: Required<MessageDescriptor> } = {
+  firstName: {
+    id: "firstName",
+    defaultMessage: en.firstName,
+    description: "First name field, used in EP",
+  },
+  mname: {
+    id: "mname",
+    defaultMessage: en.mname,
+    description: "Middle name field, used in EP",
+  },
+  lastName: {
+    id: "lastName",
+    defaultMessage: en.lastName,
+    description: "Last name field, used in EP",
+  },
+  suffix: {
+    id: "suffix",
+    defaultMessage: en.suffix,
+    description: "Name suffix field, jr. sr., used in EP",
+  },
+  jr: {
+    id: "jr",
+    description: "'Jr' name suffix, used in EP",
+    defaultMessage: en.jr,
+  },
+  sr: {
+    id: "sr",
+    description: "'Sr' name suffix, used in EP",
+    defaultMessage: en.sr,
+  },
+  suffixThree: {
+    id: "suffixThree",
+    description: "III' name suffix, used in EP",
+    defaultMessage: en.suffixThree,
+  },
+  suffixTwo: {
+    id: "suffixTwo",
+    description: "II' name suffix, used in EP",
+    defaultMessage: en.suffixTwo,
+  },
+  suffixOne: {
+    id: "suffixOne",
+    description: "I' name suffix, used in EP",
+    defaultMessage: en.suffixOne,
+  },
+  nickname: {
+    id: "nickname",
+    description: "What someone likes to be called, if not their actual name",
+    defaultMessage: en.nickname,
+  },
+  preferredIfDifferent: {
+    id: "preferredIfDifferent",
+    description: "Description of a nickname",
+    defaultMessage: en.preferredIfDifferent,
+  },
+  emailAddress: {
+    id: "emailAddress",
+    defaultMessage: en.emailAddress,
+    description: "Email field, used in EP",
+  },
+  dateOfBirth: {
+    id: "dateOfBirth",
+    defaultMessage: en.dateOfBirth,
+    description: "Date of birth field, used in EP",
+  },
+  mobileNumber: {
+    id: "mobileNumber",
+    defaultMessage: en.mobileNumber,
+    description: "phone label on unified form EP",
+  },
+  gender: {
+    id: "gender",
+    defaultMessage: en.gender,
+    description: "Gender field, used in EP",
+  },
+  select: {
+    id: "select",
+    defaultMessage: en.select,
+    description: "The word Select, used in EP",
+  },
+  female: {
+    id: "female",
+    defaultMessage: en.female,
+    description: "'Female' uppercase, used in EP",
+  },
+  male: {
+    id: "male",
+    defaultMessage: en.male,
+    description: "'Male' uppercase, used in EP",
+  },
+  other: {
+    id: "other",
+    defaultMessage: en.other,
+    description: "'Other' uppercase, used in EP",
+  },
+  sexAtBirth: {
+    id: "sexAtBirth",
+    defaultMessage: en.sexAtBirth,
+    description: "Sex at birth field, used in EP",
+  },
+  height: {
+    id: "height",
+    description: "The word Height, used in EP",
+    defaultMessage: en.height,
+  },
+  feet: {
+    id: "feet",
+    defaultMessage: en.feet,
+    description: "Feet as an imperial unit of height, used in EP",
+  },
+  inches: {
+    id: "inches",
+    defaultMessage: en.inches,
+    description: "Inches as a unit of height, used in EP",
+  },
+  weight: {
+    id: "weight",
+    defaultMessage: en.weight,
+    description:
+      "Simply the word Weight. Used in atlas, participant_app_ios, participant_app_py",
+  },
+  pounds: {
+    id: "pounds",
+    description: "The word Pounds, used in EP",
+    defaultMessage: en.pounds,
+  },
+};

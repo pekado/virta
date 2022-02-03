@@ -1,0 +1,422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileUploadSection renders with attachments 1`] = `
+Array [
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Medium",
+          "fontSize": 28,
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 28,
+        },
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "paddingBottom": 12,
+          "paddingTop": 12,
+        },
+      ]
+    }
+  >
+    Files
+  </Text>,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingBottom": 16,
+          "paddingTop": 16,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(36, 38, 43)",
+            "fontFamily": "Whitney-Book",
+            "fontSize": 20,
+            "fontWeight": "500",
+            "letterSpacing": 0,
+            "lineHeight": 20,
+          },
+        ]
+      }
+    >
+      Test File 1
+    </Text>
+    <TouchableOpacity
+      accessibilityLabel="Remove"
+      accessibilityRole="button"
+      accessible={true}
+      alignLabel="center"
+      appearance="solid"
+      disabled={false}
+      intent="tertiary"
+      onPress={[Function]}
+      size="medium"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "rgb(255,255,255)",
+            "borderColor": "rgb(255,255,255)",
+            "borderRadius": 48,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "display": "flex",
+            "justifyContent": "center",
+            "minHeight": 44,
+            "opacity": 1,
+            "paddingHorizontal": 22,
+            "textDecorationColor": "black",
+            "textDecorationLine": "none",
+            "textDecorationStyle": "solid",
+          },
+          Object {
+            "backgroundColor": "transparent",
+            "maxWidth": 70,
+            "minHeight": "none",
+          },
+        ]
+      }
+      width="none"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "minHeight": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "position": "absolute",
+            }
+          }
+        >
+          <ActivityIndicator
+            animating={false}
+            color="rgb(34, 110, 173)"
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                Object {
+                  "alignItems": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              appearance="solid"
+              disabled={false}
+              intent="tertiary"
+              size="medium"
+              style={
+                Array [
+                  Object {
+                    "color": "rgb(34, 110, 173)",
+                    "fontFamily": "Whitney-Semibold",
+                    "fontSize": 18,
+                    "fontWeight": "bold",
+                    "lineHeight": 18,
+                  },
+                ]
+              }
+            >
+              Remove
+            </Text>
+          </View>
+        </View>
+      </View>
+    </TouchableOpacity>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingBottom": 16,
+          "paddingTop": 16,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(36, 38, 43)",
+            "fontFamily": "Whitney-Book",
+            "fontSize": 20,
+            "fontWeight": "500",
+            "letterSpacing": 0,
+            "lineHeight": 20,
+          },
+        ]
+      }
+    >
+      Test File 2
+    </Text>
+    <TouchableOpacity
+      accessibilityLabel="Remove"
+      accessibilityRole="button"
+      accessible={true}
+      alignLabel="center"
+      appearance="solid"
+      disabled={false}
+      intent="tertiary"
+      onPress={[Function]}
+      size="medium"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "rgb(255,255,255)",
+            "borderColor": "rgb(255,255,255)",
+            "borderRadius": 48,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "display": "flex",
+            "justifyContent": "center",
+            "minHeight": 44,
+            "opacity": 1,
+            "paddingHorizontal": 22,
+            "textDecorationColor": "black",
+            "textDecorationLine": "none",
+            "textDecorationStyle": "solid",
+          },
+          Object {
+            "backgroundColor": "transparent",
+            "maxWidth": 70,
+            "minHeight": "none",
+          },
+        ]
+      }
+      width="none"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "minHeight": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "position": "absolute",
+            }
+          }
+        >
+          <ActivityIndicator
+            animating={false}
+            color="rgb(34, 110, 173)"
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                Object {
+                  "alignItems": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              appearance="solid"
+              disabled={false}
+              intent="tertiary"
+              size="medium"
+              style={
+                Array [
+                  Object {
+                    "color": "rgb(34, 110, 173)",
+                    "fontFamily": "Whitney-Semibold",
+                    "fontSize": 18,
+                    "fontWeight": "bold",
+                    "lineHeight": 18,
+                  },
+                ]
+              }
+            >
+              Remove
+            </Text>
+          </View>
+        </View>
+      </View>
+    </TouchableOpacity>
+  </View>,
+  <View
+    height={25}
+    style={
+      Array [
+        Object {
+          "height": 25,
+          "width": 0,
+        },
+      ]
+    }
+  />,
+  <JsonFilePicker
+    accept={
+      Array [
+        ".pdf",
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".gif",
+      ]
+    }
+    labelMessage={
+      Object {
+        "defaultMessage": "Select another file",
+        "description": "Text for the upload more button.",
+        "id": "fileUploadSection.uploadMoreButton",
+      }
+    }
+    setEncodedFiles={[Function]}
+    style={
+      Array [
+        Object {
+          "borderWidth": 0,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`FileUploadSection renders without any attachments 1`] = `
+Array [
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Medium",
+          "fontSize": 28,
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 28,
+        },
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "paddingBottom": 12,
+          "paddingTop": 12,
+        },
+      ]
+    }
+  >
+    Files
+  </Text>,
+  <View
+    height={25}
+    style={
+      Array [
+        Object {
+          "height": 25,
+          "width": 0,
+        },
+      ]
+    }
+  />,
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Book",
+          "fontSize": 20,
+          "fontWeight": "500",
+          "letterSpacing": 0,
+          "lineHeight": 20,
+        },
+      ]
+    }
+  >
+    Please upload the images/PDFs associated with this result set
+  </Text>,
+  <View
+    height={25}
+    style={
+      Array [
+        Object {
+          "height": 25,
+          "width": 0,
+        },
+      ]
+    }
+  />,
+  <JsonFilePicker
+    accept={
+      Array [
+        ".pdf",
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".gif",
+      ]
+    }
+    labelMessage={
+      Object {
+        "defaultMessage": "Select file",
+        "description": "Text for the upload button.",
+        "id": "fileUploadSection.uploadButton",
+      }
+    }
+    setEncodedFiles={[Function]}
+    style={
+      Array [
+        Object {
+          "borderWidth": 0,
+        },
+      ]
+    }
+  />,
+]
+`;

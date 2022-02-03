@@ -1,0 +1,1228 @@
+[
+  {
+    "status": "draft",
+    "resourceType": "Questionnaire",
+    "meta": {
+      "profile": [
+        "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire|2.0"
+      ],
+      "tag": [
+        {
+          "code": "lformsVersion: 24.0.0"
+        }
+      ]
+    },
+    "item": [
+      {
+        "type": "group",
+        "code": [
+          {
+            "code": "24323-8",
+            "display": "Comprehensive Metabolic Panel",
+            "system": "http://loinc.org"
+          }
+        ],
+        "required": false,
+        "linkId": "/24323-8",
+        "text": "Comprehensive Metabolic Panel",
+        "item": [
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "2345-7",
+                "display": "Glucose",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/2345-7",
+            "text": "Glucose"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "3094-0",
+                "display": "BUN",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/3094-0",
+            "text": "BUN"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "2160-0",
+                "display": "Creatinine",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/2160-0",
+            "text": "Creatinine"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "3097-3",
+                "display": "BUN/Creat SerPl",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/mg{creat}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/3097-3",
+            "text": "BUN/Creat SerPl"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "33914-3",
+                "display": "GFR/BSA.pred SerPl MDRD-ArVRat",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mL/min/{1.73_m2}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/33914-3",
+            "text": "GFR/BSA.pred SerPl MDRD-ArVRat"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "50044-7",
+                "display": "GFR/BSA pred.fem SerPlBld MDRD-ArVRat",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mL/min/{1.73_m2}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/50044-7",
+            "text": "GFR/BSA pred.fem SerPlBld MDRD-ArVRat"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "48642-3",
+                "display": "GFR/BSA pr.non blk SerPlBld MDRD-ArV",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mL/min/{1.73_m2}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/48642-3",
+            "text": "GFR/BSA pr.non blk SerPlBld MDRD-ArV"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "48643-1",
+                "display": "GFR/BSA pred.black SerPlBld MDRD-ArVRat",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mL/min/{1.73_m2}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/48643-1",
+            "text": "GFR/BSA pred.black SerPlBld MDRD-ArVRat"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "17861-6",
+                "display": "Calcium",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/17861-6",
+            "text": "Calcium"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "2885-2",
+                "display": "Total Protein",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "g/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/2885-2",
+            "text": "Total Protein",
+            "item": [
+              {
+                "text": "Although there is a qualitative difference between total protein in plasma and serum, the QUANTITATIVE difference is small and probably not clinically significant, therefore, system of SER/PLAS is acceptable. The protein concentration that is reported in electrophoresis is the same as that reported routinely.",
+                "type": "display",
+                "linkId": "/24323-8/2885-2-help",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "text": "Help-Button",
+                      "coding": [
+                        {
+                          "code": "help",
+                          "display": "Help-Button",
+                          "system": "http://hl7.org/fhir/questionnaire-item-control"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "1751-7",
+                "display": "Albumin",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "g/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/1751-7",
+            "text": "Albumin"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "10834-0",
+                "display": "Total Globulin",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "g/L"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/10834-0",
+            "text": "Total Globulin"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "1759-0",
+                "display": "Albumin/Glob ratio",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "{ratio}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/1759-0",
+            "text": "Albumin/Glob ratio"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "1975-2",
+                "display": "Total Bilirubin",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/1975-2",
+            "text": "Total Bilirubin",
+            "item": [
+              {
+                "text": "Method can be DIRECT SPECTOPHOTOMETRY, WET CHEMISTRY or DRY SLIDE (TBIL)",
+                "type": "display",
+                "linkId": "/24323-8/1975-2-help",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "text": "Help-Button",
+                      "coding": [
+                        {
+                          "code": "help",
+                          "display": "Help-Button",
+                          "system": "http://hl7.org/fhir/questionnaire-item-control"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "6768-6",
+                "display": "Alkaline Phosphatase",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "U/L"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/6768-6",
+            "text": "Alkaline Phosphatase"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "1742-6",
+                "display": "ALT SerPl-cCnc",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "U/L"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/1742-6",
+            "text": "ALT SerPl-cCnc"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "1920-8",
+                "display": "AST SerPl-cCnc",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "U/L"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/1920-8",
+            "text": "AST SerPl-cCnc"
+          },
+          {
+            "type": "group",
+            "code": [
+              {
+                "code": "24326-1",
+                "display": "Lytes 1998 Pnl SerPl",
+                "system": "http://loinc.org"
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/24326-1",
+            "text": "Lytes 1998 Pnl SerPl",
+            "item": [
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "2951-2",
+                    "display": "Sodium",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/2951-2",
+                "text": "Sodium"
+              },
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "2823-3",
+                    "display": "Potassium",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/2823-3",
+                "text": "Potassium"
+              },
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "2075-0",
+                    "display": "Chloride",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/2075-0",
+                "text": "Chloride"
+              },
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "1963-8",
+                    "display": "HCO3 SerPl-sCnc",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/1963-8",
+                "text": "HCO3 SerPl-sCnc"
+              },
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "2028-9",
+                    "display": "Carbon Dioxide",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/2028-9",
+                "text": "Carbon Dioxide"
+              },
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "33037-3",
+                    "display": "Anion Gap SerPl-sCnc",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/33037-3",
+                "text": "Anion Gap SerPl-sCnc"
+              },
+              {
+                "text": "The components of this panel were defined by HCFA (now CMS)",
+                "type": "display",
+                "linkId": "/24323-8/24326-1-help",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "text": "Help-Button",
+                      "coding": [
+                        {
+                          "code": "help",
+                          "display": "Help-Button",
+                          "system": "http://hl7.org/fhir/questionnaire-item-control"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "The components of this panel were defined by HCFA (now CMS)",
+            "type": "display",
+            "linkId": "/24323-8-help",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "text": "Help-Button",
+                  "coding": [
+                    {
+                      "code": "help",
+                      "display": "Help-Button",
+                      "system": "http://hl7.org/fhir/questionnaire-item-control"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "status": "draft",
+    "resourceType": "Questionnaire",
+    "meta": {
+      "profile": [
+        "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire|2.0"
+      ],
+      "tag": [
+        {
+          "code": "lformsVersion: 24.0.0"
+        }
+      ]
+    },
+    "item": [
+      {
+        "type": "group",
+        "code": [
+          {
+            "code": "24323-8",
+            "display": "Comprehensive Metabolic Panel",
+            "system": "http://loinc.org"
+          }
+        ],
+        "required": false,
+        "linkId": "/24323-8",
+        "text": "Comprehensive Metabolic Panel",
+        "item": [
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "2345-7",
+                "display": "Glucose",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/2345-7",
+            "text": "Glucose"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "3094-0",
+                "display": "BUN",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/3094-0",
+            "text": "BUN"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "2160-0",
+                "display": "Creatinine",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/2160-0",
+            "text": "Creatinine"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "3097-3",
+                "display": "BUN/Creat SerPl",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/mg{creat}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/3097-3",
+            "text": "BUN/Creat SerPl"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "33914-3",
+                "display": "GFR/BSA.pred SerPl MDRD-ArVRat",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mL/min/{1.73_m2}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/33914-3",
+            "text": "GFR/BSA.pred SerPl MDRD-ArVRat"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "50044-7",
+                "display": "GFR/BSA pred.fem SerPlBld MDRD-ArVRat",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mL/min/{1.73_m2}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/50044-7",
+            "text": "GFR/BSA pred.fem SerPlBld MDRD-ArVRat"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "48642-3",
+                "display": "GFR/BSA pr.non blk SerPlBld MDRD-ArV",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mL/min/{1.73_m2}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/48642-3",
+            "text": "GFR/BSA pr.non blk SerPlBld MDRD-ArV"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "48643-1",
+                "display": "GFR/BSA pred.black SerPlBld MDRD-ArVRat",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mL/min/{1.73_m2}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/48643-1",
+            "text": "GFR/BSA pred.black SerPlBld MDRD-ArVRat"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "17861-6",
+                "display": "Calcium",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/17861-6",
+            "text": "Calcium"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "2885-2",
+                "display": "Total Protein",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "g/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/2885-2",
+            "text": "Total Protein",
+            "item": [
+              {
+                "text": "Although there is a qualitative difference between total protein in plasma and serum, the QUANTITATIVE difference is small and probably not clinically significant, therefore, system of SER/PLAS is acceptable. The protein concentration that is reported in electrophoresis is the same as that reported routinely.",
+                "type": "display",
+                "linkId": "/24323-8/2885-2-help",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "text": "Help-Button",
+                      "coding": [
+                        {
+                          "code": "help",
+                          "display": "Help-Button",
+                          "system": "http://hl7.org/fhir/questionnaire-item-control"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "1751-7",
+                "display": "Albumin",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "g/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/1751-7",
+            "text": "Albumin"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "10834-0",
+                "display": "Total Globulin",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "g/L"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/10834-0",
+            "text": "Total Globulin"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "1759-0",
+                "display": "Albumin/Glob ratio",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "{ratio}"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/1759-0",
+            "text": "Albumin/Glob ratio"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "1975-2",
+                "display": "Total Bilirubin",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "mg/dL"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/1975-2",
+            "text": "Total Bilirubin",
+            "item": [
+              {
+                "text": "Method can be DIRECT SPECTOPHOTOMETRY, WET CHEMISTRY or DRY SLIDE (TBIL)",
+                "type": "display",
+                "linkId": "/24323-8/1975-2-help",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "text": "Help-Button",
+                      "coding": [
+                        {
+                          "code": "help",
+                          "display": "Help-Button",
+                          "system": "http://hl7.org/fhir/questionnaire-item-control"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "6768-6",
+                "display": "Alkaline Phosphatase",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "U/L"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/6768-6",
+            "text": "Alkaline Phosphatase"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "1742-6",
+                "display": "ALT SerPl-cCnc",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "U/L"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/1742-6",
+            "text": "ALT SerPl-cCnc"
+          },
+          {
+            "type": "decimal",
+            "code": [
+              {
+                "code": "1920-8",
+                "display": "AST SerPl-cCnc",
+                "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "U/L"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/1920-8",
+            "text": "AST SerPl-cCnc"
+          },
+          {
+            "type": "group",
+            "code": [
+              {
+                "code": "24326-1",
+                "display": "Lytes 1998 Pnl SerPl",
+                "system": "http://loinc.org"
+              }
+            ],
+            "required": false,
+            "linkId": "/24323-8/24326-1",
+            "text": "Lytes 1998 Pnl SerPl",
+            "item": [
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "2951-2",
+                    "display": "Sodium",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/2951-2",
+                "text": "Sodium"
+              },
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "2823-3",
+                    "display": "Potassium",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/2823-3",
+                "text": "Potassium"
+              },
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "2075-0",
+                    "display": "Chloride",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/2075-0",
+                "text": "Chloride"
+              },
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "1963-8",
+                    "display": "HCO3 SerPl-sCnc",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/1963-8",
+                "text": "HCO3 SerPl-sCnc"
+              },
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "2028-9",
+                    "display": "Carbon Dioxide",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/2028-9",
+                "text": "Carbon Dioxide"
+              },
+              {
+                "type": "decimal",
+                "code": [
+                  {
+                    "code": "33037-3",
+                    "display": "Anion Gap SerPl-sCnc",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "mmol/L"
+                    }
+                  }
+                ],
+                "required": false,
+                "linkId": "/24323-8/24326-1/33037-3",
+                "text": "Anion Gap SerPl-sCnc"
+              },
+              {
+                "text": "The components of this panel were defined by HCFA (now CMS)",
+                "type": "display",
+                "linkId": "/24323-8/24326-1-help",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "text": "Help-Button",
+                      "coding": [
+                        {
+                          "code": "help",
+                          "display": "Help-Button",
+                          "system": "http://hl7.org/fhir/questionnaire-item-control"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "The components of this panel were defined by HCFA (now CMS)",
+            "type": "display",
+            "linkId": "/24323-8-help",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "text": "Help-Button",
+                  "coding": [
+                    {
+                      "code": "help",
+                      "display": "Help-Button",
+                      "system": "http://hl7.org/fhir/questionnaire-item-control"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

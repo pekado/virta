@@ -1,0 +1,1444 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ObservationChooser renders 1`] = `
+Array [
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Book",
+          "fontSize": 12,
+          "fontWeight": "500",
+          "letterSpacing": 0,
+          "lineHeight": 12,
+        },
+        Object {
+          "fontWeight": "600",
+          "paddingBottom": 12,
+        },
+      ]
+    }
+  >
+    Tests Ordered
+  </Text>,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {
+          "flexWrap": "wrap",
+        },
+      ]
+    }
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="a1c"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="a1c-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                A1C
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="metabolicPanel"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="metabolicPanel-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                Metabolic Panel
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="lipid"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="lipid-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                Lipids
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="antiGad"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="antiGad-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                GAD65 Antibody
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="cPeptide"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="cPeptide-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                C-Peptide
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="hsCrp"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="hsCrp-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                hsCRP
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="albuminCreatinine"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="albuminCreatinine-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                Albumin/Creatinine, Urine
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="nmrLipoprofile"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="nmrLipoprofile-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                Lipid NMR
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="serumInsulin"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="serumInsulin-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                Serum Insulin
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="tsh"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="tsh-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                TSH
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="clinicalTrial"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="clinicalTrial-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                Clinical Trial
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <TouchableOpacity
+          accessibilityLabel="checkbox"
+          onPress={[Function]}
+          testID="biometric"
+        >
+          <View
+            hasDescription={false}
+            isChecked={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 0,
+                  "borderWidth": 0,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginRight": 8,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <View
+              isChecked={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "height": 16,
+                    "justifyContent": "center",
+                    "marginRight": 8,
+                    "width": 16,
+                  },
+                ]
+              }
+              testID="biometric-box"
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(36, 38, 43)",
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "300",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                Biometric
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View
+        height={12}
+        style={
+          Array [
+            Object {
+              "height": 12,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 8,
+          },
+        ]
+      }
+      width={8}
+    />
+  </View>,
+  <View
+    height={10}
+    style={
+      Array [
+        Object {
+          "height": 10,
+          "width": 0,
+        },
+      ]
+    }
+  />,
+]
+`;

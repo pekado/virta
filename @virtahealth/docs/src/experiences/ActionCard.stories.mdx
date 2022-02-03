@@ -1,0 +1,127 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { ActionCard } from "@virtahealth/experiences";
+
+<Meta title="Experiences / ActionCard" component={ActionCard} />
+
+# ActionCard
+
+`ActionCard` displays an action item for the user, including a title, description, buttons to complete the action, and possibly multiple actions in series with a progress bar/animations.
+
+<Preview>
+  <Story name="Single Action Card - Old Video">
+    <ActionCard
+      actionCardSingle={{
+        title: {
+          id: "exampleTitle",
+          defaultMessage: "Watch hypoglycemia video",
+        },
+        description: {
+          id: "exampleDescription",
+          defaultMessage: "3 min",
+        },
+        onPress: () => {},
+        toggleComplete: () => {},
+        primaryButtonLabel: {
+          id: "exampleLabel",
+          defaultMessage: "Watch",
+        },
+        onPressPrimaryButton: () => {},
+      }}
+    />
+  </Story>
+  <Story name="Single Action Card - New Questionaire">
+    <ActionCard
+      isNew={true}
+      actionCardSingle={{
+        title: {
+          id: "exampleTitle",
+          defaultMessage: "Complete Self-Reflection",
+        },
+        description: {
+          id: "exampleDescription",
+          defaultMessage:
+            "3 min · It’s important to know what you’re thinking, also maybe I just wanna chat, ya know? Ever think about that? Of course you didn't. Wow, jeez, huh, fine.",
+        },
+        onPress: () => {},
+        primaryButtonLabel: {
+          id: "exampleLabel",
+          defaultMessage: "Start Self-Reflection",
+        },
+        onPressPrimaryButton: () => {},
+        calloutText: {
+          id: "exampleCallout",
+          defaultMessage: "15 people have scheduled their welcome call",
+        },
+      }}
+    />
+  </Story>
+  <Story name="Single Action Card - Completed Task">
+    <ActionCard
+      actionCardSingle={{
+        title: {
+          id: "exampleTitle",
+          defaultMessage: "Change glucometer batteries",
+        },
+        onPress: () => {},
+        toggleComplete: () => {},
+        isComplete: true,
+      }}
+    />
+  </Story>
+  <Story name="Action Card Series">
+    <View>
+      <ActionCard
+        isNew={true}
+        actionCardSeries={[
+          {
+            title: {
+              id: "exampleTitle",
+              defaultMessage: "Change glucometer batteries",
+            },
+            onPress: () => {},
+            toggleComplete: () => {},
+          },
+          {
+            title: {
+              id: "exampleTitle",
+              defaultMessage: "Watch hypoglycemia video",
+            },
+            description: {
+              id: "exampleDescription",
+              defaultMessage: "3 min",
+            },
+            onPress: () => {},
+            toggleComplete: () => {},
+            primaryButtonLabel: {
+              id: "exampleLabel",
+              defaultMessage: "Watch",
+            },
+            onPressPrimaryButton: () => {},
+          },
+          {
+            title: {
+              id: "exampleTitle",
+              defaultMessage: "Complete Self-Reflection",
+            },
+            onPress: () => {},
+            primaryButtonLabel: {
+              id: "exampleLabel",
+              defaultMessage: "Start Self-Reflection",
+            },
+            onPressPrimaryButton: () => {},
+          },
+        ]}
+        seriesTitle={{
+          id: "exampleSeries",
+          defaultMessage: "Anda 1,2,3",
+        }}
+        slideCards={true}
+      />
+    </View>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ActionCard} />

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the JsonFilePicker 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderColor": "black",
+        "borderStyle": "solid",
+        "borderWidth": 2,
+      },
+    ]
+  }
+>
+  <Uploader
+    accept={
+      Array [
+        ".pdf",
+      ]
+    }
+    onSetFiles={[Function]}
+    testID="file-uploader"
+  />
+</View>
+`;

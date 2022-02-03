@@ -1,0 +1,126 @@
+import { InsuranceScannerExperience } from "@virtahealth/experiences";
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { View } from "react-native";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+import MockEPClient from "./mock_data/mockEPClient";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+
+<Meta title="Experiences / InsuranceScannerExperience" component={() => null} />
+
+# InsuranceScannerExperience
+
+`InsuranceScannerExperience` is a full experience for a user uploading insurance information from their camera phone
+
+<Preview>
+  <Story
+    name="insurance_scanner_in_bi"
+    decorators={[withKnobs]}
+    argTypes={{
+      forceManualInput: {
+        control: {
+          type: "boolean",
+        },
+      },
+      hideInsuranceGroupId: {
+        control: {
+          type: "boolean",
+        },
+      },
+      isDtp: {
+        control: {
+          type: "boolean",
+        },
+      },
+    }}
+    args={{
+      forceManualInput: false,
+      hideInsuranceGroupId: false,
+      isDtp: true,
+    }}
+  >
+    {(args) => (
+      <View style={{ alignItems: "center" }}>
+        <StoryBookVirtaContext client={new MockEPClient()}>
+          <InsuranceScannerExperience
+            user={{
+              virtaId: "test_id",
+              email: "test@virta.com",
+            }}
+            insurerOptions={["Aetna", "Cigna", "BCBS"]}
+            initialInsurance={{
+              insuranceGroupId: "",
+              insuranceMemberId: "",
+              issueDate: "",
+              insuranceCarrier: "Aetna",
+            }}
+            onCompletion={() => {}}
+            forceManualInput={args.forceManualInput}
+            onSwitchToManualInsurance={() => console.log("switch to manual")}
+            onSkipInsurance={() => console.log("skipping insurance")}
+            onEditInsuranceForm={(updates, existing) =>
+              console.log("edited insurance", updates, existing)
+            }
+            hideInsuranceGroupId={args.hideInsuranceGroupId}
+            isDtp={args.isDtp}
+          />
+        </StoryBookVirtaContext>
+      </View>
+    )}
+  </Story>
+  <Story
+    name="insurance_scanner_in_hh"
+    decorators={[withKnobs]}
+    argTypes={{
+      forceManualInput: {
+        control: {
+          type: "boolean",
+        },
+      },
+      hideInsuranceGroupId: {
+        control: {
+          type: "boolean",
+        },
+      },
+      isDtp: {
+        control: {
+          type: "boolean",
+        },
+      },
+    }}
+    args={{
+      forceManualInput: true,
+      hideInsuranceGroupId: false,
+      isDtp: true,
+    }}
+  >
+    {(args) => (
+      <View style={{ alignItems: "center" }}>
+        <StoryBookVirtaContext client={new MockEPClient()}>
+          <InsuranceScannerExperience
+            insurerOptions={[
+              "AARP",
+              "Aetna",
+              "Cigna",
+              "BCBS NC",
+              "BCBS NE",
+              "Kaiser Permanente",
+              "Select Health",
+              "State of Alabama",
+            ]}
+            initialInsurance={{
+              insuranceGroupId: "",
+              insuranceMemberId: "",
+              insuranceCarrier: "Aetna",
+            }}
+            onCompletion={() => {}}
+            forceManualInput={args.forceManualInput}
+            hideInsuranceGroupId={args.hideInsuranceGroupId}
+            isInHealthHistory={true}
+            isDtp={args.isDtp}
+          />
+        </StoryBookVirtaContext>
+      </View>
+    )}
+  </Story>
+</Preview>

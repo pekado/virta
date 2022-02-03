@@ -1,0 +1,54 @@
+{
+  "status": "draft",
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire|2.0"
+    ],
+    "tag": [
+      {
+        "code": "lformsVersion: 25.1.3"
+      }
+    ]
+  },
+  "item": [
+    {
+      "type": "group",
+      "code": [],
+      "required": false,
+      "linkId": "/11580-8",
+      "text": "TSH",
+      "item": [
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "11580-8",
+              "display": "TSH",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "m[IU]/L"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueDecimal": 0.04
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueDecimal": 13.0
+            }
+          ],
+          "required": false,
+          "linkId": "/11580-8",
+          "text": "TSH"
+        }
+      ]
+    }
+  ]
+}

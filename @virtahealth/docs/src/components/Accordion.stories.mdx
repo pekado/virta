@@ -1,0 +1,58 @@
+import { Accordion, BlockText } from "@virtahealth/components";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { View } from "react-native";
+
+<Meta title="Components / Accordion" component={Accordion} />
+
+# Accordion
+
+`Accordion` is a used to show/hide the contents of the Accordion
+
+<Preview>
+  <Story name="example">
+    {(args) => (
+      <View style={{ backgroundColor: "#F9FAFB" }}>
+        <Accordion
+          title="Glucose graph"
+          subtitle="Mar 8-14, 2021"
+          addlHeaderText="Average: 150"
+          containerStyle={{ marginBottom: "2px" }}
+        >
+          <BlockText style={{ margin: "2rem" }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </BlockText>
+        </Accordion>
+        <Accordion
+          title="Another graph"
+          subtitle="Mar 8-14, 2021"
+          addlHeaderText={{
+            defaultMessage: "Average: 100",
+            id: "graphStory.descriptorExample",
+          }}
+          containerStyle={{ marginBottom: "2px" }}
+        >
+          <BlockText style={{ margin: "2rem" }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </BlockText>
+        </Accordion>
+      </View>
+    )}
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={Accordion} />

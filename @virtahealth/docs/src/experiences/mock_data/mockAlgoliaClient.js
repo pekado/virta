@@ -1,0 +1,183 @@
+export default class MockAlgoliaClient {
+  search(index, query, options) {
+    console.log(`Searched ${index}: "${query}"`, options);
+
+    return Promise.resolve({
+      hits: [
+        {
+          __i18n_lang: "en-US",
+          created_at: "2021-03-11T18:00:07Z",
+          updated_at: "2021-03-24T04:21:08Z",
+          _id: "c542d4ca-3a3d-4d6c-ade1-3922bc8106da",
+          _type: "article",
+          body: "",
+          care_protocols: [],
+          hero_image: { alt_text: "", caption: "", image_url: "" },
+          preview_text: "",
+          slug: { current: "test-spanish-cheat-sheet" },
+          tags: [],
+          time_to_complete: {
+            amount: 0.0,
+            unit: { label: "", label_plural: "", abbreviation: "" },
+          },
+          title: "Test Spanish Cheat Sheet",
+          wordpress_post_id: "4275",
+          wordpress_slug: "4275",
+          objectID: "c542d4ca-3a3d-4d6c-ade1-3922bc8106da",
+          _highlightResult: {
+            preview_text: { value: "", matchLevel: "none", matchedWords: [] },
+            title: {
+              value: "<em>Test</em> Spanish Cheat Sheet",
+              matchLevel: "full",
+              fullyHighlighted: false,
+              matchedWords: ["teest"],
+            },
+          },
+        },
+        {
+          __i18n_lang: "en-US",
+          created_at: "2021-03-11T18:00:07Z",
+          updated_at: "2021-03-19T00:19:53Z",
+          _id: "65e0a3bd-c7a6-48b4-93c5-9c30be016f8b",
+          _type: "article",
+          body: "",
+          care_protocols: [],
+          hero_image: {
+            alt_text: "",
+            caption: "",
+            image_url:
+              "https://cdn.sanity.io/images/iyfmtfwm/patient-content/076b185ba11645cbf15b859072e4fc69503900a0-1275x850.png",
+          },
+          preview_text: "",
+          slug: { current: "meal-testing-matrix" },
+          tags: [],
+          time_to_complete: {
+            amount: 0.0,
+            unit: { label: "", label_plural: "", abbreviation: "" },
+          },
+          title: "Meal Testing Matrix",
+          wordpress_post_id: "2869",
+          wordpress_slug: "2869",
+          objectID: "65e0a3bd-c7a6-48b4-93c5-9c30be016f8b",
+          _highlightResult: {
+            preview_text: { value: "", matchLevel: "none", matchedWords: [] },
+            title: {
+              value: "Meal <em>Test</em>ing Matrix",
+              matchLevel: "full",
+              fullyHighlighted: false,
+              matchedWords: ["teest"],
+            },
+          },
+        },
+        {
+          __i18n_lang: "en-US",
+          created_at: "2021-03-11T18:00:07Z",
+          updated_at: "2021-03-18T01:06:23Z",
+          _id: "40f43f8f-0d2c-4f17-839b-1e6ca7750f9e",
+          _type: "article",
+          body: "",
+          care_protocols: [],
+          hero_image: {
+            alt_text: "",
+            caption: "",
+            image_url:
+              "https://cdn.sanity.io/images/iyfmtfwm/patient-content/4d72386db3b13081b2d0907e4e7458f7facd5e50-1275x850.png",
+          },
+          preview_text: "",
+          slug: { current: "meal-testing-guidelines" },
+          tags: [],
+          time_to_complete: {
+            amount: 0.0,
+            unit: { label: "", label_plural: "", abbreviation: "" },
+          },
+          title: "Meal Testing Guidelines",
+          wordpress_post_id: "2870",
+          wordpress_slug: "2870",
+          objectID: "40f43f8f-0d2c-4f17-839b-1e6ca7750f9e",
+          _highlightResult: {
+            preview_text: { value: "", matchLevel: "none", matchedWords: [] },
+            title: {
+              value: "Meal <em>Test</em>ing Guidelines",
+              matchLevel: "full",
+              fullyHighlighted: false,
+              matchedWords: ["teest"],
+            },
+          },
+        },
+        {
+          __i18n_lang: "en-US",
+          created_at: "2021-03-11T18:00:07Z",
+          updated_at: "2021-03-23T00:35:14Z",
+          _id: "8dadd29f-bd55-44f9-af1b-a6b2ab56a26e",
+          _type: "article",
+          body: "",
+          care_protocols: [],
+          hero_image: {
+            alt_text: "",
+            caption: "",
+            image_url:
+              "https://cdn.sanity.io/images/iyfmtfwm/patient-content/c0b1afa37b211596bb69f95b19af0de3e922ed93-1280x853.png",
+          },
+          preview_text: "",
+          slug: { current: "virta-guide-to-blood-lipid-tests" },
+          tags: [],
+          time_to_complete: {
+            amount: 0.0,
+            unit: { label: "", label_plural: "", abbreviation: "" },
+          },
+          title: "Virta Guide to Blood Lipid Tests",
+          wordpress_post_id: "2119",
+          wordpress_slug: "2119",
+          objectID: "8dadd29f-bd55-44f9-af1b-a6b2ab56a26e",
+          _highlightResult: {
+            preview_text: { value: "", matchLevel: "none", matchedWords: [] },
+            title: {
+              value: "Virta Guide to Blood Lipid <em>Test</em>s",
+              matchLevel: "full",
+              fullyHighlighted: false,
+              matchedWords: ["teest"],
+            },
+          },
+        },
+        {
+          __i18n_lang: "en-US",
+          created_at: "2021-03-11T18:00:07Z",
+          updated_at: "2021-03-24T23:31:08Z",
+          _id: "ea8198e2-6fca-4c71-9c07-b7801694233a",
+          _type: "article",
+          body: "",
+          care_protocols: [],
+          hero_image: { alt_text: "", caption: "", image_url: "" },
+          preview_text: "",
+          slug: { current: "virta-guide-to-follow-up-lab-tests" },
+          tags: [],
+          time_to_complete: {
+            amount: 0.0,
+            unit: { label: "", label_plural: "", abbreviation: "" },
+          },
+          title: "Virta Guide to Follow Up Lab Tests",
+          wordpress_post_id: "2118",
+          wordpress_slug: "2118",
+          objectID: "ea8198e2-6fca-4c71-9c07-b7801694233a",
+          _highlightResult: {
+            preview_text: { value: "", matchLevel: "none", matchedWords: [] },
+            title: {
+              value: "Virta Guide to Follow Up Lab <em>Test</em>s",
+              matchLevel: "full",
+              fullyHighlighted: false,
+              matchedWords: ["teest"],
+            },
+          },
+        },
+      ],
+      nbHits: 5,
+      page: 0,
+      nbPages: 1,
+      hitsPerPage: 20,
+      exhaustiveNbHits: true,
+      query: "Teest",
+      params: "query=Teest",
+      processingTimeMS: 1,
+    });
+  }
+}

@@ -1,0 +1,29 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { ContentPage } from "@virtahealth/experiences";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+import MockPAClient from "./mock_data/mockPAClient";
+
+<Meta title="Experiences / ContentPage" />
+
+# ContentPage
+
+<Preview>
+  <Story
+    name="default"
+    args={{
+      isMobile: false,
+      isBookmarked: true,
+    }}
+  >
+    {(args) => (
+      <StoryBookVirtaContext client={new MockPAClient()}>
+        <ContentPage {...args} contentId={1} />
+      </StoryBookVirtaContext>
+    )}
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ContentPage} />

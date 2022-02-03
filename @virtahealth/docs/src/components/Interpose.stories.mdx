@@ -1,0 +1,109 @@
+import { View } from "react-native";
+import {
+  Interpose,
+  Row,
+  Body,
+  Heading2,
+  Spacer,
+  Divider,
+} from "@virtahealth/components";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+<Meta title="Components / Interpose" component={Interpose} />
+
+# Interpose
+
+`Interpose` is used to add a spacer or divider between a set of children
+
+<Preview>
+  <Story name="Column Spacer">
+    <View>
+      <Heading2>Interpose using column with a spacer</Heading2>
+      <Interpose with={<Spacer height={30} />}>
+        <Body>Item 1</Body>
+        <Body>Item 2</Body>
+        <Body>Item 3</Body>
+        <Body>Item 4</Body>
+        <Body>Item 5</Body>
+      </Interpose>
+    </View>
+  </Story>
+  <Story name="Row Spacer">
+    <View>
+      <Heading2>Interpose using row with a spacer</Heading2>
+      <Interpose flexDirection="row" with={<Spacer width={10} />}>
+        <Body>Item 1</Body>
+        <Body>Item 2</Body>
+        <Body>Item 3</Body>
+        <Body>Item 4</Body>
+        <Body>Item 5</Body>
+      </Interpose>
+    </View>
+  </Story>
+  <Story name="Column Divider">
+    <View>
+      <Heading2>Interpose using column with a divider</Heading2>
+      <Interpose with={<Divider thickness={1} direction="row" />}>
+        <Body>Item 1</Body>
+        <Body>Item 2</Body>
+        <Body>Item 3</Body>
+        <Body>Item 4</Body>
+        <Body>Item 5</Body>
+      </Interpose>
+    </View>
+  </Story>
+  <Story name="Row Divider">
+    <View>
+      <Heading2>Interpose using row with a divider</Heading2>
+      <Interpose
+        flexDirection="row"
+        with={<Divider thickness={2} direction="column" />}
+      >
+        <Body>Item 1</Body>
+        <Body>Item 2</Body>
+        <Body>Item 3</Body>
+        <Body>Item 4</Body>
+        <Body>Item 5</Body>
+      </Interpose>
+    </View>
+  </Story>
+  <Story name="Column Divider With ShowLast">
+    <View>
+      <Heading2>
+        Interpose using column with a divider with the showLast option
+      </Heading2>
+      <Interpose
+        with={<Divider thickness={1} direction="row" />}
+        showLast={true}
+      >
+        <Body>Item 1</Body>
+        <Body>Item 2</Body>
+        <Body>Item 3</Body>
+        <Body>Item 4</Body>
+        <Body>Item 5</Body>
+      </Interpose>
+    </View>
+  </Story>
+  <Story name="Row Divider With ShowLast">
+    <View>
+      <Heading2>
+        Interpose using row with a divider with the showLast option
+      </Heading2>
+      <Interpose
+        flexDirection="row"
+        with={<Divider thickness={2} direction="column" />}
+        showLast={true}
+      >
+        <Body>Item 1</Body>
+        <Body>Item 2</Body>
+        <Body>Item 3</Body>
+        <Body>Item 4</Body>
+        <Body>Item 5</Body>
+      </Interpose>
+    </View>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={Interpose} />

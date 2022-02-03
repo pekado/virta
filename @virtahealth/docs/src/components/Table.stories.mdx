@@ -1,0 +1,33 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Table, TableRow, TableCell } from "@virtahealth/components";
+
+<Meta title="Components / Table" />
+
+# Table
+
+A couple notes about using this `Table` component:
+
+- `TableRow` is able to display `children` and/or an array of `data` — children will be rendered first,
+  and then it maps each item in the array as a `TableCell`.
+
+- `TableCell` is pretty flexible in what it accepts as a `value` prop so you can pass it a string
+  or another component.
+
+<Preview>
+  <Story name="example">
+    <Table>
+      <TableRow
+        name={"Headers"}
+        data={[<a href="#">04/13/2020</a>, "04/22/2020"]}
+      >
+        <TableCell value={"Lipids"} />
+      </TableRow>
+      <TableRow name={"Total Cholesterol"} data={["170", "100"]}>
+        <TableCell value={"Total Cholesterol"} />
+      </TableRow>
+      <TableRow name={"Triglycerides"} data={["94", "92"]}>
+        <TableCell value={"Triglycerides"} />
+      </TableRow>
+    </Table>
+  </Story>
+</Preview>

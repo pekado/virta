@@ -1,0 +1,327 @@
+import { action } from "@storybook/addon-actions";
+import {
+  Callout,
+  Heading2,
+  SearchIcon,
+  Table,
+  TableRow,
+} from "@virtahealth/components";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+<Meta title="Components / Callout" component={Callout} />
+
+# Callout
+
+A `Callout` is a block component used for displaying a success, error or warning message
+with the option to take up to two actions on that message
+
+<Preview>
+  <Story name="Success">
+    <div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with icon, primary and secondary buttons</Heading2>
+        <Callout
+          intent="success"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+          icon={SearchIcon}
+          primaryActionProps={{
+            labelMessage: {
+              id: "components.callout.primaryActionLabel",
+              defaultMessage: "Check it out",
+            },
+            onPress: action("pressed primary"),
+          }}
+          secondaryActionProps={{
+            labelMessage: {
+              id: "components.callout.secondaryActionLabel",
+              defaultMessage: "Dismiss",
+            },
+            onPress: action("pressed secondary"),
+          }}
+        />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with primary button</Heading2>
+        <Callout
+          intent="success"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+          primaryActionProps={{
+            labelMessage: {
+              id: "components.callout.primaryActionLabel",
+              defaultMessage: "Check it out",
+            },
+            onPress: action("pressed primary"),
+          }}
+        />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with secondary button</Heading2>
+        <Callout
+          intent="success"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+          secondaryActionProps={{
+            labelMessage: {
+              id: "components.callout.secondaryActionLabel",
+              defaultMessage: "Dismiss",
+            },
+            onPress: action("pressed secondary"),
+          }}
+        />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with no buttons or icon</Heading2>
+        <Callout
+          intent="success"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+        />
+      </div>
+    </div>
+  </Story>
+  <Story name="Warning">
+    <div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with icon, primary and secondary buttons</Heading2>
+        <Callout
+          intent="warning"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+          icon={SearchIcon}
+          primaryActionProps={{
+            labelMessage: {
+              id: "components.callout.primaryActionLabel",
+              defaultMessage: "Check it out",
+            },
+            onPress: action("pressed primary"),
+          }}
+          secondaryActionProps={{
+            labelMessage: {
+              id: "components.callout.secondaryActionLabel",
+              defaultMessage: "Dismiss",
+            },
+            onPress: action("pressed secondary"),
+          }}
+        />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with primary button</Heading2>
+        <Callout
+          intent="warning"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+          primaryActionProps={{
+            labelMessage: {
+              id: "components.callout.primaryActionLabel",
+              defaultMessage: "Check it out",
+            },
+            onPress: action("pressed primary"),
+          }}
+        />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with secondary button</Heading2>
+        <Callout
+          intent="warning"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+          secondaryActionProps={{
+            labelMessage: {
+              id: "components.callout.secondaryActionLabel",
+              defaultMessage: "Dismiss",
+            },
+            onPress: action("pressed secondary"),
+          }}
+        />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with no buttons or icon</Heading2>
+        <Callout
+          intent="warning"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+        />
+      </div>
+    </div>
+  </Story>
+  <Story name="Danger">
+    <div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with icon, primary and secondary buttons</Heading2>
+        <Callout
+          intent="danger"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+          icon={SearchIcon}
+          primaryActionProps={{
+            labelMessage: {
+              id: "components.callout.primaryActionLabel",
+              defaultMessage: "Check it out",
+            },
+            onPress: action("pressed primary"),
+          }}
+          secondaryActionProps={{
+            labelMessage: {
+              id: "components.callout.secondaryActionLabel",
+              defaultMessage: "Dismiss",
+            },
+            onPress: action("pressed secondary"),
+          }}
+        />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with primary button</Heading2>
+        <Callout
+          intent="danger"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+          primaryActionProps={{
+            labelMessage: {
+              id: "components.callout.primaryActionLabel",
+              defaultMessage: "Check it out",
+            },
+            onPress: action("pressed primary"),
+          }}
+        />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with secondary button</Heading2>
+        <Callout
+          intent="danger"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+          secondaryActionProps={{
+            labelMessage: {
+              id: "components.callout.secondaryActionLabel",
+              defaultMessage: "Dismiss",
+            },
+            onPress: action("pressed secondary"),
+          }}
+        />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Heading2>Callout with no buttons or icon</Heading2>
+        <Callout
+          intent="danger"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+        />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Heading2>
+          Callout with no buttons or icon but has some description links
+        </Heading2>
+        <Callout
+          intent="danger"
+          title={{
+            id: "components.callout.title",
+            defaultMessage: "Title of Callout",
+          }}
+          description={{
+            id: "components.callout.description",
+            defaultMessage: "This is a description of the callout message",
+          }}
+          descriptionLinks={[
+            {
+              anchorId: "x1",
+              text: {
+                id: "components.callout.x1",
+                description: "Weight: Required",
+                defaultMessage: "Weight: Required",
+              },
+            },
+            {
+              anchorId: "x2",
+              text: {
+                id: "components.callout.x1",
+                description: "Phone Number: Number is too short",
+                defaultMessage: "Phone Number: Number is too short",
+              },
+            },
+          ]}
+          onDescriptionLinkClicked={(val) => {
+            console.log(val, " is pressed");
+          }}
+        />
+      </div>
+    </div>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={Callout} />

@@ -1,0 +1,29 @@
+{
+  "en": {
+    "components.button": "Button",
+    "components.button.primary": "Primary Button",
+    "components.button.secondary": "Secondary Button",
+    "components.button.tertiary": "Tertiary Button",
+    "components.combobox.label": "Combobox Label",
+    "components.combobox.placeholder": "Type here...",
+    "components.dateInput.label": "Start Date",
+    "components.dateInput.placeholder": "mm/dd/yyyy",
+    "components.form.inputLabel": "A Field Label",
+    "components.form.buttonLabel": "Submit",
+    "components.formElementLabel.label": "A Field Label",
+    "components.formElementLabel.helperText": "Help text",
+    "components.input.error": "Required",
+    "components.input.inlineDescription": "1 tablet",
+    "components.input.insetText": "unit",
+    "components.input.label": "Form Label",
+    "components.input.placeholder": "Type here...",
+    "components.phoneInput.helper": "Cell",
+    "components.phoneInput.label": "Phone",
+    "components.phoneInput.placeholder": "999-999-9999",
+    "components.radio.label": "Radio Button",
+    "components.buttonradio.fieldlabel": "Button Radio Form Field",
+    "components.buttonradio.label": "Button Radio",
+    "components.searchbox.label": "Search Box Label",
+    "components.searchbox.placeholder": "Type here..."
+  }
+}

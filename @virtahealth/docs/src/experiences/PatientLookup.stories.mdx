@@ -1,0 +1,27 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { PatientLookup } from "@virtahealth/experiences";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+
+# PatientLookup
+
+This component performs a Patient search by date of birth or Virta ID in the
+Identity Service.
+
+<Meta title="Experiences / PatientLookup" />
+
+<Preview>
+  <Story name="PatientLookup">
+    <StoryBookVirtaContext
+      client={{
+        get: action("get"),
+      }}
+    >
+      <PatientLookup />
+    </StoryBookVirtaContext>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={PatientLookup} />

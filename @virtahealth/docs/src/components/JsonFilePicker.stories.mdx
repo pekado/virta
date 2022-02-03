@@ -1,0 +1,20 @@
+import { action } from "@storybook/addon-actions";
+import { JsonFilePicker } from "@virtahealth/components";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+<Meta title="Components / JsonFilePicker" component={JsonFilePicker} />
+
+# JsonFilePicker
+
+The JsonFilePicker is a controlled component for selecting a file and encoding it to send as a JSON parameter.
+This component allows only a single file to be selected.
+
+<Preview>
+  <Story name="example">
+    <JsonFilePicker setEncodedFiles={action("fileReceived")} />
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={JsonFilePicker} />

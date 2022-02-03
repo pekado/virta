@@ -1,0 +1,543 @@
+{
+  "status": "draft",
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire|2.0"
+    ],
+    "tag": [
+      {
+        "code": "lformsVersion: 29.0.3"
+      }
+    ]
+  },
+  "item": [
+    {
+      "type": "group",
+      "code": [],
+      "required": false,
+      "linkId": "/clinical-trial",
+      "text": "Clinical Trial",
+      "item": [
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "6690-2",
+              "display": "WBC",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "10*3/uL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/6690-2",
+          "text": "WBC"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "789-8",
+              "display": "RBC",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "10*6/uL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/789-8",
+          "text": "RBC"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "718-7",
+              "display": "Hemoglobin",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "g/dL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/718-7",
+          "text": "Hemoglobin"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "4544-3",
+              "display": "Hematocrit",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "%"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/4544-3",
+          "text": "Hematocrit"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "787-2",
+              "display": "MCV",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "fL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/787-2",
+          "text": "MCV"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "785-6",
+              "display": "MCH",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "pg"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/785-6",
+          "text": "MCH"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "786-4",
+              "display": "MCHC",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "g/dL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/786-4",
+          "text": "MCHC"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "788-0",
+              "display": "RDW",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "%"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/788-0",
+          "text": "RDW"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "777-3",
+              "display": "Platelets",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "10*3/uL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/777-3",
+          "text": "Platelets"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "770-8",
+              "display": "Neutrophils (%)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "%"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/770-8",
+          "text": "Neutrophils (%)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "736-9",
+              "display": "Lymphs (%)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "%"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/736-9",
+          "text": "Lymphs (%)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "5905-5",
+              "display": "Monocytes (%)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "%"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/5905-5",
+          "text": "Monocytes (%)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "713-8",
+              "display": "Eos (%)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "%"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/713-8",
+          "text": "Eos (%)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "706-2",
+              "display": "Basos (%)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "%"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/706-2",
+          "text": "Basos (%)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "71695-1",
+              "display": "Immature Granu (%)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "%"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/71695-1",
+          "text": "Immature Granu (%)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "751-8",
+              "display": "Neutrophils (Abs)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "10*3/uL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/751-8",
+          "text": "Neutrophils (Abs)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "731-0",
+              "display": "Lymphs (Abs)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "10*3/uL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/731-0",
+          "text": "Lymphs (Abs)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "742-7",
+              "display": "Monocytes (Abs)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "10*3/uL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/742-7",
+          "text": "Monocytes (Abs)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "711-2",
+              "display": "Eos (Abs)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "10*3/uL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/711-2",
+          "text": "Eos (Abs)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "704-7",
+              "display": "Baso (Abs)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "10*3/uL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/704-7",
+          "text": "Baso (Abs)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "53115-2",
+              "display": "Immature Granu (Abs)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "x10E3/uL"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueDecimal": 0.0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueDecimal": 0.1
+            }
+          ],
+          "required": false,
+          "linkId": "/53115-2",
+          "text": "Immature Granu (Abs)"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "1884-6",
+              "display": "Apolipoprotein B",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "mg/dL"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/1884-6",
+          "text": "Apolipoprotein B"
+        },
+        {
+          "type": "quantity",
+          "code": [
+            {
+              "code": "1869-7",
+              "display": "Apolipoprotein A1",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "display": "mg/dL"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "display": "g/L"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/1869-7",
+          "text": "Apolipoprotein A1"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "1874-7",
+              "display": "Apolipoprotein B/A1 ratio",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "{Ratio}"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/1874-7",
+          "text": "Apolipoprotein B/A1 ratio"
+        }
+      ]
+    }
+  ]
+}

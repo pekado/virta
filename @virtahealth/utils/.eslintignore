@@ -1,0 +1,7 @@
+**/dist
+**/node_modules/
+**/coverage
+babel.config.js
+base.config.js
+production.config.js
+development.config.js

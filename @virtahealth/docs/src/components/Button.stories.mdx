@@ -1,0 +1,3076 @@
+import { action } from "@storybook/addon-actions";
+import { View } from "react-native";
+import {
+  Button,
+  Table,
+  TableRow,
+  TableCell,
+  Heading2,
+  SearchIcon,
+} from "@virtahealth/components";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+<Meta title="Components / Button" component={Button} />
+
+# Button
+
+<!-- TODO: Add knobs -->
+<!-- TODO: refactor these stories to use args after updating to Storybook v6 -->
+
+<Preview>
+  <Story
+    name="Primary"
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/OyNwGh3xYdmQGDE9l5Bkmv37/Substrate-MASTER-%E2%9A%A0%EF%B8%8F?node-id=997%3A342",
+      },
+    }}
+  >
+    <div>
+      <Heading2>Appearance</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Size",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="link"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="outline"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="minimal"
+              size="large"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="link"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="outline"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="minimal"
+              size="medium"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="link"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="outline"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="minimal"
+              size="small"
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Width</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Size",
+            "width: none",
+            "width: narrow",
+            "width: wide",
+            "width: 100",
+          ]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              width="none"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              width="narrow"
+              size="large"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="primary"
+                width="wide"
+                size="large"
+              />
+            </View>,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              width={100}
+              size="large"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              width="none"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              width="narrow"
+              size="medium"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="primary"
+                width="wide"
+                size="medium"
+              />
+            </View>,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              width={100}
+              size="medium"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              width="none"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              width="narrow"
+              size="small"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="primary"
+                width="wide"
+                size="small"
+              />
+            </View>,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              width={100}
+              size="small"
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Disabled</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Disabled",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"disabled"}
+          data={[
+            "True",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="link"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="outline"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              appearance="minimal"
+              size="medium"
+              disabled={true}
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Align Label</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "width",
+            "alignLabel: left",
+            "alignLabel: center",
+            "alignLabel: right",
+          ]}
+        />
+        <TableRow
+          name={"wide"}
+          data={[
+            "wide",
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="primary"
+                size="medium"
+                width="wide"
+                alignLabel="left"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="primary"
+                size="medium"
+                width="wide"
+                alignLabel="center"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="primary"
+                size="medium"
+                width="wide"
+                alignLabel="right"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Loading</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "loading",
+            "size: large",
+            "size: medium",
+            "size: small",
+            "size: medium, width: wide",
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "true",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="large"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="medium"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="small"
+              loading={true}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="primary"
+                size="medium"
+                width="wide"
+                loading={true}
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "false",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="large"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="medium"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="small"
+              loading={false}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="primary"
+                size="medium"
+                width="wide"
+                loading={false}
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Icons</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"iconBefore"}
+          data={[
+            "iconBefore",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="medium"
+              iconBefore={<SearchIcon />}
+            />,
+          ]}
+        />
+        <TableRow
+          name={"iconAfter"}
+          data={[
+            "iconAfter",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="primary"
+              size="medium"
+              iconAfter={<SearchIcon />}
+            />,
+          ]}
+        />
+      </Table>
+    </div>
+  </Story>
+  <Story
+    name="Secondary"
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/OyNwGh3xYdmQGDE9l5Bkmv37/Substrate-MASTER-%E2%9A%A0%EF%B8%8F?node-id=997%3A342",
+      },
+    }}
+  >
+    <div>
+      <Heading2>Appearance</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Size",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="link"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="outline"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="minimal"
+              size="large"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="link"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="outline"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="minimal"
+              size="medium"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="link"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="outline"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="minimal"
+              size="small"
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Width</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={["Size", "width: none", "width: narrow", "width: wide"]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              width="none"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              width="narrow"
+              size="large"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="secondary"
+                width="wide"
+                size="large"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              width="none"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              width="narrow"
+              size="medium"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="secondary"
+                width="wide"
+                size="medium"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              width="none"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              width="narrow"
+              size="small"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="secondary"
+                width="wide"
+                size="small"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Disabled</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Disabled",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"disabled"}
+          data={[
+            "True",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="link"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="outline"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              appearance="minimal"
+              size="medium"
+              disabled={true}
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Align Label</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "width",
+            "alignLabel: left",
+            "alignLabel: center",
+            "alignLabel: right",
+          ]}
+        />
+        <TableRow
+          name={"wide"}
+          data={[
+            "wide",
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="secondary"
+                size="medium"
+                width="wide"
+                alignLabel="left"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="secondary"
+                size="medium"
+                width="wide"
+                alignLabel="center"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="secondary"
+                size="medium"
+                width="wide"
+                alignLabel="right"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Loading</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "loading",
+            "size: large",
+            "size: medium",
+            "size: small",
+            "size: medium, width: wide",
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "true",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="large"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="medium"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="small"
+              loading={true}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="secondary"
+                size="medium"
+                width="wide"
+                loading={true}
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "false",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="large"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="medium"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="small"
+              loading={false}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="secondary"
+                size="medium"
+                width="wide"
+                loading={false}
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Icons</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"iconBefore"}
+          data={[
+            "iconBefore",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="medium"
+              iconBefore={<SearchIcon />}
+            />,
+          ]}
+        />
+        <TableRow
+          name={"iconAfter"}
+          data={[
+            "iconAfter",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="secondary"
+              size="medium"
+              iconAfter={<SearchIcon />}
+            />,
+          ]}
+        />
+      </Table>
+    </div>
+  </Story>
+  <Story
+    name="Tertiary"
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/OyNwGh3xYdmQGDE9l5Bkmv37/Substrate-MASTER-%E2%9A%A0%EF%B8%8F?node-id=997%3A342",
+      },
+    }}
+  >
+    <div>
+      <Heading2>Appearance</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Size",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="link"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="outline"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="minimal"
+              size="large"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="link"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="outline"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="minimal"
+              size="medium"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="link"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="outline"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="minimal"
+              size="small"
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Width</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={["Size", "width: none", "width: narrow", "width: wide"]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              width="none"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              width="narrow"
+              size="large"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="tertiary"
+                width="wide"
+                size="large"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              width="none"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              width="narrow"
+              size="medium"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="tertiary"
+                width="wide"
+                size="medium"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              width="none"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              width="narrow"
+              size="small"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="tertiary"
+                width="wide"
+                size="small"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Disabled</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Disabled",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"disabled"}
+          data={[
+            "True",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="link"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="outline"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              appearance="minimal"
+              size="medium"
+              disabled={true}
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Align Label</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "width",
+            "alignLabel: left",
+            "alignLabel: center",
+            "alignLabel: right",
+          ]}
+        />
+        <TableRow
+          name={"wide"}
+          data={[
+            "wide",
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="tertiary"
+                size="medium"
+                width="wide"
+                alignLabel="left"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="tertiary"
+                size="medium"
+                width="wide"
+                alignLabel="center"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="tertiary"
+                size="medium"
+                width="wide"
+                alignLabel="right"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Loading</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "loading",
+            "size: large",
+            "size: medium",
+            "size: small",
+            "size: medium, width: wide",
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "true",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="large"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="medium"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="small"
+              loading={true}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="tertiary"
+                size="medium"
+                width="wide"
+                loading={true}
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "false",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="large"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="medium"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="small"
+              loading={false}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="tertiary"
+                size="medium"
+                width="wide"
+                loading={false}
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Icons</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"iconBefore"}
+          data={[
+            "iconBefore",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="medium"
+              iconBefore={<SearchIcon />}
+            />,
+          ]}
+        />
+        <TableRow
+          name={"iconAfter"}
+          data={[
+            "iconAfter",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="tertiary"
+              size="medium"
+              iconAfter={<SearchIcon />}
+            />,
+          ]}
+        />
+      </Table>
+    </div>
+  </Story>
+  <Story
+    name="None"
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/OyNwGh3xYdmQGDE9l5Bkmv37/Substrate-MASTER-%E2%9A%A0%EF%B8%8F?node-id=997%3A342",
+      },
+    }}
+  >
+    <div>
+      <Heading2>Appearance</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Size",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="link"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="outline"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="minimal"
+              size="large"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="link"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="outline"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="minimal"
+              size="medium"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="link"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="outline"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="minimal"
+              size="small"
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Width</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={["Size", "width: none", "width: narrow", "width: wide"]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              width="none"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              width="narrow"
+              size="large"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="none"
+                width="wide"
+                size="large"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              width="none"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              width="narrow"
+              size="medium"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="none"
+                width="wide"
+                size="medium"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              width="none"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              width="narrow"
+              size="small"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="none"
+                width="wide"
+                size="small"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Disabled</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Disabled",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"disabled"}
+          data={[
+            "True",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="link"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="outline"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              appearance="minimal"
+              size="medium"
+              disabled={true}
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Align Label</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "width",
+            "alignLabel: left",
+            "alignLabel: center",
+            "alignLabel: right",
+          ]}
+        />
+        <TableRow
+          name={"wide"}
+          data={[
+            "wide",
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="none"
+                size="medium"
+                width="wide"
+                alignLabel="left"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="none"
+                size="medium"
+                width="wide"
+                alignLabel="center"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="none"
+                size="medium"
+                width="wide"
+                alignLabel="right"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Loading</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "loading",
+            "size: large",
+            "size: medium",
+            "size: small",
+            "size: medium, width: wide",
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "true",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="large"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="medium"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="small"
+              loading={true}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="none"
+                size="medium"
+                width="wide"
+                loading={true}
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "false",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="large"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="medium"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="small"
+              loading={false}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="none"
+                size="medium"
+                width="wide"
+                loading={false}
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Icons</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"iconBefore"}
+          data={[
+            "iconBefore",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="medium"
+              iconBefore={<SearchIcon />}
+            />,
+          ]}
+        />
+        <TableRow
+          name={"iconAfter"}
+          data={[
+            "iconAfter",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="none"
+              size="medium"
+              iconAfter={<SearchIcon />}
+            />,
+          ]}
+        />
+      </Table>
+    </div>
+  </Story>
+  <Story
+    name="Success"
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/OyNwGh3xYdmQGDE9l5Bkmv37/Substrate-MASTER-%E2%9A%A0%EF%B8%8F?node-id=997%3A342",
+      },
+    }}
+  >
+    <div>
+      <Heading2>Appearance</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Size",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="link"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="outline"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="minimal"
+              size="large"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="link"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="outline"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="minimal"
+              size="medium"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="link"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="outline"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="minimal"
+              size="small"
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Width</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={["Size", "width: none", "width: narrow", "width: wide"]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              width="none"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              width="narrow"
+              size="large"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="success"
+                width="wide"
+                size="large"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              width="none"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              width="narrow"
+              size="medium"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="success"
+                width="wide"
+                size="medium"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              width="none"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              width="narrow"
+              size="small"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="success"
+                width="wide"
+                size="small"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Disabled</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Disabled",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"disabled"}
+          data={[
+            "True",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="link"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="outline"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              appearance="minimal"
+              size="medium"
+              disabled={true}
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Align Label</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "width",
+            "alignLabel: left",
+            "alignLabel: center",
+            "alignLabel: right",
+          ]}
+        />
+        <TableRow
+          name={"wide"}
+          data={[
+            "wide",
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="success"
+                size="medium"
+                width="wide"
+                alignLabel="left"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="success"
+                size="medium"
+                width="wide"
+                alignLabel="center"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="success"
+                size="medium"
+                width="wide"
+                alignLabel="right"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Loading</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "loading",
+            "size: large",
+            "size: medium",
+            "size: small",
+            "size: medium, width: wide",
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "true",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="large"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="medium"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="small"
+              loading={true}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="success"
+                size="medium"
+                width="wide"
+                loading={true}
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "false",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="large"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="medium"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="small"
+              loading={false}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="success"
+                size="medium"
+                width="wide"
+                loading={false}
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Icons</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"iconBefore"}
+          data={[
+            "iconBefore",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="medium"
+              iconBefore={<SearchIcon />}
+            />,
+          ]}
+        />
+        <TableRow
+          name={"iconAfter"}
+          data={[
+            "iconAfter",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="success"
+              size="medium"
+              iconAfter={<SearchIcon />}
+            />,
+          ]}
+        />
+      </Table>
+    </div>
+  </Story>
+  <Story
+    name="Warning"
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/OyNwGh3xYdmQGDE9l5Bkmv37/Substrate-MASTER-%E2%9A%A0%EF%B8%8F?node-id=997%3A342",
+      },
+    }}
+  >
+    <div>
+      <Heading2>Appearance</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Size",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="link"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="outline"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="minimal"
+              size="large"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="link"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="outline"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="minimal"
+              size="medium"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="link"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="outline"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="minimal"
+              size="small"
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Width</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={["Size", "width: none", "width: narrow", "width: wide"]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              width="none"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              width="narrow"
+              size="large"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="warning"
+                width="wide"
+                size="large"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              width="none"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              width="narrow"
+              size="medium"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="warning"
+                width="wide"
+                size="medium"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              width="none"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              width="narrow"
+              size="small"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="warning"
+                width="wide"
+                size="small"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Disabled</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Disabled",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"disabled"}
+          data={[
+            "True",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="link"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="outline"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              appearance="minimal"
+              size="medium"
+              disabled={true}
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Align Label</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "width",
+            "alignLabel: left",
+            "alignLabel: center",
+            "alignLabel: right",
+          ]}
+        />
+        <TableRow
+          name={"wide"}
+          data={[
+            "wide",
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="warning"
+                size="medium"
+                width="wide"
+                alignLabel="left"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="warning"
+                size="medium"
+                width="wide"
+                alignLabel="center"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="warning"
+                size="medium"
+                width="wide"
+                alignLabel="right"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Loading</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "loading",
+            "size: large",
+            "size: medium",
+            "size: small",
+            "size: medium, width: wide",
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "true",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="large"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="medium"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="small"
+              loading={true}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="warning"
+                size="medium"
+                width="wide"
+                loading={true}
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "false",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="large"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="medium"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="small"
+              loading={false}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="warning"
+                size="medium"
+                width="wide"
+                loading={false}
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Icons</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"iconBefore"}
+          data={[
+            "iconBefore",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="medium"
+              iconBefore={<SearchIcon />}
+            />,
+          ]}
+        />
+        <TableRow
+          name={"iconAfter"}
+          data={[
+            "iconAfter",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="warning"
+              size="medium"
+              iconAfter={<SearchIcon />}
+            />,
+          ]}
+        />
+      </Table>
+    </div>
+  </Story>
+  <Story
+    name="Danger"
+    parameters={{
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/OyNwGh3xYdmQGDE9l5Bkmv37/Substrate-MASTER-%E2%9A%A0%EF%B8%8F?node-id=997%3A342",
+      },
+    }}
+  >
+    <div>
+      <Heading2>Appearance</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Size",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="link"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="outline"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="minimal"
+              size="large"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="link"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="outline"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="minimal"
+              size="medium"
+            />,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="link"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="outline"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="minimal"
+              size="small"
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Width</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={["Size", "width: none", "width: narrow", "width: wide"]}
+        />
+        <TableRow
+          name={"large"}
+          data={[
+            "Large",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              width="none"
+              size="large"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              width="narrow"
+              size="large"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="danger"
+                width="wide"
+                size="large"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"medium"}
+          data={[
+            "Medium",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              width="none"
+              size="medium"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              width="narrow"
+              size="medium"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="danger"
+                width="wide"
+                size="medium"
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"small"}
+          data={[
+            "Small",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              width="none"
+              size="small"
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              width="narrow"
+              size="small"
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="danger"
+                width="wide"
+                size="small"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Disabled</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "Disabled",
+            "appearance: solid",
+            "appearance: link",
+            "appearance: outline",
+            "appearance: minimal",
+          ]}
+        />
+        <TableRow
+          name={"disabled"}
+          data={[
+            "True",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="link"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="outline"
+              size="medium"
+              disabled={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              appearance="minimal"
+              size="medium"
+              disabled={true}
+            />,
+          ]}
+        />
+      </Table>
+      <Heading2>Align Label</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "width",
+            "alignLabel: left",
+            "alignLabel: center",
+            "alignLabel: right",
+          ]}
+        />
+        <TableRow
+          name={"wide"}
+          data={[
+            "wide",
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="danger"
+                size="medium"
+                width="wide"
+                alignLabel="left"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="danger"
+                size="medium"
+                width="wide"
+                alignLabel="center"
+              />
+            </View>,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="danger"
+                size="medium"
+                width="wide"
+                alignLabel="right"
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Loading</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"title"}
+          data={[
+            "loading",
+            "size: large",
+            "size: medium",
+            "size: small",
+            "size: medium, width: wide",
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "true",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="large"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="medium"
+              loading={true}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="small"
+              loading={true}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="danger"
+                size="medium"
+                width="wide"
+                loading={true}
+              />
+            </View>,
+          ]}
+        />
+        <TableRow
+          name={"loading"}
+          data={[
+            "false",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="large"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="medium"
+              loading={false}
+            />,
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="small"
+              loading={false}
+            />,
+            <View style={{ width: "100%" }}>
+              <Button
+                onPress={action("pressed")}
+                labelMessage={{ id: "components.button" }}
+                intent="danger"
+                size="medium"
+                width="wide"
+                loading={false}
+              />
+            </View>,
+          ]}
+        />
+      </Table>
+      <Heading2>Icons</Heading2>
+      <Table style={{ backgroundColor: "#F0F8FF" }}>
+        <TableRow
+          name={"iconBefore"}
+          data={[
+            "iconBefore",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="medium"
+              iconBefore={<SearchIcon />}
+            />,
+          ]}
+        />
+        <TableRow
+          name={"iconAfter"}
+          data={[
+            "iconAfter",
+            <Button
+              onPress={action("pressed")}
+              labelMessage={{ id: "components.button" }}
+              intent="danger"
+              size="medium"
+              iconAfter={<SearchIcon />}
+            />,
+          ]}
+        />
+      </Table>
+    </div>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={Button} />

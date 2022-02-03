@@ -1,0 +1,6 @@
+**/dist
+**/node_modules/
+babel.config.js
+base.config.js
+production.config.js
+development.config.js

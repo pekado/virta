@@ -1,0 +1,20 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { UniversalPatientHeaderExperience } from "@virtahealth/experiences";
+import { MockedGraphQLProvider } from "@virtahealth/utils";
+import { mocks } from "./mock_data/mockUniversalPatientHeaderClient";
+
+<Meta title="Experiences / Universal Patient Header" />
+
+<Preview>
+  <Story name="example">
+    <MockedGraphQLProvider mocks={mocks}>
+      <UniversalPatientHeaderExperience
+        id={9999}
+        supUrl="https://spark.virtahealth.com/user/333"
+        useEffectHandler={() => {
+          console.log("useEffectHandler ran");
+        }}
+      />
+    </MockedGraphQLProvider>
+  </Story>
+</Preview>

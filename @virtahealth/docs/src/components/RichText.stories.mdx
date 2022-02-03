@@ -1,0 +1,1906 @@
+import { RichTextRenderer } from "@virtahealth/components";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+
+<Meta title="Components / RichTextRenderer" component={RichTextRenderer} />
+
+# RichTextRenderer
+
+`RichTextRenderer` is used to render rich text articles
+
+<Preview>
+  <Story name="RichText">
+    <RichTextRenderer
+      blocks={[
+        {
+          _key: "26fb60989ca9",
+          _type: "block",
+          children: [
+            {
+              _key: "57d0725ff360",
+              _type: "span",
+              marks: [],
+              text: "Buscar alimentos aceptables para Virta cuando va a comer a restaurantes o viaja es fácil si tiene en cuenta algunos consejos.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "c6c493e91559",
+          _type: "block",
+          children: [
+            {
+              _key: "0bb187ba7953",
+              _type: "span",
+              marks: [],
+              text: 'Método "S.A.F.E." de Virta para ordenar:',
+            },
+          ],
+          markDefs: [],
+          style: "h2",
+        },
+        {
+          _key: "52caa11532f8",
+          _type: "block",
+          children: [
+            {
+              _key: "2b4484648206",
+              _type: "span",
+              marks: [],
+              text: "Analizar",
+            },
+          ],
+          markDefs: [],
+          style: "h1",
+        },
+        {
+          _key: "0713c9c9e8af",
+          _type: "block",
+          children: [
+            {
+              _key: "7f86c287c31b",
+              _type: "span",
+              marks: [],
+              text: "Lea el menú y busque alimentos aprobados por Virta que le gusten.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "3f42437af040",
+          _type: "block",
+          children: [
+            {
+              _key: "e0dfe82d7a72",
+              _type: "span",
+              marks: [],
+              text: "Analyze & Preguntar",
+            },
+          ],
+          markDefs: [],
+          style: "h1",
+        },
+        {
+          _key: "ec56228bea19",
+          _type: "block",
+          children: [
+            {
+              _key: "c281a36b2a56",
+              _type: "span",
+              marks: [],
+              text: "Cuando un producto le llama la atención, analice cuidadosamente todo el platillo, incluidos los acompañamientos. Busque si tienen fuentes de carbohidratos, en especial azúcares y almidones.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "12a9b9da5b9c",
+          _type: "block",
+          children: [
+            {
+              _key: "5ec616e45e52",
+              _type: "span",
+              marks: ["em"],
+              text: "*Si tiene dudas, pregúntele a los camareros.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "914d9cf3eba6",
+          _type: "block",
+          children: [
+            {
+              _key: "443155250919",
+              _type: "span",
+              marks: [],
+              text: "Modificar",
+            },
+          ],
+          markDefs: [],
+          style: "h1",
+        },
+        {
+          _key: "07dc70d2c87f",
+          _type: "block",
+          children: [
+            {
+              _key: "a6d95da6d68d",
+              _type: "span",
+              marks: [],
+              text: "En la descripción, ¿parece haber acompañamientos o salsas con ingredientes que no son aceptables para Virta? Siempre puede pedir que no le agreguen algo, que se sirva por separado o reemplazarlo por completo.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "7a85961d6de5",
+          _type: "block",
+          children: [
+            {
+              _key: "705dbbef2b46",
+              _type: "span",
+              marks: ["em"],
+              text: "*No se olvide de pedir más mantequilla o aceite de oliva por separado para tener mayor saciedad.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "8d03f5f99cf8",
+          _type: "block",
+          children: [
+            {
+              _key: "f2e89d0e956d",
+              _type: "span",
+              marks: [],
+              text: "Disfrutar",
+            },
+          ],
+          markDefs: [],
+          style: "h1",
+        },
+        {
+          _key: "d80d1ad715c5",
+          _type: "block",
+          children: [
+            {
+              _key: "7e8fb3b3bad5",
+              _type: "span",
+              marks: [],
+              text: "¡Relájese y disfrute la comida!",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "1ebc54227300",
+          _type: "block",
+          children: [
+            {
+              _key: "e7e01af74d23",
+              _type: "span",
+              marks: ["em"],
+              text: "Algunos consejos útiles que puede recordar . . .",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "ce3cb1956a67",
+          _type: "block",
+          children: [
+            {
+              _key: "bc9b6bacecdc",
+              _type: "span",
+              marks: [],
+              text: "Analizar:",
+            },
+          ],
+          markDefs: [],
+          style: "h2",
+        },
+        {
+          _key: "fc0158dfe4b4",
+          _type: "block",
+          children: [
+            {
+              _key: "8d4414064692",
+              _type: "span",
+              marks: ["strong"],
+              text: "Concéntrese en buscar platillos con proteínas o vegetales, como carne o ensalada, preferentemente con una salsa grasa.",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "6785c95d992e",
+          _type: "block",
+          children: [
+            {
+              _key: "8825181c1fe7",
+              _type: "span",
+              marks: [],
+              text: 'Pueden ser platillos principales o aperitivos. Busque palabras clave como "asado", "horneado", "al vapor" o "a la parrilla" junto a las carnes, las aves y los mariscos. Elija platillos que se sirvan con vegetales sin almidón.',
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "19719231ad9e",
+          _type: "block",
+          children: [
+            {
+              _key: "f66f4092d149",
+              _type: "span",
+              marks: ["strong"],
+              text: "Ignore las secciones del menú que claramente no se alinean con las pautas nutricionales de Virta.",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "4f0b7f38ff96",
+          _type: "block",
+          children: [
+            {
+              _key: "193cb24ed7b4",
+              _type: "span",
+              marks: [],
+              text: "En lugar de perder el tiempo en las secciones de pasta/fideos, pizza y postres, pase directamente a las secciones que es más probable que coincidan con las pautas del programa de Virta (3 g o menos de carbohidratos totales, proteína moderada, grasa agregada para sentir saciedad).",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "bbb182c7d088",
+          _type: "calloutBlock",
+          color: "purple",
+          contents: [
+            {
+              _key: "7ea4aa3c35a0",
+              _type: "block",
+              children: [
+                {
+                  _key: "4d82c1c0f8ee",
+                  _type: "span",
+                  marks: [],
+                  text: "Analice con antelación. Muchos restaurantes tienen los menús publicados en línea, así que puede consultarlos con anticipación para ver qué opciones podrían ser aceptables para Virta.",
+                },
+              ],
+              markDefs: [],
+              style: "purple",
+            },
+            {
+              _key: "72f7f4a33b10",
+              _type: "block",
+              children: [
+                {
+                  _key: "9b1a62cd70b6",
+                  _type: "span",
+                  marks: [],
+                  text: "En el raro caso en que no haya ninguna opción para usted, analizar con anticipación le dará la oportunidad de sugerir un restaurante diferente.",
+                },
+              ],
+              markDefs: [],
+              style: "purple",
+            },
+          ],
+          title: "CONSEJO PROFESIONAL: Analice con anticipación",
+        },
+        {
+          _key: "c6b7b08c03dc",
+          _type: "block",
+          children: [
+            {
+              _key: "7fa90b96d6b3",
+              _type: "span",
+              marks: [],
+              text: "Analizar/preguntar:",
+            },
+          ],
+          markDefs: [],
+          style: "h2",
+        },
+        {
+          _key: "0c8274d8978a",
+          _type: "block",
+          children: [
+            {
+              _key: "95cd797f3036",
+              _type: "span",
+              marks: [],
+              text: "¡Sea como un buen sabueso y confíe en su paladar!",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "b5bd4528ad49",
+          _type: "block",
+          children: [
+            {
+              _key: "2377d201febd",
+              _type: "span",
+              marks: [],
+              text: "Pregúntele a los camareros para saber exactamente cómo se prepara el platillo y, si tiene dudas (en especial con las salsas, los aderezos o los condimentos), pídalos separados. Siempre puede probar primero si el platillo sabe dulce, pero no podrá quitarle los ingredientes una vez que se hayan agregado a su comida.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "a36a4d97104b",
+          _type: "block",
+          children: [
+            {
+              _key: "a2ebd729c257",
+              _type: "span",
+              marks: [],
+              text: "Haga preguntas sin sentirse incómodo.",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "9ac290b482ac",
+          _type: "block",
+          children: [
+            {
+              _key: "d118483fa91e",
+              _type: "span",
+              marks: [],
+              text: "Recuerde que el trabajo de los camareros es conocer el menú, por eso, haga todas las preguntas necesarias para saber con seguridad qué pedir. Si no saben la respuesta, pídales que le pregunten al chef o al gerente.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "e5d9de4244f4",
+          _type: "calloutBlock",
+          color: "blue",
+          contents: [
+            {
+              _key: "ec9225597580",
+              _type: "block",
+              children: [
+                {
+                  _key: "ec15b3bf9beb",
+                  _type: "span",
+                  marks: [],
+                  text: "Tenga cuidado con los carbohidratos ocultos en las salsas, los aderezos y otros condimentos.",
+                },
+              ],
+              markDefs: [],
+              style: "normal",
+            },
+            {
+              _key: "2f84741d1c0e",
+              _type: "block",
+              children: [
+                {
+                  _key: "7af2b49129b8",
+                  _type: "span",
+                  marks: ["strong"],
+                  text: "Tenga mucho cuidado con las salsas, los aderezos, los alimentos empanados y los condimentos.",
+                },
+                {
+                  _key: "eb1d8bd66635",
+                  _type: "span",
+                  marks: [],
+                  text: " Muchos contienen azúcar, jarabe de maíz, fécula de maíz o harina. Siempre debe analizarlos cuidadosamente. Si no sabe cuáles son los ingredientes, simplemente pregunte. Evite el kétchup, el aderezo mil islas, la vinagreta de frambuesa, la mostaza con miel y la vinagreta francesa.",
+                },
+              ],
+              level: 1,
+              listItem: "bullet",
+              markDefs: [],
+              style: "normal",
+            },
+            {
+              _key: "a98c31b6d59e",
+              _type: "block",
+              children: [
+                {
+                  _key: "eb59311c5caf",
+                  _type: "span",
+                  marks: [],
+                  text: "Las salsas y los aderezos siempre deben ",
+                },
+                {
+                  _key: "6135bc2eaff9",
+                  _type: "span",
+                  marks: ["strong"],
+                  text: "analizarse.",
+                },
+                {
+                  _key: "4f4b5fce93fd",
+                  _type: "span",
+                  marks: [],
+                  text: " Si no sabe con seguridad cuáles son los ingredientes, tan solo ",
+                },
+                {
+                  _key: "b23034e7cdc2",
+                  _type: "span",
+                  marks: ["strong"],
+                  text: "pregunte.",
+                },
+                {
+                  _key: "fcbc5711e7a1",
+                  _type: "span",
+                  marks: [],
+                  text: " (Evite el kétchup, el aderezo mil islas, la vinagreta de frambuesa, la mostaza con miel y la vinagreta francesa).",
+                },
+              ],
+              level: 1,
+              listItem: "bullet",
+              markDefs: [],
+              style: "normal",
+            },
+            {
+              _key: "ff862119387d",
+              _type: "block",
+              children: [
+                {
+                  _key: "d48455ad094a",
+                  _type: "span",
+                  marks: [],
+                  text: "La mostaza no dulce, la mayonesa, la salsa picante, la mantequilla, el aceite de oliva, el vinagre (de vino, de manzana o balsámico) y las salsas y aderezos de crema en general está bien consumirlos. De todos modos, no hace daño preguntar si no está seguro.",
+                },
+              ],
+              level: 1,
+              listItem: "bullet",
+              markDefs: [],
+              style: "normal",
+            },
+            {
+              _key: "be625fd4f8d5",
+              _type: "block",
+              children: [
+                {
+                  _key: "2ac7a85d3a16",
+                  _type: "span",
+                  marks: [],
+                  text: "",
+                },
+              ],
+              markDefs: [],
+              style: "normal",
+            },
+          ],
+          title:
+            "CONSEJO PROFESIONAL: Carbohidratos ocultos en salsas/aderezos",
+        },
+        {
+          _key: "5d7d9df0aff3",
+          _type: "block",
+          children: [
+            {
+              _key: "c008edcb5761",
+              _type: "span",
+              marks: ["strong"],
+              text: "Modificar:",
+            },
+          ],
+          markDefs: [],
+          style: "h2",
+        },
+        {
+          _key: "24f17d9a3ef2",
+          _type: "block",
+          children: [
+            {
+              _key: "a65052023ef8",
+              _type: "span",
+              marks: [],
+              text: "¡El cliente siempre tiene la razón!",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "55ecb215e319",
+          _type: "block",
+          children: [
+            {
+              _key: "713b0d4ff2bb",
+              _type: "span",
+              marks: [],
+              text: "Tiene derecho a personalizar su orden. Recuerde que es perfectamente aceptable que alguien con intolerancia al gluten pida algo especial, y es aceptable de igual modo que alguien con intolerancia a los carbohidratos pida reemplazarlos.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "b867bf6fea37",
+          _type: "block",
+          children: [
+            {
+              _key: "acad29e55177",
+              _type: "span",
+              marks: [],
+              text: "Comúnmente, el reemplazo más sencillo es cambiar los alimentos con almidón por vegetales que no lo contengan.",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "c0ab6fb14e04",
+          _type: "block",
+          children: [
+            {
+              _key: "100722a73174",
+              _type: "span",
+              marks: [],
+              text: "Ejemplo: Cambie el arroz o las papas por brócoli o espárragos. Busque ideas de reemplazos viendo los ingrediente de otros platillos, hay una buena probabilidad de que pueda agregarlos a su orden.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "2d4abdb930ca",
+          _type: "block",
+          children: [
+            {
+              _key: "57d94a7d5714",
+              _type: "span",
+              marks: [],
+              text: "Las adiciones más fáciles típicamente son agregar condimentos grasos.",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "2af60350c5ca",
+          _type: "block",
+          children: [
+            {
+              _key: "1b94e999736c",
+              _type: "span",
+              marks: [],
+              text: "La mantequilla, el aceite de oliva, el guacamole, la crema agria, el queso y el aderezo ranchero, o acompañamientos como vegetales sin almidón o tocino, son fuentes simples de saciedad.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "51cde22c70dd",
+          _type: "block",
+          children: [
+            {
+              _key: "d08b3463dc02",
+              _type: "span",
+              marks: [],
+              text: "Retire el resto de las fuentes evidentes de carbohidratos con almidón y azúcar.",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "69829cf7f97a",
+          _type: "block",
+          children: [
+            {
+              _key: "e8b0bd996868",
+              _type: "span",
+              marks: [],
+              text: "Es decir, pasta, arroz, frijoles, pan, pizza, papas fritas, galletas, papas, maíz, avena, quinoa, refrescos y postres.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "e61c5b42ca8d",
+          _type: "block",
+          children: [
+            {
+              _key: "52c8ff0fad3d",
+              _type: "span",
+              marks: [],
+              text: "No se rinda solo porque el platillo tiene pan, ¡sea creativo!",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "bb9e80d85afe",
+          _type: "block",
+          children: [
+            {
+              _key: "3b63322ecfd8",
+              _type: "span",
+              marks: [],
+              text: "La mayoría de los sándwiches y las hamburguesas pueden envolverse en lechuga o, al menos, servirse en una ensalada o cama de lechuga. Si ninguna opción está disponible, solo pídalos sin pan; la mejor parte del sándwich está adentro, no afuera.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "9b0e3ac4bc72",
+          _type: "block",
+          children: [
+            {
+              _key: "558765d6e7f5",
+              _type: "span",
+              marks: [],
+              text: "Evite que le sirvan alimentos que no quiere.",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "b4ee481211dd",
+          _type: "block",
+          children: [
+            {
+              _key: "2e11326ffd5f",
+              _type: "span",
+              marks: [],
+              text: "En los restaurantes en los que se ofrece pan, panecillos o papas fritas gratis, pídale a los camareros que no los lleven a la mesa. Y si otras personas de su grupo los quieren, trate de mantenerlos fuera de su alcance.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "9785ed5e68e6",
+          _type: "calloutBlock",
+          contents: [
+            {
+              _key: "e5568e3ea9cf",
+              _type: "block",
+              children: [
+                {
+                  _key: "4e97b6174b94",
+                  _type: "span",
+                  marks: [],
+                  text: "Si siente que el camarero no entiende su estilo de vida de Virta, considere contarle por qué lo eligió, puede ser divertido compartir sus logros y lo que aprendió con los demás. Si le explica al camarero cuán importante es para su salud comer de este modo, es más probable que entienda mejor sus preguntas y ajustes.",
+                },
+              ],
+              markDefs: [],
+              style: "normal",
+            },
+          ],
+          title: "CONSEJO PROFESIONAL: Considere contar su historia",
+        },
+        {
+          _key: "e0a164c0dfc1",
+          _type: "block",
+          children: [
+            {
+              _key: "64a73abea0c2",
+              _type: "span",
+              marks: [],
+              text: "",
+            },
+          ],
+          markDefs: [],
+          style: "h2",
+        },
+        {
+          _key: "2071c18f1475",
+          _type: "block",
+          children: [
+            {
+              _key: "1f6f85c1706a",
+              _type: "span",
+              marks: ["strong"],
+              text: "Disfrute la comida:",
+            },
+          ],
+          markDefs: [],
+          style: "h2",
+        },
+        {
+          _key: "0439720b168a",
+          _type: "block",
+          children: [
+            {
+              _key: "9a591a977547",
+              _type: "span",
+              marks: [],
+              text: "Recuerde que lleva práctica aprender el método de ",
+            },
+            {
+              _key: "dcd43d6bdd3a",
+              _type: "span",
+              marks: ["strong"],
+              text: "los 4 pasos (S.A.F.E.)",
+            },
+            {
+              _key: "5bb8c2a156a0",
+              _type: "span",
+              marks: [],
+              text: ", y parte del aprendizaje es prueba y error.",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "b1e1aca2cdb6",
+          _type: "block",
+          children: [
+            {
+              _key: "2430c5811a74",
+              _type: "span",
+              marks: [],
+              text: "Habrá algunas comidas que no resultarán exactamente como las planeó, pero está bien. ¡Hay mucho tiempo para volver a intentarlo!",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "996a924ab218",
+          _type: "block",
+          children: [
+            {
+              _key: "05437ca8b9f4",
+              _type: "span",
+              marks: [],
+              text: "Con práctica, mejorará en la modificación de los menús para adaptarlos al programa de Virta, y pedirá esas modificaciones con más comodidad. Si aún no ocurrió, pronto sentirá saciedad con las opciones de comidas aprobadas por Virta casi en todos lados.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "f3b4686600f0",
+          _type: "block",
+          children: [
+            {
+              _key: "ea848f936816",
+              _type: "span",
+              marks: [],
+              text: "",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "362706922391",
+          _type: "block",
+          children: [
+            {
+              _key: "27b793ff0b78",
+              _type: "span",
+              marks: ["strong"],
+              text: "Postres:",
+            },
+          ],
+          markDefs: [],
+          style: "h2",
+        },
+        {
+          _key: "7aaa8674e7b5",
+          _type: "block",
+          children: [
+            {
+              _key: "48887d71ef43",
+              _type: "span",
+              marks: [],
+              text: "La mayoría de los restaurantes no tienen opciones de postres aceptables para Virta.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "413de448e48d",
+          _type: "block",
+          children: [
+            {
+              _key: "6951e2d50354",
+              _type: "span",
+              marks: [],
+              text: "Hay algunas opciones aceptables para Virta, podría comer un plato de queso, una pequeña cantidad de frutos secos o fruta fresca, o un café con crema.",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "f87e6c09c45f",
+          _type: "block",
+          children: [
+            {
+              _key: "975e2d754cce",
+              _type: "span",
+              marks: [],
+              text: "Si le preocupa sentirse tentado o que lo excluyan, pruebe llevar consigo un pequeño trozo de chocolate amargo, varias marcas hacen cuadros de una porción envueltos individualmente.",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "cbcca044f33b",
+          _type: "block",
+          children: [
+            {
+              _key: "dace4c87cdb7",
+              _type: "span",
+              marks: [],
+              text: "O bien puede planificar con anticipación, y asegurarse de tener en casa un postre con pocos carbohidratos aceptable para Virta.",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "f244b7f55d14",
+          _type: "block",
+          children: [
+            {
+              _key: "14faf216c6bf",
+              _type: "span",
+              marks: [],
+              text: "Si realmente le cuesta resistirse cuando ve el menú de postres en los restaurantes, una buena estrategia es asegurarse de elegir un platillo principal llenador, de modo que cuando llegue el menú de postres, ¡ni siquiera se sienta tentado",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "0eab666c0e4b",
+          _type: "block",
+          children: [
+            {
+              _key: "c15d23185e6e",
+              _type: "span",
+              marks: [],
+              text: "",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "48cd7edd4663",
+          _type: "block",
+          children: [
+            {
+              _key: "d61501fd61bc",
+              _type: "span",
+              marks: ["strong"],
+              text: "Bebidas y alcohol:",
+            },
+          ],
+          markDefs: [],
+          style: "h2",
+        },
+        {
+          _key: "2411cccd8892",
+          _type: "block",
+          children: [
+            {
+              _key: "70a9542a5749",
+              _type: "span",
+              marks: [],
+              text: "Hay muchas opciones de bebidas aceptables para Virta en la mayoría de los restaurantes:",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "60ea27dbd223",
+          _type: "block",
+          children: [
+            {
+              _key: "68de6f1b5ebe",
+              _type: "span",
+              marks: [],
+              text: "Agua (con o sin gas)",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "4b28b3a3c89c",
+          _type: "block",
+          children: [
+            {
+              _key: "4d04db66aa13",
+              _type: "span",
+              marks: [],
+              text: "Refresco dietético",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "79d5d14b5d51",
+          _type: "block",
+          children: [
+            {
+              _key: "c765a03e0a4a",
+              _type: "span",
+              marks: [],
+              text: "Si piensa que podría no ser dietético, pida otro.",
+            },
+          ],
+          level: 2,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "c5144ed10dcb",
+          _type: "block",
+          children: [
+            {
+              _key: "2da700a63984",
+              _type: "span",
+              marks: [],
+              text: "Té helado sin endulzar o dietético",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "0f6a661ad341",
+          _type: "block",
+          children: [
+            {
+              _key: "323c427ad39b",
+              _type: "span",
+              marks: [],
+              text: "Si piensa que podría no ser dietético, pida otro.",
+            },
+          ],
+          level: 2,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "9fafe66e41f0",
+          _type: "block",
+          children: [
+            {
+              _key: "b6234edfda10",
+              _type: "span",
+              marks: [],
+              text: "Café o té caliente (pídalo con crema)",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "02a062b66f5c",
+          _type: "block",
+          children: [
+            {
+              _key: "4165581662fb",
+              _type: "span",
+              marks: [],
+              text: "Vino tinto y blanco (cuanto más seco, mejor)",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "bb07c5e8f351",
+          _type: "calloutBlock",
+          color: "purple",
+          contents: [
+            {
+              _key: "d58aa4120589",
+              _type: "block",
+              children: [
+                {
+                  _key: "d3ba14ec95c50",
+                  _type: "span",
+                  marks: [],
+                  text: "Las versiones clásicas de bebidas mezcladas suelen descartarse, ya que contienen mezclas con alto contenido de carbohidraos, como jugo, refrescos u otras mezclas azucaradas.",
+                },
+              ],
+              level: 1,
+              listItem: "bullet",
+              markDefs: [],
+              style: "purple",
+            },
+            {
+              _key: "f5d4a4fbdc3d",
+              _type: "block",
+              children: [
+                {
+                  _key: "4e1789f2e0240",
+                  _type: "span",
+                  marks: [],
+                  text: "En lugar de ron y cola, beba ron y cola dietética",
+                },
+              ],
+              level: 1,
+              listItem: "bullet",
+              markDefs: [],
+              style: "purple",
+            },
+            {
+              _key: "91f9c072181b",
+              _type: "block",
+              children: [
+                {
+                  _key: "d7c07f52aafb0",
+                  _type: "span",
+                  marks: [],
+                  text: "En lugar de whisky sour, beba whisky con hielo",
+                },
+              ],
+              level: 1,
+              listItem: "bullet",
+              markDefs: [],
+              style: "purple",
+            },
+          ],
+          title: "CONSEJO PROFESIONAL: Bebidas alcohólicas",
+        },
+        {
+          _key: "74285afa5bbc",
+          _type: "block",
+          children: [
+            {
+              _key: "0edb2fa68a4a",
+              _type: "span",
+              marks: [],
+              text: "Recuerde disfrutar las comidas, disfrute el momento con amigos cuando vayan a salir a comer y disfrute el nuevo estilo de vida. La comida es sabrosa y satisfactoria, ya sea en casa o en un restaurante.",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "489a6502e54e",
+          _type: "block",
+          children: [
+            {
+              _key: "1a4fd3f2da4d",
+              _type: "span",
+              marks: [],
+              text: "",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "7bb5e4db5b90",
+          _type: "block",
+          children: [
+            {
+              _key: "22cec9c2bc7a",
+              _type: "span",
+              marks: [],
+              text: "Ejemplos de platillos modificados para Virta usando el método de los 4 pasos:",
+            },
+          ],
+          markDefs: [],
+          style: "h2",
+        },
+        {
+          _key: "389062fc06f3",
+          _type: "block",
+          children: [
+            {
+              _key: "5a5730f923fd",
+              _type: "span",
+              marks: ["strong"],
+              text: "Comida mexicana con los 4 pasos:",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "c42e3ca0ed1a",
+          _type: "block",
+          children: [
+            {
+              _key: "f169b3facef1",
+              _type: "span",
+              marks: ["strong"],
+              text: "Analice:",
+            },
+            {
+              _key: "87d085e968f5",
+              _type: "span",
+              marks: [],
+              text: " sus proteínas favoritas (carne asada, pollo, carnitas, chorizo, ceviche, etc.) en fajitas, ensaladas de taco, platos combinados, tazones de burrito, etc.",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "b80e10b40ae5",
+          _type: "block",
+          children: [
+            {
+              _key: "6ea5fc5fb51c",
+              _type: "span",
+              marks: ["strong"],
+              text: "Evite/pida que eliminen",
+            },
+            {
+              _key: "49153e6124bb",
+              _type: "span",
+              marks: [],
+              text: ": frijoles (verdes/negros/refritos), arroz, tortilla, papas fritas, salsas con base de frutas (como mango), maíz, tamales, sopas, mole (salsa), paella",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "08d1e6bce188",
+          _type: "block",
+          children: [
+            {
+              _key: "239808eeccc7",
+              _type: "span",
+              marks: ["strong"],
+              text: "Incorpore:",
+            },
+            {
+              _key: "8fa009242b25",
+              _type: "span",
+              marks: [],
+              text: " pimientos asados, guacamole*, crema agria, queso, vegetales mixtos",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "089457b45ba8",
+          _type: "block",
+          children: [
+            {
+              _key: "03b75e809d47",
+              _type: "span",
+              marks: ["strong"],
+              text: "\nComida griega/del medio oriente con los 4 pasos:",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "73176da9a102",
+          _type: "block",
+          children: [
+            {
+              _key: "5476b638ba15",
+              _type: "span",
+              marks: ["strong"],
+              text: "Analice:",
+            },
+            {
+              _key: "5f0691a816c0",
+              _type: "span",
+              marks: [],
+              text: " shish o kofta kebabs, curries y estofados, carnes asadas, ensaladas",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "62cc54ab0360",
+          _type: "block",
+          children: [
+            {
+              _key: "35d8ffac0c85",
+              _type: "span",
+              marks: ["strong"],
+              text: "Evite/pida que eliminen",
+            },
+            {
+              _key: "c70ab2902826",
+              _type: "span",
+              marks: [],
+              text: ": hummus, pan pita, dolmas, tabule, frijoles (garbanzo, fava), granos (cuscús, trigo burgol, cebada, freekeh), falafel",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "e26b8082378e",
+          _type: "block",
+          children: [
+            {
+              _key: "fb5538d4c8f0",
+              _type: "span",
+              marks: ["strong"],
+              text: "Incorpore:",
+            },
+            {
+              _key: "8ad51a63e53d",
+              _type: "span",
+              marks: [],
+              text: " mantequilla, smen (mantequilla fermentada), ghee (mantequilla clarificada), vegetales asados, queso feta o halloumi, baba ganoush",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "1057b454a322",
+          _type: "block",
+          children: [
+            {
+              _key: "a70695cc8f06",
+              _type: "span",
+              marks: ["strong"],
+              text: "\nComida india/paquistaní/afgana con los 4 pasos:",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "f5490d12a173",
+          _type: "block",
+          children: [
+            {
+              _key: "b8b508d833bd",
+              _type: "span",
+              marks: ["strong"],
+              text: "Analice:",
+            },
+            {
+              _key: "b6705d12fe4f",
+              _type: "span",
+              marks: [],
+              text: " curries (el korma con base de crema es mejor, el tomate está bien), estofados, carnes tandoori, kebabs",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "c1342900f476",
+          _type: "block",
+          children: [
+            {
+              _key: "83224d73dc64",
+              _type: "span",
+              marks: ["strong"],
+              text: "Evite/pida que eliminen",
+            },
+            {
+              _key: "ec21a7ae2fb8",
+              _type: "span",
+              marks: [],
+              text: ": arroz, naan, puris, rotis, chapatis, chaat, frijoles (garbanzo, lentejas), aloo (papa), pakoras, samosas",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "d6fb5979b3a1",
+          _type: "block",
+          children: [
+            {
+              _key: "4c4342e7ed99",
+              _type: "span",
+              marks: ["strong"],
+              text: "Incorpore:",
+            },
+            {
+              _key: "f0da8bb96ada",
+              _type: "span",
+              marks: [],
+              text: " saag (espinaca), deshi ghee (mantequilla clarificada), paneer (queso), ensalada de acompañamiento (para verterle salsa de curry en lugar del arroz)",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "10a0e792d5b3",
+          _type: "block",
+          children: [
+            {
+              _key: "37d1926d7669",
+              _type: "span",
+              marks: [],
+              text: "",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "e3fce50927f0",
+          _type: "block",
+          children: [
+            {
+              _key: "56c7912e598d",
+              _type: "span",
+              marks: ["strong"],
+              text: "Comida china/japonesa/tailandesa/coreana con los 4 pasos:",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "6b46588fc17c",
+          _type: "block",
+          children: [
+            {
+              _key: "f862284ac194",
+              _type: "span",
+              marks: ["strong"],
+              text: "Analice:",
+            },
+            {
+              _key: "b6faaa3746cf",
+              _type: "span",
+              marks: [],
+              text: " sashimi/poke/tartare (pescado crudo), carnes asadas/salteadas/sofritas (evite empanarlas), curries (evite las que sean dulces o espesadas con harina o almidón)",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "44e8844d97d5",
+          _type: "block",
+          children: [
+            {
+              _key: "a7f83b20f5da",
+              _type: "span",
+              marks: ["strong"],
+              text: "Evite/pida que eliminen",
+            },
+            {
+              _key: "6680b256daa7",
+              _type: "span",
+              marks: [],
+              text: ": fideo (de huevo, arroz, soba, udon, ramen, etc.), arroz, wontons, dumplings, rollos de huevo, papel de arroz, tempura, salsas dulces, tofu, sushi, salsa teriyaki, salsa de cacahuete, salsas dulces y agridulces",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "e732c3acaf07",
+          _type: "block",
+          children: [
+            {
+              _key: "9f8c8b63ac68",
+              _type: "span",
+              marks: ["strong"],
+              text: "Incorpore:",
+            },
+            {
+              _key: "e171e2fc0276",
+              _type: "span",
+              marks: [],
+              text: " más vegetales, kimchi (vegetales sin almidón)",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "b785f9745466",
+          _type: "block",
+          children: [
+            {
+              _key: "b083ffe73c41",
+              _type: "span",
+              marks: [],
+              text: "",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "bfa201757ddc",
+          _type: "block",
+          children: [
+            {
+              _key: "f74708391c2b",
+              _type: "span",
+              marks: ["strong"],
+              text: "Comida de bares/comedores/bistros con los 4 pasos:",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "8ff6fda41488",
+          _type: "block",
+          children: [
+            {
+              _key: "c1bbebfb6fac",
+              _type: "span",
+              marks: ["strong"],
+              text: "Analice:",
+            },
+            {
+              _key: "431f0d023976",
+              _type: "span",
+              marks: [],
+              text: " ensaladas (cobb, del chef, César, etc.), hamburguesas/sándwiches (pídalos envueltos en lechuga o sin pan sobre una base de hojas verdes), carnes asadas/horneadas, platillos con huevo (omelettes, revueltos, fritos, etc.)",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "263be8194a50",
+          _type: "block",
+          children: [
+            {
+              _key: "504982609974",
+              _type: "span",
+              marks: ["strong"],
+              text: "Evite/pida que eliminen",
+            },
+            {
+              _key: "e36cf43831a1",
+              _type: "span",
+              marks: [],
+              text: ": frituras, crutones, kétchup, aderezos/salsas azucaradas",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "38ea760afa7f",
+          _type: "block",
+          children: [
+            {
+              _key: "06a9264aaf31",
+              _type: "span",
+              marks: ["strong"],
+              text: "Incorpore:",
+            },
+            {
+              _key: "4ad4a6e5dfb7",
+              _type: "span",
+              marks: [],
+              text: " ensalada adicional, vegetales, mantequilla o aceite de oliva, queso, tocino, aguacate",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "fea2aa28b7d9",
+          _type: "block",
+          children: [
+            {
+              _key: "cfb20bbb8c18",
+              _type: "span",
+              marks: [],
+              text: "",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "637f94ee75ad",
+          _type: "block",
+          children: [
+            {
+              _key: "0a7167293ae0",
+              _type: "span",
+              marks: ["strong"],
+              text: "Ensaladas modificadas con los 4 pasos:",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "99e57a7c8642",
+          _type: "block",
+          children: [
+            {
+              _key: "9af51d7a671a",
+              _type: "span",
+              marks: ["strong"],
+              text: "Analice:",
+            },
+            {
+              _key: "5a20ded171af",
+              _type: "span",
+              marks: [],
+              text: " cualquier ensalada",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "01719f0257a8",
+          _type: "block",
+          children: [
+            {
+              _key: "bc0b98ff31bc",
+              _type: "span",
+              marks: ["strong"],
+              text: "Evite/pida que eliminen",
+            },
+            {
+              _key: "a81ecc05968a",
+              _type: "span",
+              marks: [],
+              text: ': frutas frescas (si no son bayas*), frutas deshidratadas (arándanos, uvas pasas, etc.) empanado/fideos (busque las palabras "crocante" y "crujiente"), aderezos azucarados (salsa mil islas, vinagreta francesa, mostaza con miel, vinagreta de frambuesa, etc.), frutos secos azucarados, vegetales con almidón (remolacha, zanahoria, nabo, papa, etc.)',
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "d2c9eec51401",
+          _type: "block",
+          children: [
+            {
+              _key: "5170f4543f9b",
+              _type: "span",
+              marks: ["strong"],
+              text: "Incorpore:",
+            },
+            {
+              _key: "6e2bd8ddccc7",
+              _type: "span",
+              marks: [],
+              text: " proteína adicional (huevos duros, tocino, salmón, pollo, carne de res, etc.), más vegetales u hojas verdes, queso, aceitunas, aceite de oliva, mantequilla derretida, aderezos altos en grasa, como ranchero o queso azul (pero siempre pregunte cuáles son los ingredientes de los aderezos)",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "12fe5f38b235",
+          _type: "calloutBlock",
+          color: "green",
+          contents: [
+            {
+              _key: "44f258a07e84",
+              _type: "block",
+              children: [
+                {
+                  _key: "262f376a2cb7",
+                  _type: "span",
+                  marks: [],
+                  text: "Casi todos los restaurantes tienen ensaladas, y usted puede modificarlas para que se adapten al programa de Virta.",
+                },
+              ],
+              markDefs: [],
+              style: "green",
+            },
+          ],
+          title: "CONSEJO PROFESIONAL: Busque las ensaladas",
+        },
+        {
+          _key: "2de4c4eb243b",
+          _type: "block",
+          children: [
+            {
+              _key: "2f9645679464",
+              _type: "span",
+              marks: [],
+              text: "",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "be3b8f7c4a3a",
+          _type: "block",
+          children: [
+            {
+              _key: "a0e9717022f9",
+              _type: "span",
+              marks: ["strong"],
+              text: "Desayuno/comida en comedores con los 4 pasos:",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "2d63405181fd",
+          _type: "block",
+          children: [
+            {
+              _key: "617eca927d14",
+              _type: "span",
+              marks: ["strong"],
+              text: "Analice:",
+            },
+            {
+              _key: "2665bd34b33d",
+              _type: "span",
+              marks: [],
+              text: " huevos (fritos, escalfados, revueltos, omelettes etc.), tocino, jamón, salchicha, carne de res, salmón ahumado, yogur no descremado (natural), café o lattes con crema espesa",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "7bfa55a1f3df",
+          _type: "block",
+          children: [
+            {
+              _key: "8b37914c6b0a",
+              _type: "span",
+              marks: ["strong"],
+              text: "Evite/pida que eliminen",
+            },
+            {
+              _key: "fcbde08aa22c",
+              _type: "span",
+              marks: [],
+              text: ": panqueques, waffles, hash brown o frituras (papas), tostada, panecillos, muffins, granola, avena, cereal, fruta, jugo, jarabe/mermelada/jalea, buñuelos fritos (generalmente de papa)",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "511c46b14948",
+          _type: "block",
+          children: [
+            {
+              _key: "64f2aaea2a38",
+              _type: "span",
+              marks: ["strong"],
+              text: "Incorpore:",
+            },
+            {
+              _key: "7fb81accf83b",
+              _type: "span",
+              marks: [],
+              text: " vegetales con poco almidón (pimientos, espinaca, champiñones, cebollas, calabacín etc.), queso, crema agria, aguacate*, mantequilla",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "a791d9d1b441",
+          _type: "block",
+          children: [
+            {
+              _key: "008f2289abb2",
+              _type: "span",
+              marks: [],
+              text: "",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "e4fd90e4e953",
+          _type: "block",
+          children: [
+            {
+              _key: "9d9c3f0181d5",
+              _type: "span",
+              marks: ["strong"],
+              text: "Comida rápida/de centros comerciales con los 4 pasos:",
+            },
+          ],
+          markDefs: [],
+          style: "h3",
+        },
+        {
+          _key: "b1b311b8bdf4",
+          _type: "block",
+          children: [
+            {
+              _key: "c16d63efb7ed",
+              _type: "span",
+              marks: ["strong"],
+              text: "Analice:",
+            },
+            {
+              _key: "4c1a02a87b04",
+              _type: "span",
+              marks: [],
+              text: " ensaladas, hamburguesas/sándwiches (pídalos envueltos en lechuga o sin pan sobre una base de hojas verdes), carnes asadas/horneadas y vegetales",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "1f4950708057",
+          _type: "block",
+          children: [
+            {
+              _key: "9f22b632f559",
+              _type: "span",
+              marks: ["strong"],
+              text: "Evite/pida que eliminen",
+            },
+            {
+              _key: "3e53c2f8fd1b",
+              _type: "span",
+              marks: [],
+              text: ": pan, crutones, papas fritas, papa, aderezos/salsas azucaradas",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "e05f6b4d5f2a",
+          _type: "block",
+          children: [
+            {
+              _key: "4456f733513d",
+              _type: "span",
+              marks: ["strong"],
+              text: "Incorpore:",
+            },
+            {
+              _key: "993afbb7ae3b",
+              _type: "span",
+              marks: [],
+              text: " queso y más vegetales",
+            },
+          ],
+          level: 1,
+          listItem: "bullet",
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "fddfbd88e064",
+          _type: "block",
+          children: [
+            {
+              _key: "d26e09d0d76c",
+              _type: "span",
+              marks: [],
+              text: "* Aunque es aceptable, incorpore con moderación",
+            },
+          ],
+          markDefs: [],
+          style: "normal",
+        },
+        {
+          _key: "d4d2ed4c04bf",
+          _type: "calloutBlock",
+          color: "blue",
+          contents: [
+            {
+              _key: "a51d7f3d2fb1",
+              _type: "block",
+              children: [
+                {
+                  _key: "9de3881c127b",
+                  _type: "span",
+                  marks: [],
+                  text: "Algunas pizzerías harán la pizza sin masa, ¡vale la pena preguntar! Si no puede hacerlo, generalmente hay ensaladas básicas en el menú. Intente personalizar una ensalada usando los ingredientes de las pizzas que ve en el menú o, si la mesa pida una pizza, retire la masa y agregue los ingredientes a su ensalada. No se olvide de buscar aderezos (aceite de oliva, ranchero, queso azul) para agregar grasa. Además, algunos lugares también ofrecen calzones que son ENORMES. Pídalos y coma el relleno con una ensalada.",
+                },
+              ],
+              markDefs: [],
+              style: "normal",
+            },
+          ],
+          title: "CONSEJO PROFESIONAL: Pizzerías",
+        },
+      ]}
+    />
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={RichTextRenderer} />

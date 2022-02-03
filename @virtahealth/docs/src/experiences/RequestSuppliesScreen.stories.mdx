@@ -1,0 +1,37 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { RequestSuppliesScreen } from "@virtahealth/experiences";
+import { PatientProfileMenu } from "@virtahealth/experiences";
+import { MockedGraphQLProvider } from "@virtahealth/utils";
+import { mocks } from "./mock_data/mockUniversalPatientHeaderClient";
+
+<Meta title="Experiences / Request Supplies Screen" />
+
+<Preview>
+  <Story name="example">
+    <MockedGraphQLProvider mocks={mocks}>
+      <RequestSuppliesScreen
+        address={{
+          street1: "123 Main St",
+          street2: "Apt 2",
+          city: "San Francisco",
+          state: "CA",
+          zip: "94104",
+        }}
+        devices={[{ type: "ketone", model: "some model" }]}
+        firstName="Damien"
+        lastName="Kan"
+        participantType=""
+        participantSubtype=""
+        adaptedOn={""}
+        planDefinitionName="diabetes-management"
+        virtaId={"mock-virta-id"}
+        onSubmit={(values) => {
+          return new Promise((resolve) => setTimeout(resolve, 1500));
+        }}
+        onSuccessClose={(values) => {
+          location.reload();
+        }}
+      />
+    </MockedGraphQLProvider>
+  </Story>
+</Preview>

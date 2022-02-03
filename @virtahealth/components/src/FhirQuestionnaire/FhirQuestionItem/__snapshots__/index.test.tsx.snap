@@ -1,0 +1,320 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FHIR Question Item component group item types renders question item of type \`group\` 1`] = `
+<View>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Medium",
+          "fontSize": 20,
+          "fontWeight": "500",
+          "letterSpacing": 0,
+          "lineHeight": 20,
+        },
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "fontWeight": "600",
+          "lineHeight": 28,
+          "marginBottom": 32,
+          "paddingBottom": 12,
+          "paddingTop": 12,
+        },
+      ]
+    }
+  >
+    sample group
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "marginRight": 32,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexBasis": "auto",
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 0,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "marginRight": 0,
+                "marginTop": 0,
+                "minWidth": 205,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 12,
+                },
+              ]
+            }
+          >
+            sample question in group
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "flex-start",
+                },
+                Object {
+                  "display": "flex",
+                  "marginTop": 10,
+                },
+              ]
+            }
+          >
+            <View
+              editable={true}
+              isFocused={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "flex-start",
+                  },
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "rgb(255,255,255)",
+                    "borderColor": "rgb(214, 217, 221)",
+                    "borderRadius": 6,
+                    "borderStyle": "solid",
+                    "borderWidth": 2,
+                    "display": "flex",
+                    "flexBasis": "auto",
+                    "flexGrow": 1,
+                    "flexShrink": 0,
+                  },
+                ]
+              }
+            >
+              <TextInput
+                editable={true}
+                isFocused={false}
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "color": "rgb(0,0,0)",
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontFamily": "Whitney-Book",
+                      "fontSize": 20,
+                      "minHeight": 40,
+                      "paddingBottom": 8,
+                      "paddingLeft": 12,
+                      "paddingRight": 12,
+                      "paddingTop": 8,
+                    },
+                  ]
+                }
+                testID="test-decimal-linkId"
+                value=""
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 36,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`FHIR Question Item component question item types renders question item of type \`question\` 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginRight": 32,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "display": "flex",
+            "flexBasis": "auto",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 0,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "marginRight": 0,
+              "marginTop": 0,
+              "minWidth": 205,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgb(36, 38, 43)",
+                "fontFamily": "Whitney-Book",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "letterSpacing": 0,
+                "lineHeight": 12,
+              },
+            ]
+          }
+        >
+          sample question
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+              },
+              Object {
+                "display": "flex",
+                "marginTop": 10,
+              },
+            ]
+          }
+        >
+          <View
+            editable={true}
+            isFocused={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "flex-start",
+                },
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "rgb(255,255,255)",
+                  "borderColor": "rgb(214, 217, 221)",
+                  "borderRadius": 6,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "display": "flex",
+                  "flexBasis": "auto",
+                  "flexGrow": 1,
+                  "flexShrink": 0,
+                },
+              ]
+            }
+          >
+            <TextInput
+              editable={true}
+              isFocused={false}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "color": "rgb(0,0,0)",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "fontFamily": "Whitney-Book",
+                    "fontSize": 20,
+                    "minHeight": 40,
+                    "paddingBottom": 8,
+                    "paddingLeft": 12,
+                    "paddingRight": 12,
+                    "paddingTop": 8,
+                  },
+                ]
+              }
+              testID="test-linkId"
+              value=""
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 36,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

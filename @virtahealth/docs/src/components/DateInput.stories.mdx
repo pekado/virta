@@ -1,0 +1,46 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import {
+  DateInput as ControlledDateInput,
+  LabeledFormElement,
+  styled,
+} from "@virtahealth/components";
+import { wrapControlledInput } from "./mock_data/ControlledInputWrapper";
+
+export const DateInput = wrapControlledInput(ControlledDateInput);
+
+<Meta title="Components / DateInput" component={ControlledDateInput} />
+
+# DateInput
+
+`DateInput` is a styled date input field based on
+[imask.js](https://imask.js.org/) and using [date-fns](https://date-fns.org/)
+for date support. Usage is similar to the `Input` component (q.v.).
+
+<Preview>
+  <Story name="unlabeled">
+    <DateInput
+      placeholderMessage={{ id: "components.dateInput.placeholder" }}
+      onChangeText={action("change-text")}
+      onSubmitText={action("submit-text")}
+    />
+  </Story>
+  <Story name="example">
+    <LabeledFormElement labelMessage={{ id: "components.dateInput.label" }}>
+      <DateInput
+        placeholderMessage={{ id: "components.dateInput.placeholder" }}
+        onChangeText={action("change-text")}
+        onSubmitText={action("submit-text")}
+      />
+    </LabeledFormElement>
+  </Story>
+  <Story name="disabled">
+    <LabeledFormElement labelMessage={{ id: "components.dateInput.label" }}>
+      <DateInput editable={false} value="02/02/2020" />
+    </LabeledFormElement>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ControlledDateInput} />

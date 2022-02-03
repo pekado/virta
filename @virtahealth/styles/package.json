@@ -1,0 +1,21 @@
+{
+  "name": "@virtahealth/styles",
+  "description": "Home of Virta's design tokens and themes",
+  "version": "10.18.1",
+  "author": "Pete Petrash <pete@virtahealth.com>",
+  "scripts": {
+    "start": "env NODE_ENV=development webpack --config ./development.config.js --watch",
+    "build": "env NODE_ENV=development webpack --config ./development.config.js",
+    "build-prod": "env NODE_ENV=production webpack --config ./production.config.js --optimize-minimize",
+    "lint": "eslint --ext .js,.ts,.tsx ."
+  },
+  "devDependencies": {
+    "@types/react-native": "0.66.4",
+    "ts-loader": "^8.0.11",
+    "typescript": "4.0.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "main": "src/index.ts",
+  "license": "MIT"
+}

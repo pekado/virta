@@ -1,0 +1,35 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { Table, TableRow } from "@virtahealth/components";
+import { primitives } from "@virtahealth/styles";
+
+<Meta title="Styles / Color Palette" />
+
+<Preview>
+  <Story name="colors">
+    <Table>
+      <TableRow
+        name={"Header"}
+        data={["Color Name", "Color Swatch", "Color Value"]}
+      />
+      {Object.keys(primitives.color)
+        .sort()
+        .map((colorKey) => (
+          <TableRow
+            key={colorKey}
+            name={colorKey}
+            data={[
+              colorKey,
+              <div
+                style={{
+                  backgroundColor: primitives.color[colorKey],
+                  width: "20px",
+                  height: "20px",
+                }}
+              ></div>,
+              primitives.color[colorKey],
+            ]}
+          />
+        ))}
+    </Table>
+  </Story>
+</Preview>

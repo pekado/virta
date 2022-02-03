@@ -1,0 +1,148 @@
+{
+  "status": "draft",
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire|2.0"
+    ],
+    "tag": [
+      {
+        "code": "lformsVersion: 29.0.3"
+      }
+    ]
+  },
+  "item": [
+    {
+      "type": "group",
+      "code": [],
+      "required": false,
+      "linkId": "/biometric",
+      "text": "Biometric",
+      "item": [
+        {
+          "type": "quantity",
+          "code": [
+            {
+              "code": "3141-9",
+              "display": "Weight",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "display": "[lb_av]"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "display": "kg"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/3141-9",
+          "text": "Weight"
+        },
+        {
+          "type": "quantity",
+          "code": [
+            {
+              "code": "3137-7",
+              "display": "Height",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "display": "[in_us]"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "display": "cm"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "display": "m"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/3137-7",
+          "text": "Height"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "8280-0",
+              "display": "Waist Circumference",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "cm"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/8280-0",
+          "text": "Waist Circumference"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "8480-6",
+              "display": "Systolic BP",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "mm[Hg]"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/8480-6",
+          "text": "Systolic BP"
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "8462-4",
+              "display": "Diastolic BP",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "mm[Hg]"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/8462-4",
+          "text": "Diastolic BP"
+        }
+      ]
+    }
+  ]
+}

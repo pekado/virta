@@ -1,0 +1,92 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import {
+  LabeledFormElement,
+  Row,
+  SearchBox as ControlledSearchBox,
+  SearchResult,
+  styled,
+} from "@virtahealth/components";
+import { wrapControlledInput } from "./mock_data/ControlledInputWrapper";
+
+export const SearchBox = wrapControlledInput(ControlledSearchBox);
+
+export const StyledSearchBox = styled(SearchBox)`
+  flex: 1;
+`;
+
+<Meta title="Components / SearchBox" component={SearchBox} />
+
+# SearchBox
+
+`SearchBox` provides a text input with integrated "search" button and presents
+results in a dropdown.
+
+A search may be performed by either the `onChangeText` handler (for
+autocomplete/typeahead search) or the `onSubmitText` handler. Search results
+are provided as [children](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx),
+using the `<SearchResult>` component. When a search result is selected from the
+list, the `onSelectResult` handler is called.
+
+This is a [controlled component](https://reactjs.org/docs/forms.html#controlled-components),
+meaning that users of this component should maintain state for it via the
+`onChangeText` handler, passing in the `value` prop. User code will likely also
+maintain the list of search results in state.
+
+<Preview>
+  <Story name="normal">
+    <SearchBox
+      placeholderMessage={{ id: "components.searchbox.placeholder" }}
+      value="Blueberry"
+      onChange={action("change")}
+      onChangeText={action("change-text")}
+      onSubmitText={action("submit-text")}
+    />
+  </Story>
+  <Story name="disabled">
+    <SearchBox
+      placeholderMessage={{ id: "components.searchbox.placeholder" }}
+      value="Raspberry"
+      editable={false}
+    />
+  </Story>
+  <Story name="labeled">
+    <LabeledFormElement labelMessage={{ id: "components.searchbox.label" }}>
+      <StyledSearchBox
+        placeholderMessage={{ id: "components.searchbox.placeholder" }}
+        showSearchResults
+        onChange={action("change")}
+        onChangeText={action("change-text")}
+        onSubmitText={action("submit-text")}
+      />
+    </LabeledFormElement>
+  </Story>
+  <Story name="empty results">
+    <SearchBox
+      value="Unobtanium"
+      showSearchResults
+      onChange={action("change")}
+      onChangeText={action("change-text")}
+      onSubmitText={action("submit-text")}
+    >
+      {[]}
+    </SearchBox>
+  </Story>
+  <Story name="with results">
+    <SearchBox
+      value="chlor"
+      showSearchResults
+      onChange={action("change")}
+      onChangeText={action("change-text")}
+      onSubmitText={action("submit-text")}
+      onSelectResult={action("select-result")}
+    >
+      <SearchResult value="NaCl">Sodium chloride</SearchResult>
+      <SearchResult value="KCl">Potassium chloride</SearchResult>
+    </SearchBox>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ControlledSearchBox} />

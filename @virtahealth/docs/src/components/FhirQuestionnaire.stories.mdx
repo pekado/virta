@@ -1,0 +1,29 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { FhirQuestionnaire } from "@virtahealth/components";
+import { FhirQuestionnaireForm } from "./FhirQuestionnaireForm";
+
+<Meta title="Components / FHIR Questionnaire" />
+
+# FhirQuestionnaire
+
+This component takes in a FHIR Questionnaire and sends back a FHIR Questionnaire Response. Note that a parent
+component must control the state of the FhirQuestionnaire or the component will not work.
+
+Since this is a first pass, there are a few things to note:
+
+- This will parse the FHIR Questionnaire JSON to build input fields for the item and/or its child items. If
+  the item is of type `question` and it has child items, the item itself will be displayed first.
+
+- For the sake of simplicity, `QuestionnaireResponse` that it sends back is NOT nested (even if the items were
+  grouped in the questionnaire).We can iterate on how this gets built out; the nesting just made things a bit
+  complicated when trying to update answers.
+
+- Types of questionnaires to double check before using:
+  - Questionnaires with multiple groups
+  - Questionnaires with specific type needs
+
+<Preview>
+  <Story name="example">
+    <FhirQuestionnaireForm />
+  </Story>
+</Preview>

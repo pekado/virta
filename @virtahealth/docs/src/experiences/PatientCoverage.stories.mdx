@@ -1,0 +1,23 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+import { PatientCoverageExperience } from "@virtahealth/experiences";
+import { MockedGraphQLProvider } from "@virtahealth/utils";
+import { mocks } from "./mock_data/mockPatientCoverageClient";
+
+<Meta title="Experiences / PatientCoverage" />
+
+<Preview>
+  <Story name="PatientCoverage">
+    <StoryBookVirtaContext>
+      <MockedGraphQLProvider addTypename={false} mocks={mocks}>
+        <PatientCoverageExperience
+          virtaId={"40d9bd52-edea-46c8-84a5-42e003f01502"}
+        />
+      </MockedGraphQLProvider>
+    </StoryBookVirtaContext>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={PatientCoverage} />

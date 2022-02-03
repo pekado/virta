@@ -1,0 +1,38 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { View } from "react-native";
+import { NavBar, Spacer } from "@virtahealth/components";
+import { SpacerWrapper } from "./mock_data/SpacerWrapper";
+
+<Meta title="Components / NavBar" component={NavBar} />
+
+# NavBar
+
+This is a component that displays a horizontal navigation bar. It allows for scrolling on mobile sizes
+if the content is too wide for the screen.
+
+<Preview>
+  <Story name="example">
+    <View>
+      <NavBar
+        onChangeTab={(index) => console.log("wheee", index)}
+        navItems={[
+          { id: "assignBiomarkers", defaultMessage: "Assign Biomarkers" },
+          { id: "overview", defaultMessage: "Overview" },
+          { id: "graphs", defaultMessage: "Graphs" },
+          { id: "profile", defaultMessage: "Profile" },
+          { id: "notes", defaultMessage: "Notes" },
+          { id: "actions", defaultMessage: "Actions" },
+          { id: "medications", defaultMessage: "Medications" },
+        ]}
+        direction="row"
+        initialSelectedTabIndex={2}
+        spacer={SpacerWrapper}
+      />
+    </View>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={NavBar} />

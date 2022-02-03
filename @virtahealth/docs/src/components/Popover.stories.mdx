@@ -1,0 +1,81 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { PopoverWrapper, PopoverCell } from "./mock_data/PopoverWrapper";
+import { Popover, Table, TableRow, TableCell } from "@virtahealth/components";
+
+<Meta title="Components / Popover" />
+
+# Popover
+
+### \*WEB ONLY\*
+
+This is a `Popover` component that opens when a user hovers their mouse over an element.
+The example is best viewed in the Canvas tab.
+
+Notes for usage:
+
+- For the `Popover` to properly be stacked on top of other elements,
+  it's best to put it at the outermost level of elements possible so that it does not get
+  covered up by other child/sibling elements.
+- In order for the popover to remain open and allow the user to click links/buttons on it, we need to pass
+  the same function that toggles its `isOpen` state so that the `PointerEnter` and `PointerLeave` events when
+  hovering on the popover don't cause it to close/flicker.
+- To help make positioning a little easier to adjust, you can pass in `offsetValues`
+  to help nudge the popover into the right spot.
+- `HoverPopoverTarget` is a wrapper component for the element(s) you want to use to toggle the popover.
+
+<Preview>
+  <Story name="example">
+    <PopoverWrapper>
+      {({
+        onPointerEnter,
+        onPointerLeave,
+        persistPopover,
+        showPopover,
+        setPopoverTarget,
+        popoverTarget,
+      }) => (
+        <Table>
+          <TableRow
+            name={"Headers"}
+            data={[<a href="#">04/13/2020</a>, "04/22/2020"]}
+          >
+            <PopoverCell
+              onPointerEnter={onPointerEnter}
+              onPointerLeave={onPointerLeave}
+              setPopoverTarget={setPopoverTarget}
+              content={"Lipids"}
+            />
+          </TableRow>
+          <TableRow name={"Total Cholesterol"} data={["100"]}>
+            <TableCell value={"Total Cholesterol"} />
+            <PopoverCell
+              onPointerEnter={onPointerEnter}
+              onPointerLeave={onPointerLeave}
+              setPopoverTarget={setPopoverTarget}
+              content={"170"}
+            />
+          </TableRow>
+          <TableRow name={"Triglycerides"} data={["92", "70"]}>
+            <TableCell value={"Triglycerides"} />
+          </TableRow>
+          <Popover
+            isOpen={showPopover}
+            persistPopover={persistPopover}
+            targetElement={popoverTarget}
+            width={200}
+            height={100}
+            offsetValues={{ top: 40, left: 30 }}
+          >
+            <Text style={{ textAlign: "center" }}>
+              Here is some additional information about lipids
+            </Text>
+          </Popover>
+        </Table>
+      )}
+    </PopoverWrapper>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={Popover} />

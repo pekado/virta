@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip Renders the tooltip with popover hidden 1`] = `
+<TouchableOpacity
+  disabled={true}
+  height={14}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "height": 14,
+        "width": 14,
+      },
+    ]
+  }
+  width={14}
+>
+  <div
+    onPointerEnter={[Function]}
+    onPointerLeave={[Function]}
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={16}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={16}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": 16,
+            "width": 14,
+          },
+        ]
+      }
+      vbHeight={14}
+      vbWidth={14}
+      width={14}
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+      >
+        <RNSVGGroup
+          clipPath="clip0_2679:399"
+        >
+          <RNSVGPath
+            d="M7.00002 12.8333C10.2217 12.8333 12.8334 10.2217 12.8334 7.00001C12.8334 3.77834 10.2217 1.16667 7.00002 1.16667C3.77836 1.16667 1.16669 3.77834 1.16669 7.00001C1.16669 10.2217 3.77836 12.8333 7.00002 12.8333Z"
+            propList={
+              Array [
+                "stroke",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={4289244854}
+            strokeLinecap={1}
+            strokeLinejoin={1}
+          />
+          <RNSVGPath
+            d="M7 9.33333V7"
+            propList={
+              Array [
+                "stroke",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={4289244854}
+            strokeLinecap={1}
+            strokeLinejoin={1}
+          />
+          <RNSVGPath
+            d="M7 4.66667H7.00583"
+            propList={
+              Array [
+                "stroke",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={4289244854}
+            strokeLinecap={1}
+            strokeLinejoin={1}
+          />
+        </RNSVGGroup>
+        <RNSVGDefs>
+          <RNSVGClipPath
+            name="clip0_2679:399"
+          >
+            <RNSVGRect
+              fill={4294967295}
+              height="14"
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              width="14"
+              x={0}
+              y={0}
+            />
+          </RNSVGClipPath>
+        </RNSVGDefs>
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </div>
+  <View />
+</TouchableOpacity>
+`;

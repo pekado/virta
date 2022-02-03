@@ -1,0 +1,21 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { ObservationBlock } from "@virtahealth/components";
+import glucoseObservation from "./mock_data/glucoseObservation.json";
+
+<Meta title="Components / Observation" />
+
+# Observation
+
+Measurements and simple assertions made about a patient, device or other subject.
+
+![](https://img.shields.io/static/v1?label=Status&message=Experimental&color=red)
+
+<Preview>
+  <Story name="example">
+    <ObservationBlock observation={glucoseObservation} />
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ObservationBlock} />

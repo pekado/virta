@@ -1,0 +1,48 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { ContactEdit } from "@virtahealth/experiences";
+import { StoryBookVirtaContext } from "../utils/StoryBookVirtaContext";
+
+<Meta title="Experiences / ContactEdit" />
+
+# ContactEdit
+
+This component generates text input fields for modifying patient/applicant contact data
+through the Identity service.
+
+<Preview>
+  <Story name="default">
+    <StoryBookVirtaContext
+      client={{
+        patch: action("patch"),
+      }}
+    >
+      <ContactEdit
+        patient={{
+          first_name: "Test",
+          last_name: "Patient",
+          date_of_birth: "1993-12-15",
+          virta_id: "test-virta-id",
+          addresses: [
+            {
+              address_1: "123 Main St",
+              address_2: "Apt 2",
+              city: "Minneapolis",
+              province: "MN",
+              postal_code: "55404",
+              type: "shipping",
+            },
+          ],
+          primary_email: {
+            address: "test@virtahealth.com",
+          },
+          primary_phone: "123-456-7890",
+        }}
+      />
+    </StoryBookVirtaContext>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={ContactEdit} />

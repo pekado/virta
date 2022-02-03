@@ -1,0 +1,68 @@
+{
+  "name": "@virtahealth/experiences",
+  "description": "Experiences for Atlas",
+  "version": "10.20.1",
+  "author": "Aaron Fullerton <aaron.fullerton@virtahealth.com>",
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,tsx"
+    }
+  },
+  "scripts": {
+    "start": "env NODE_ENV=development webpack --config ./development.config.js --watch",
+    "build": "env NODE_ENV=development webpack --config ./development.config.js",
+    "build-prod": "env NODE_ENV=production webpack --config ./production.config.js --optimize-minimize",
+    "lint": "eslint --ext .js,.ts,.tsx .",
+    "test": "jest",
+    "test-and-log-memory-leaks": "node --expose-gc ./node_modules/.bin/jest --runInBand --logHeapUsage",
+    "test-watch": "jest --watch",
+    "watch": "npm-watch"
+  },
+  "dependencies": {
+    "date-fns-timezone": "^0.1.4",
+    "formik": "^2.2.9",
+    "react-calendly": "2.2.2",
+    "react-native-card-flip": "git://github.com/bmbmjmdm/react-native-card-flip.git",
+    "react-native-collapsible": "^1.6.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@testing-library/react-native": "^7.1.0",
+    "@virtahealth/components": "^10.19.2",
+    "@virtahealth/styles": "^10.18.1",
+    "@virtahealth/utils": "^10.19.2",
+    "babel-jest": "26.6.3",
+    "jest": "26.6.3",
+    "npm-watch": "^0.7.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "4.0.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "peerDependencies": {
+    "@virtahealth/components": "^9.0.0",
+    "@virtahealth/styles": "^9.0.0",
+    "@virtahealth/utils": "^9.0.0",
+    "react": "17.0.2",
+    "react-intl": "5.21.2",
+    "react-native": "0.66.3",
+    "react-native-web": "0.17.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "main": "src/index.ts",
+  "license": "MIT"
+}

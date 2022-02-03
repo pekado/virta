@@ -1,0 +1,30 @@
+import { Chiclet, Row } from "@virtahealth/components";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+
+<Meta title="Components / Chiclet" component={Chiclet} />
+
+# Chiclet
+
+`Chiclet` is a tag used to highlight an important attribute of a resource
+
+<Preview>
+  <Story name="default">
+    <Row>
+      <Chiclet color="blue" label="Reversal" />
+      <Chiclet color="red" label="DMOC" />
+      <Chiclet color="purple" label="Vegetarian" />
+      <Chiclet color="orange" label="In Release" />
+      <Chiclet color="green" label="Perfect" />
+    </Row>
+  </Story>
+  <Story name="dismissable">
+    <Row>
+      <Chiclet label="Vegetarian" onDismiss={action("dismissed")} />
+    </Row>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={Chiclet} />

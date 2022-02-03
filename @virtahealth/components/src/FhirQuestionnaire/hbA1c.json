@@ -1,0 +1,46 @@
+{
+  "status": "draft",
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire|2.0"
+    ],
+    "tag": [
+      {
+        "code": "lformsVersion: 24.0.0"
+      }
+    ]
+  },
+  "item": [
+    {
+      "type": "group",
+      "code": [],
+      "required": false,
+      "linkId": "/4548-4",
+      "text": "Hgb A1c MFr Bld",
+      "item": [
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "4548-4",
+              "display": "Hgb A1c MFr Bld",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "%"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/4548-4",
+          "text": "Hgb A1c MFr Bld"
+        }
+      ]
+    }
+  ]
+}

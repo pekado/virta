@@ -1,0 +1,360 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge Component Renders a badge using HTML color 1`] = `
+<View
+  color="yellow"
+  size={25}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "yellow",
+        "borderRadius": 25,
+        "height": 25,
+        "justifyContent": "center",
+        "width": 25,
+      },
+    ]
+  }
+>
+  <Text
+    size={25}
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Book",
+          "fontSize": 20,
+          "fontWeight": "500",
+          "letterSpacing": 0,
+          "lineHeight": 20,
+          "textDecorationColor": "black",
+          "textDecorationLine": "none",
+          "textDecorationStyle": "solid",
+        },
+        Object {
+          "color": "rgb(255,255,255)",
+          "fontFamily": "Whitney-Medium",
+          "fontSize": 16.666666666666668,
+          "fontWeight": "700",
+          "textAlign": "center",
+          "textTransform": "uppercase",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    1
+  </Text>
+</View>
+`;
+
+exports[`Badge Component Renders a badge using RGB 1`] = `
+<View
+  color="rgb(0, 0, 0)"
+  size={25}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "borderRadius": 25,
+        "height": 25,
+        "justifyContent": "center",
+        "width": 25,
+      },
+    ]
+  }
+>
+  <Text
+    size={25}
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Book",
+          "fontSize": 20,
+          "fontWeight": "500",
+          "letterSpacing": 0,
+          "lineHeight": 20,
+          "textDecorationColor": "black",
+          "textDecorationLine": "none",
+          "textDecorationStyle": "solid",
+        },
+        Object {
+          "color": "rgb(255,255,255)",
+          "fontFamily": "Whitney-Medium",
+          "fontSize": 16.666666666666668,
+          "fontWeight": "700",
+          "textAlign": "center",
+          "textTransform": "uppercase",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    1
+  </Text>
+</View>
+`;
+
+exports[`Badge Component Renders a badge with a 0 label 1`] = `
+<View
+  size={25}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(22, 56, 76)",
+        "borderRadius": 25,
+        "height": 25,
+        "justifyContent": "center",
+        "width": 25,
+      },
+    ]
+  }
+>
+  <Text
+    size={25}
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Book",
+          "fontSize": 20,
+          "fontWeight": "500",
+          "letterSpacing": 0,
+          "lineHeight": 20,
+          "textDecorationColor": "black",
+          "textDecorationLine": "none",
+          "textDecorationStyle": "solid",
+        },
+        Object {
+          "color": "rgb(255,255,255)",
+          "fontFamily": "Whitney-Medium",
+          "fontSize": 16.666666666666668,
+          "fontWeight": "700",
+          "textAlign": "center",
+          "textTransform": "uppercase",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    0
+  </Text>
+</View>
+`;
+
+exports[`Badge Component Renders a badge with default color 1`] = `
+<View
+  size={25}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(22, 56, 76)",
+        "borderRadius": 25,
+        "height": 25,
+        "justifyContent": "center",
+        "width": 25,
+      },
+    ]
+  }
+>
+  <Text
+    size={25}
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Book",
+          "fontSize": 20,
+          "fontWeight": "500",
+          "letterSpacing": 0,
+          "lineHeight": 20,
+          "textDecorationColor": "black",
+          "textDecorationLine": "none",
+          "textDecorationStyle": "solid",
+        },
+        Object {
+          "color": "rgb(255,255,255)",
+          "fontFamily": "Whitney-Medium",
+          "fontSize": 16.666666666666668,
+          "fontWeight": "700",
+          "textAlign": "center",
+          "textTransform": "uppercase",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    1
+  </Text>
+</View>
+`;
+
+exports[`Badge Component Renders a blue badge 1`] = `
+<View
+  color="blue"
+  size={25}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(22, 56, 76)",
+        "borderRadius": 25,
+        "height": 25,
+        "justifyContent": "center",
+        "width": 25,
+      },
+    ]
+  }
+>
+  <Text
+    size={25}
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Book",
+          "fontSize": 20,
+          "fontWeight": "500",
+          "letterSpacing": 0,
+          "lineHeight": 20,
+          "textDecorationColor": "black",
+          "textDecorationLine": "none",
+          "textDecorationStyle": "solid",
+        },
+        Object {
+          "color": "rgb(255,255,255)",
+          "fontFamily": "Whitney-Medium",
+          "fontSize": 16.666666666666668,
+          "fontWeight": "700",
+          "textAlign": "center",
+          "textTransform": "uppercase",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    1
+  </Text>
+</View>
+`;
+
+exports[`Badge Component Renders a pink badge 1`] = `
+<View
+  color="pink"
+  size={25}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(203, 0, 113)",
+        "borderRadius": 25,
+        "height": 25,
+        "justifyContent": "center",
+        "width": 25,
+      },
+    ]
+  }
+>
+  <Text
+    size={25}
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Book",
+          "fontSize": 20,
+          "fontWeight": "500",
+          "letterSpacing": 0,
+          "lineHeight": 20,
+          "textDecorationColor": "black",
+          "textDecorationLine": "none",
+          "textDecorationStyle": "solid",
+        },
+        Object {
+          "color": "rgb(255,255,255)",
+          "fontFamily": "Whitney-Medium",
+          "fontSize": 16.666666666666668,
+          "fontWeight": "700",
+          "textAlign": "center",
+          "textTransform": "uppercase",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    1
+  </Text>
+</View>
+`;
+
+exports[`Badge Component Renders an empty badge 1`] = `
+<View
+  size={25}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(22, 56, 76)",
+        "borderRadius": 25,
+        "height": 25,
+        "justifyContent": "center",
+        "width": 25,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Badge Component Renders an orange badge 1`] = `
+<View
+  color="orange"
+  size={25}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(127, 58, 5)",
+        "borderRadius": 25,
+        "height": 25,
+        "justifyContent": "center",
+        "width": 25,
+      },
+    ]
+  }
+>
+  <Text
+    size={25}
+    style={
+      Array [
+        Object {
+          "color": "rgb(36, 38, 43)",
+          "fontFamily": "Whitney-Book",
+          "fontSize": 20,
+          "fontWeight": "500",
+          "letterSpacing": 0,
+          "lineHeight": 20,
+          "textDecorationColor": "black",
+          "textDecorationLine": "none",
+          "textDecorationStyle": "solid",
+        },
+        Object {
+          "color": "rgb(255,255,255)",
+          "fontFamily": "Whitney-Medium",
+          "fontSize": 16.666666666666668,
+          "fontWeight": "700",
+          "textAlign": "center",
+          "textTransform": "uppercase",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    1
+  </Text>
+</View>
+`;

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GrowingTextBox should render the component with the correct initial value 1`] = `
+<View>
+  <View
+    style={
+      Array [
+        Object {
+          "width": 389,
+        },
+      ]
+    }
+    width={389}
+  >
+    <TextInput
+      isFocused={false}
+      maxLength={1200}
+      multiline={true}
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onContentSizeChange={[Function]}
+      onFocus={[Function]}
+      scrollEnabled={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgb(255,255,255)",
+            "borderColor": "rgb(168, 174, 182)",
+            "borderRadius": 4,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "fontFamily": "Whitney-Book",
+            "fontSize": 14,
+            "fontWeight": "300",
+            "minHeight": 110,
+            "width": "100%",
+          },
+          Object {
+            "padding": 8,
+          },
+          undefined,
+          Object {
+            "height": 110,
+          },
+        ]
+      }
+      testID="providerNotes"
+      value="Hey, it's a test"
+    />
+    <Text
+      exceedsCount={false}
+      style={
+        Array [
+          Object {
+            "color": "rgb(115, 121, 129)",
+            "fontFamily": "Whitney-Book",
+            "fontSize": 12,
+            "fontWeight": "100",
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      16
+      /
+      1200
+       characters
+    </Text>
+  </View>
+</View>
+`;

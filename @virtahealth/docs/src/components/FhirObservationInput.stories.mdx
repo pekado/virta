@@ -1,0 +1,24 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { FhirObservationInput } from "@virtahealth/components";
+import { ObservationInputExample } from "./mock_data/observationInputExample";
+
+<Meta title="Components / FHIR Observation Input" />
+
+# FhirObservationInput
+
+This component takes in a `FHIR Observation`
+(or a denormalized version of one that extends the `fhir.Observation` interface) and generates
+input fields that populate with existing data and allow users to update the values.
+
+\*\* Note that the component depends on a function `setObservation` to update the `observation` prop —
+this is why the example is a component that wraps the input component.
+
+<Preview>
+  <Story name="example">
+    <ObservationInputExample />
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={FhirObservationInput} />

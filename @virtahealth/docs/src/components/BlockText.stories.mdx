@@ -1,0 +1,24 @@
+import { BlockText, Row } from "@virtahealth/components";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+<Meta title="Components / BlockText" component={BlockText} />
+
+# BlockText
+
+`BlockText` is a used to render text in a block format with specified width and height
+
+<Preview>
+  <Story name="example">
+    <Row>
+      <BlockText
+        width={400}
+        height={30}
+        text="T2DM. New dx. HL. Migraine. Hypothyroid. Works as exec assistant at ACME Corp. Her boss knows Sami Inkinen."
+      />
+    </Row>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={BlockText} />

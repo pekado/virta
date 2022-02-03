@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PatientLabDataEntry initially renders the labs results view 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      justifyContent="flex-end"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-end",
+          },
+        ]
+      }
+    >
+      <TouchableOpacity
+        accessibilityLabel="Add New Result"
+        accessibilityRole="button"
+        accessible={true}
+        alignLabel="center"
+        appearance="solid"
+        disabled={false}
+        intent="primary"
+        onPress={[Function]}
+        size="medium"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "rgb(35, 175, 255)",
+              "borderColor": "rgb(35, 175, 255)",
+              "borderRadius": 48,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "display": "flex",
+              "justifyContent": "center",
+              "minHeight": 44,
+              "opacity": 1,
+              "paddingHorizontal": 0,
+              "width": 180,
+            },
+          ]
+        }
+        testID="create"
+        width={180}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "minHeight": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
+          >
+            <ActivityIndicator
+              animating={false}
+              color="rgb(255,255,255)"
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                  Object {
+                    "alignItems": "center",
+                  },
+                ]
+              }
+            >
+              <Text
+                appearance="solid"
+                disabled={false}
+                intent="primary"
+                size="medium"
+                style={
+                  Array [
+                    Object {
+                      "color": "rgb(255,255,255)",
+                      "fontFamily": "Whitney-Semibold",
+                      "fontSize": 18,
+                      "fontWeight": "bold",
+                      "lineHeight": 18,
+                    },
+                  ]
+                }
+              >
+                Add New Result
+              </Text>
+            </View>
+          </View>
+        </View>
+      </TouchableOpacity>
+    </View>
+    <View
+      height={20}
+      style={
+        Array [
+          Object {
+            "height": 20,
+            "width": 0,
+          },
+        ]
+      }
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgb(36, 38, 43)",
+            "fontFamily": "Whitney-Medium",
+            "fontSize": 20,
+            "fontWeight": "500",
+            "letterSpacing": 0,
+            "lineHeight": 20,
+          },
+        ]
+      }
+      testID="no-results"
+    >
+      No lab results available
+    </Text>
+  </View>
+</View>
+`;

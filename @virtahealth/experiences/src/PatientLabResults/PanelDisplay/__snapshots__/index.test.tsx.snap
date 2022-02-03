@@ -1,0 +1,2481 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PanelDisplay renders 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "borderBottomWidth": 0,
+        "borderColor": "rgb(214, 217, 221)",
+        "borderLeftWidth": 0,
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "borderTopWidth": 0,
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      Object {
+        "alignSelf": "flex-start",
+        "borderRightWidth": 0,
+        "marginBottom": 24,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderStyle": "solid",
+          "borderTopWidth": 0,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-start",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "maxWidth": 250,
+            "width": 250,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+              "textAlign": "left",
+            },
+          ]
+        }
+      >
+        Lipids
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-end",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 70,
+            "maxWidth": 115,
+            "minWidth": 115,
+            "width": 115,
+          },
+        ]
+      }
+    >
+      <TouchableOpacity
+        accessibilityLabel="06/01/2020 report"
+        accessible={true}
+        disabled={true}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            Other
+          </Text>
+          <Text
+            disabled={true}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            06/01/2020
+          </Text>
+        </View>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-end",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 70,
+            "maxWidth": 115,
+            "minWidth": 115,
+            "width": 115,
+          },
+        ]
+      }
+    >
+      <TouchableOpacity
+        accessibilityLabel="05/01/2020 report"
+        accessible={true}
+        disabled={true}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight={13}
+            bbWidth={13}
+            fill="none"
+            focusable={false}
+            height={13}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 13,
+                  "width": 13,
+                },
+              ]
+            }
+            vbHeight={13}
+            vbWidth={13}
+            width={13}
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+            >
+              <RNSVGPath
+                clipRule={0}
+                d="M11.375 10.8805C11.375 11.2947 11.0392 11.6305 10.625 11.6305H2.375C1.96079 11.6305 1.625 11.2947 1.625 10.8805V1.13049C1.625 0.71628 1.96079 0.380493 2.375 0.380493H7.6895C7.88827 0.380536 8.0789 0.459484 8.2195 0.599993L11.1555 3.53599C11.296 3.67659 11.375 3.86722 11.375 4.06599V10.8805Z"
+                fillRule={0}
+                propList={
+                  Array [
+                    "fillRule",
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+              <RNSVGPath
+                d="M11.375 4.13049H8.375C7.96079 4.13049 7.625 3.79471 7.625 3.38049V0.380493"
+                propList={
+                  Array [
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+              <RNSVGPath
+                d="M5.3345 4.80945L4.2685 6.23045C4.20325 6.31734 4.10351 6.37165 3.99512 6.37932C3.88673 6.387 3.78034 6.34728 3.7035 6.27045L3.125 5.69245"
+                propList={
+                  Array [
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+              <RNSVGPath
+                d="M5.3345 8.18445L4.2685 9.60545C4.20325 9.69234 4.10351 9.74665 3.99512 9.75432C3.88673 9.762 3.78034 9.72228 3.7035 9.64545L3.125 9.06695"
+                propList={
+                  Array [
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+              <RNSVGPath
+                d="M6.875 6.38049H9.125"
+                propList={
+                  Array [
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+              <RNSVGPath
+                d="M6.875 9.38049H9.125"
+                propList={
+                  Array [
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            Other
+          </Text>
+          <Text
+            disabled={true}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            05/01/2020
+          </Text>
+        </View>
+      </TouchableOpacity>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderStyle": "solid",
+          "borderTopWidth": 0,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {
+          "backgroundColor": "rgb(249, 250, 251)",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-start",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 2,
+            "maxWidth": 250,
+            "width": 250,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        Cholest SerPl-mCnc
+      </Text>
+    </View>
+    <div
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderLeftWidth": 1,
+              "borderRightWidth": 0,
+              "borderStyle": "solid",
+              "display": "flex",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+              "minWidth": 250,
+              "paddingBottom": 12,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 12,
+            },
+            Object {
+              "borderLeftWidth": 0,
+              "borderRightWidth": 1,
+              "display": "flex",
+              "flexDirection": "row",
+              "height": 50,
+              "maxWidth": 115,
+              "minWidth": 115,
+              "width": 115,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            165
+          </Text>
+        </View>
+      </View>
+    </div>
+    <div
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderLeftWidth": 1,
+              "borderRightWidth": 0,
+              "borderStyle": "solid",
+              "display": "flex",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+              "minWidth": 250,
+              "paddingBottom": 12,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 12,
+            },
+            Object {
+              "borderLeftWidth": 0,
+              "borderRightWidth": 1,
+              "display": "flex",
+              "flexDirection": "row",
+              "height": 50,
+              "maxWidth": 115,
+              "minWidth": 115,
+              "width": 115,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            159
+          </Text>
+        </View>
+      </View>
+    </div>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderStyle": "solid",
+          "borderTopWidth": 0,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-start",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 2,
+            "maxWidth": 250,
+            "width": 250,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        Trigl SerPl-mCnc
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "borderLeftWidth": 0,
+            "borderRightWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 50,
+            "maxWidth": 115,
+            "minWidth": 115,
+            "width": 115,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        —
+      </Text>
+    </View>
+    <div
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderLeftWidth": 1,
+              "borderRightWidth": 0,
+              "borderStyle": "solid",
+              "display": "flex",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+              "minWidth": 250,
+              "paddingBottom": 12,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 12,
+            },
+            Object {
+              "borderLeftWidth": 0,
+              "borderRightWidth": 1,
+              "display": "flex",
+              "flexDirection": "row",
+              "height": 50,
+              "maxWidth": 115,
+              "minWidth": 115,
+              "width": 115,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            115
+          </Text>
+        </View>
+      </View>
+    </div>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderStyle": "solid",
+          "borderTopWidth": 0,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {
+          "backgroundColor": "rgb(249, 250, 251)",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-start",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 2,
+            "maxWidth": 250,
+            "width": 250,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        HDL-C
+      </Text>
+    </View>
+    <div
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderLeftWidth": 1,
+              "borderRightWidth": 0,
+              "borderStyle": "solid",
+              "display": "flex",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+              "minWidth": 250,
+              "paddingBottom": 12,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 12,
+            },
+            Object {
+              "borderLeftWidth": 0,
+              "borderRightWidth": 1,
+              "display": "flex",
+              "flexDirection": "row",
+              "height": 50,
+              "maxWidth": 115,
+              "minWidth": 115,
+              "width": 115,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            203
+          </Text>
+        </View>
+      </View>
+    </div>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "borderLeftWidth": 0,
+            "borderRightWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 50,
+            "maxWidth": 115,
+            "minWidth": 115,
+            "width": 115,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        —
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`PanelDisplay renders an empty panel when there are no results and the most recent results flag is true 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "borderBottomWidth": 0,
+        "borderColor": "rgb(214, 217, 221)",
+        "borderLeftWidth": 0,
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "borderTopWidth": 0,
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      Object {
+        "alignSelf": "flex-start",
+        "borderRightWidth": 0,
+        "marginBottom": 24,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderStyle": "solid",
+          "borderTopWidth": 0,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {},
+        Object {
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-start",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "maxWidth": 250,
+            "width": 250,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+              "textAlign": "left",
+            },
+          ]
+        }
+      >
+        Lipids
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderStyle": "solid",
+          "borderTopWidth": 0,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {
+          "backgroundColor": "rgb(249, 250, 251)",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-start",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 2,
+            "maxWidth": 250,
+            "width": 250,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        No results for this panel
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "borderLeftWidth": 0,
+            "borderRightWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 50,
+            "maxWidth": 115,
+            "minWidth": 115,
+            "width": 115,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        —
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`PanelDisplay renders when panel has no results for a set of dates 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "borderBottomWidth": 0,
+        "borderColor": "rgb(214, 217, 221)",
+        "borderLeftWidth": 0,
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "borderTopWidth": 0,
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      Object {
+        "alignSelf": "flex-start",
+        "borderRightWidth": 0,
+        "marginBottom": 24,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderStyle": "solid",
+          "borderTopWidth": 0,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-start",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "maxWidth": 250,
+            "width": 250,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+              "textAlign": "left",
+            },
+          ]
+        }
+      >
+        Lipids
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-end",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 70,
+            "maxWidth": 115,
+            "minWidth": 115,
+            "width": 115,
+          },
+        ]
+      }
+    >
+      <TouchableOpacity
+        accessibilityLabel="06/01/2020 report"
+        accessible={true}
+        disabled={true}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            Other
+          </Text>
+          <Text
+            disabled={true}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            06/01/2020
+          </Text>
+        </View>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-end",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 70,
+            "maxWidth": 115,
+            "minWidth": 115,
+            "width": 115,
+          },
+        ]
+      }
+    >
+      <TouchableOpacity
+        accessibilityLabel="05/01/2020 report"
+        accessible={true}
+        disabled={true}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight={13}
+            bbWidth={13}
+            fill="none"
+            focusable={false}
+            height={13}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 13,
+                  "width": 13,
+                },
+              ]
+            }
+            vbHeight={13}
+            vbWidth={13}
+            width={13}
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+            >
+              <RNSVGPath
+                clipRule={0}
+                d="M11.375 10.8805C11.375 11.2947 11.0392 11.6305 10.625 11.6305H2.375C1.96079 11.6305 1.625 11.2947 1.625 10.8805V1.13049C1.625 0.71628 1.96079 0.380493 2.375 0.380493H7.6895C7.88827 0.380536 8.0789 0.459484 8.2195 0.599993L11.1555 3.53599C11.296 3.67659 11.375 3.86722 11.375 4.06599V10.8805Z"
+                fillRule={0}
+                propList={
+                  Array [
+                    "fillRule",
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+              <RNSVGPath
+                d="M11.375 4.13049H8.375C7.96079 4.13049 7.625 3.79471 7.625 3.38049V0.380493"
+                propList={
+                  Array [
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+              <RNSVGPath
+                d="M5.3345 4.80945L4.2685 6.23045C4.20325 6.31734 4.10351 6.37165 3.99512 6.37932C3.88673 6.387 3.78034 6.34728 3.7035 6.27045L3.125 5.69245"
+                propList={
+                  Array [
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+              <RNSVGPath
+                d="M5.3345 8.18445L4.2685 9.60545C4.20325 9.69234 4.10351 9.74665 3.99512 9.75432C3.88673 9.762 3.78034 9.72228 3.7035 9.64545L3.125 9.06695"
+                propList={
+                  Array [
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+              <RNSVGPath
+                d="M6.875 6.38049H9.125"
+                propList={
+                  Array [
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+              <RNSVGPath
+                d="M6.875 9.38049H9.125"
+                propList={
+                  Array [
+                    "stroke",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={4284046949}
+                strokeLinecap={1}
+                strokeLinejoin={1}
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            Other
+          </Text>
+          <Text
+            disabled={true}
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            05/01/2020
+          </Text>
+        </View>
+      </TouchableOpacity>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderStyle": "solid",
+          "borderTopWidth": 0,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {
+          "backgroundColor": "rgb(249, 250, 251)",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-start",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 2,
+            "maxWidth": 250,
+            "width": 250,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        Cholest SerPl-mCnc
+      </Text>
+    </View>
+    <div
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderLeftWidth": 1,
+              "borderRightWidth": 0,
+              "borderStyle": "solid",
+              "display": "flex",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+              "minWidth": 250,
+              "paddingBottom": 12,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 12,
+            },
+            Object {
+              "borderLeftWidth": 0,
+              "borderRightWidth": 1,
+              "display": "flex",
+              "flexDirection": "row",
+              "height": 50,
+              "maxWidth": 115,
+              "minWidth": 115,
+              "width": 115,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            165
+          </Text>
+        </View>
+      </View>
+    </div>
+    <div
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderLeftWidth": 1,
+              "borderRightWidth": 0,
+              "borderStyle": "solid",
+              "display": "flex",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+              "minWidth": 250,
+              "paddingBottom": 12,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 12,
+            },
+            Object {
+              "borderLeftWidth": 0,
+              "borderRightWidth": 1,
+              "display": "flex",
+              "flexDirection": "row",
+              "height": 50,
+              "maxWidth": 115,
+              "minWidth": 115,
+              "width": 115,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            159
+          </Text>
+        </View>
+      </View>
+    </div>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderStyle": "solid",
+          "borderTopWidth": 0,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-start",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 2,
+            "maxWidth": 250,
+            "width": 250,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        Trigl SerPl-mCnc
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "borderLeftWidth": 0,
+            "borderRightWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 50,
+            "maxWidth": 115,
+            "minWidth": 115,
+            "width": 115,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        —
+      </Text>
+    </View>
+    <div
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderLeftWidth": 1,
+              "borderRightWidth": 0,
+              "borderStyle": "solid",
+              "display": "flex",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+              "minWidth": 250,
+              "paddingBottom": 12,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 12,
+            },
+            Object {
+              "borderLeftWidth": 0,
+              "borderRightWidth": 1,
+              "display": "flex",
+              "flexDirection": "row",
+              "height": 50,
+              "maxWidth": 115,
+              "minWidth": 115,
+              "width": 115,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            115
+          </Text>
+        </View>
+      </View>
+    </div>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "rgb(214, 217, 221)",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderStyle": "solid",
+          "borderTopWidth": 0,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+        },
+        Object {
+          "backgroundColor": "rgb(249, 250, 251)",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "alignItems": "flex-start",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 2,
+            "maxWidth": 250,
+            "width": 250,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        HDL-C
+      </Text>
+    </View>
+    <div
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderColor": "rgb(214, 217, 221)",
+              "borderLeftWidth": 1,
+              "borderRightWidth": 0,
+              "borderStyle": "solid",
+              "display": "flex",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+              "minWidth": 250,
+              "paddingBottom": 12,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 12,
+            },
+            Object {
+              "borderLeftWidth": 0,
+              "borderRightWidth": 1,
+              "display": "flex",
+              "flexDirection": "row",
+              "height": 50,
+              "maxWidth": 115,
+              "minWidth": 115,
+              "width": 115,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgb(36, 38, 43)",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "color": "#3A3D43",
+                  "fontFamily": "Whitney-Book",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "paddingLeft": 3,
+                  "paddingRight": 3,
+                },
+              ]
+            }
+          >
+            203
+          </Text>
+        </View>
+      </View>
+    </div>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderColor": "rgb(214, 217, 221)",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 0,
+            "borderStyle": "solid",
+            "display": "flex",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "minWidth": 250,
+            "paddingBottom": 12,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 12,
+          },
+          Object {
+            "borderLeftWidth": 0,
+            "borderRightWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 50,
+            "maxWidth": 115,
+            "minWidth": 115,
+            "width": 115,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "rgb(36, 38, 43)",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            },
+            Object {
+              "color": "#3A3D43",
+              "fontFamily": "Whitney-Book",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "paddingLeft": 3,
+              "paddingRight": 3,
+            },
+          ]
+        }
+      >
+        —
+      </Text>
+    </View>
+  </View>
+</View>
+`;

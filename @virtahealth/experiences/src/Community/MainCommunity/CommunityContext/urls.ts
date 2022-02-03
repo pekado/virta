@@ -1,0 +1,10 @@
+export const communityUserUrl = "/api/v1/community/user";
+export const communityUserActionsUrl = "/api/v1/community/user_actions";
+export const communityPostUrl = "/api/v1/community/post";
+export const communityCommentUrl = "/api/v1/community/comment";
+export const communityTopicsUrl = "/api/v1/community/topics";
+export const communityFeedUrl = "/api/v1/community/newsfeed";
+export const communityLikeUrl = "/api/v1/community/like";
+export const communityFlagUrl = "/api/v1/community/flag";
+export const communityUploadMediaUrl = "/api/v1/community/media";
+export const communityUploadProfileUrl = "/api/v1/community/profile_photo";

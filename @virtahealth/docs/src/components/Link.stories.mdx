@@ -1,0 +1,24 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { View } from "react-native";
+import { Base, Link } from "@virtahealth/components";
+
+<Meta title="Components / Link" component={Link} />
+
+# Link
+
+This is deprecated component. Most use cases should be supported by a Button with appearance "link" property.
+
+<Preview>
+  <Story name="example">
+    <View>
+      <Base>
+        A <Link text={"link"} onPress={action("link-clicked")} />
+      </Base>
+    </View>
+  </Story>
+</Preview>
+
+## API Reference
+
+<Props of={Link} />
