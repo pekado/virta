@@ -10,9 +10,9 @@ import * as space from "../../primitives/space";
 // Base Chiclet
 export const chicletBaseMarginHorizontal = space.space0;
 export const chicletBaseMarginVertical = space.space2;
-export const chicletBasePaddingHorizontal = space.space4;
+export const chicletBasePaddingHorizontal = space.space350;
 export const chicletBaseBorderRadius = space.space2;
-export const chicletBasePaddingVertical = space.space1;
+export const chicletBasePaddingVertical = space.space2;
 export const chicletBaseHeight = space.space5;
 export const chicletLargePaddingVerticle = space.space3;
 
