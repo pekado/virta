@@ -23,14 +23,14 @@ export const buttonBaseTextFontWeight: TextStyle["fontWeight"] = "bold";
 
 // Intent
 // Primary Button
-export const buttonPrimaryBackgroundColor = color.oxygenBlue500;
-export const buttonPrimaryBorderColor = color.oxygenBlue500;
+export const buttonPrimaryBackgroundColor = color.oxygenBlue700;
+export const buttonPrimaryBorderColor = color.oxygenBlue700;
 // Primary Button Text
 export const buttonPrimaryTextColor = color.white;
 export const buttonPrimaryTextFontWeight = font.fontWeight5;
 
 // Secondary Button
-export const buttonSecondaryBackgroundColor = color.oxygenBlue700;
+export const buttonSecondaryBackgroundColor = color.oxygenBlue900;
 export const buttonSecondaryBorderColor = color.calciumTeal500;
 // Secondary Button Text
 export const buttonSecondaryTextColor = color.white;
