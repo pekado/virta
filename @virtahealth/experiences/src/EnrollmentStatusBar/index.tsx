@@ -55,7 +55,7 @@ export interface EnrollmentStatusBarProps {
   steps: Steps;
 }
 
-const StyledRow = styled(View) <{ isLast: boolean }>`
+const StyledRow = styled(View)<{ isLast: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -63,7 +63,7 @@ const StyledRow = styled(View) <{ isLast: boolean }>`
   ${({ isLast }) => !isLast && `margin-right: 16px;`}
 `;
 
-const StyledBody = styled(Body) <{ color: string }>`
+const StyledBody = styled(Body)<{ color: string }>`
   color: ${({ color }) => color};
   font-size: ${({ theme }) => theme.buttonSmallTextFontSize};
 `;
@@ -102,9 +102,9 @@ export const EnrollmentStatusBar: React.FunctionComponent<EnrollmentStatusBarPro
 
     const bodyColor = (stepStatus: string) => {
       if (stepStatus === ACTIVE) {
-        return primitives.color.oxygenBlue700;
+        return primitives.color.oxygenBlue500;
       } else {
-        return primitives.color.carbonGray700;
+        return primitives.color.carbonGray400;
       }
     };
 

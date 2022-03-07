@@ -150,8 +150,8 @@ export const textLabelFontFamily = font.fontFamilySansSerifBookPostscript;
 export const textLabelFontFamilyAndroid = font.fontFamilySansSerifBookFilename;
 export const textLabelFontFamilyWeb =
   font.fontFamilySansSerifABHeleveticaArialLucidaFullname;
-export const textLabelFontSize = font.fontSize5;
-export const textLabelLargeFontSize = font.fontSize7;
+export const textLabelFontSize = font.fontSize2;
+export const textLabelLargeFontSize = font.fontSize5;
 export const textLabelLetterSpacing = 0;
 export const textLabelFontWeight = font.fontWeight5;
 export const textLabelLineHeight: TextStyle["lineHeight"] = font.fontSize2;
@@ -222,4 +222,4 @@ export const textItalicFontFamilyAndroid =
 
 // Generic
 export const textColorDisabled = color.carbonGray400;
-export const textColorSubtitle = color.carbonGray600;
+export const textColorSubtitle = color.carbonGray800;

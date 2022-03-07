@@ -7,11 +7,11 @@ import * as font from "../../primitives/font";
  */
 
 export const substrateTextColorBase = color.carbonGray900;
-export const substrateTextColorSubdued = color.carbonGray900;
+export const substrateTextColorSubdued = color.carbonGray600;
 export const substrateTextColorPrimary = color.oxygenBlue500;
 export const substrateTextColorSecondary = color.oxygenBlue700;
 export const substrateTextColorSuccess = color.clorineGreen500;
-export const substrateTextColorDanger = color.ironRed700;
+export const substrateTextColorDanger = color.ironRed500;
 export const substrateTextColorWarning = color.phosphorousOrange500;
 
 export const lightFontWeight = font.fontWeight3;
